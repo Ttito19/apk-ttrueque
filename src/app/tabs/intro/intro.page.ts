@@ -16,10 +16,10 @@ export class IntroPage implements OnInit {
   }
 
   onCliente(){
-    this._navController.navigateRoot("/lateral");
+    this._navController.navigateRoot("/auth");
   }
   onEmpleado(){
-    this._navController.navigateRoot("/lateral");
+    this._navController.navigateRoot("/empleado");
   }
 
 
