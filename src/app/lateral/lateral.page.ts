@@ -21,16 +21,6 @@ export class LateralPage implements OnInit {
       icon: "trending-up",
     },
     {
-      title: "Categorías",
-      url: "/lateral/category",
-      icon: "apps-outline",
-    },
-    {
-      title: "Mapa",
-      url: "/lateral/map",
-      icon: "map",
-    },
-    {
       title: "Sobre nosotros",
       url: "/lateral/about",
       icon: "information-circle",
@@ -44,16 +34,16 @@ export class LateralPage implements OnInit {
 
   public userDetails: any;
   userData = {
-    fname: "",
-    lastname: "",
+    nombre_cliente: "",
+    apellido_cliente: "",
   };
 
   constructor(private _navController: NavController, private router: Router) {
     var data = JSON.parse(localStorage.getItem("user"));
     if (data) {
       this.userDetails = data.userData;
-      this.userData.fname = this.userDetails.fname;
-      this.userData.lastname = this.userDetails.lastname;
+      this.userData.nombre_cliente = this.userDetails.nombre_cliente;
+      this.userData.apellido_cliente = this.userDetails.apellido_cliente;
     }
     this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
@@ -64,7 +54,7 @@ export class LateralPage implements OnInit {
   onLogout() {
     // this._userDetailService.clearUserData();
     localStorage.clear();
-    this._navController.navigateRoot("/auth");
-    console.log("hola");
+    this._navController.navigateRoot("/intro");
+    // console.log("hola");
   }
 }

@@ -30,15 +30,6 @@ const routes: Routes = [
         ],
       },
       {
-        path: "map",
-        children: [
-          {
-            path: "",
-            loadChildren: "../tabs/map/map.module#MapPageModule",
-          },
-        ],
-      },
-      {
         path: "about",
         children: [
           {
@@ -56,15 +47,7 @@ const routes: Routes = [
           },
         ],
       },
-      {
-        path: "category",
-        children: [
-          {
-            path: "",
-            loadChildren: "../tabs/category/category.module#CategoryPageModule",
-          },
-        ],
-      },
+  
       {
         path: "",
         redirectTo: "/lateral/home",

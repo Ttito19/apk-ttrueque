@@ -7,16 +7,16 @@
 <ion-content >
   <div   class="cls-content" >
     <ion-item   >
-      <ion-label>Celular:</ion-label>
-      <ion-input  type="number"></ion-input>
+      <ion-label>Email:</ion-label>
+      <ion-input [(ngModel)]="userData.email_cliente"    type="text"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Contraeña:</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-label>Télefono:</ion-label>
+      <ion-input [(ngModel)]="userData.telefono"  type="text"></ion-input>
     </ion-item>
   
 
-    <ion-button  class="no-ripple" id="btn-login" profile-button end>
+    <ion-button  (click)="onLogin()"   class="no-ripple" id="btn-login" profile-button end>
      
           <!-- <ion-ripple-effect></ion-ripple-effect> -->
         <span >  Iniciar Sesión</span>

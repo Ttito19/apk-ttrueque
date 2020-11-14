@@ -17,14 +17,12 @@ const routes: Routes = [
     loadChildren: "./tabs/tabs.module#TabsPageModule",
     canActivate: [AuthguardGuard],
   },
-  {
-    path: 'modal-category',
-    loadChildren: () => import('./modal-category/modal-category.module').then( m => m.ModalCategoryPageModule)
-  },
+
   {
     path: 'intro',
     loadChildren: () => import('./tabs/intro/intro.module').then( m => m.IntroPageModule)
-  },  {
+  },
+  {
     path: 'empleado',
     loadChildren: () => import('./empleado/empleado.module').then( m => m.EmpleadoPageModule)
   },

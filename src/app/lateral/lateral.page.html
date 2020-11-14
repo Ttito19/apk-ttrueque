@@ -10,7 +10,7 @@
         <ion-menu-toggle>
           <ion-item>
             <ion-icon name="person-circle-outline" slot="start"></ion-icon>
-            <ion-label>{{userData.fname}}</ion-label>
+            <ion-label>{{userData.nombre_cliente}}</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle *ngFor="let p of pages">
@@ -42,10 +42,6 @@
         <ion-label>{{ 'TRENDING.title' | translate }}</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="map">
-        <ion-icon name="map"></ion-icon>
-        <ion-label>{{ 'MAP.title' | translate }}</ion-label>
-      </ion-tab-button>
 
       <ion-tab-button tab="about">
         <ion-icon name="information-circle"></ion-icon>
