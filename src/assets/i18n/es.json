@@ -1,0 +1,27 @@
+{
+  "appname": "Diseño Delivery",
+
+  "CATEGORY": {
+    "title": "Categoría"
+  },
+  "HOME": {
+    "title": "Inicio"
+  },
+
+  "ABOUT": {
+    "title": "Nosotros"
+  },
+  "MAP": {
+    "title": "Mapa"
+  },
+  "TRENDING": {
+    "title": "Tendencias"
+  },
+  "SETTINGS": {
+    "title": "Ajustes",
+    "dark": "Modo Oscuro"
+  },
+  "LOGOUT": {
+    "title": "Cerrar Sesión"
+  }
+}

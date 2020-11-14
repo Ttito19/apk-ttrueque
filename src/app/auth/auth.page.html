@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div   class="cls-content" >
+    <ion-item   >
+      <ion-label>Celular:</ion-label>
+      <ion-input [(ngModel)]="userData.mobile" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contraeña:</ion-label>
+      <ion-input [(ngModel)]="userData.password" type="password"></ion-input>
+    </ion-item>
+  
+
+    <ion-button (click)="onLogin()" class="no-ripple" id="btn-login" profile-button end>
+     
+          <!-- <ion-ripple-effect></ion-ripple-effect> -->
+        <span >  Iniciar Sesión</span>
+    
+    </ion-button>
+
+  </div>
+
+</ion-content>
