@@ -1,0 +1,12 @@
+actualizar ttrueque
+guardar en una carpeta en v1 la apk antigua
+
+ionic cordova build --release android
+
+cd platforms/android/app/build/outputs/apk/release
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ttrueque.keystore app-release-unsigned.apk ttrueque
+
+ttrueque20
+
+zipalign -v 4 app-release-unsigned.apk ttrueque.apk

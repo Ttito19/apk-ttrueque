@@ -1,0 +1,27 @@
+ionic cordova build android --release
+cd platforms/android/app/build/outputs/apk/release
+keytool -genkey -v -keystore ttrueque.keystore -alias ttrueque -keyalg RSA -keysize 2048 -validity 10000
+
+clave:ttrueque20
+
+¿Cuáles son su nombre y su apellido?
+ csscreativos
+¿Cuál es el nombre de su unidad de organización? 
+css
+¿Cuál es el nombre de su organización?
+ css
+¿Cuál es el nombre de su ciudad o localidad? 
+lima
+¿Cuál es el nombre de su estado o provincia?
+lima
+¿Cuál es el código de país de dos letras de la unidad?
+51
+   (INTRO si es la misma contraseña que la del almacén de claves): "solo dar enter"
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ttrueque.keystore app-release-unsigned.apk ttrueque
+Enter Passphrase for keystore:ttrueque20
+
+zipalign -v 4 app-release-unsigned.apk ttrueque.apk
+
+
+se firmo a las 19 y 26 pm del 03/02/2020
