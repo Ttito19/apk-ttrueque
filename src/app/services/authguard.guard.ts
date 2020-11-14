@@ -24,7 +24,6 @@ export class AuthguardGuard implements CanActivate {
       return true;
     }
     this._navController.navigateRoot("/auth");
-    console.log("ssjs");
 
     return false;
   }
