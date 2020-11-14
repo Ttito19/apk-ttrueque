@@ -1,49 +1,35 @@
-
-
 <ion-content>
-
   <ion-grid>
     <ion-row>
       <ion-col class="ion-padding-top">
 <div class="ion-text-center"  >
   <ion-title>Seleccione tipo de usuario</ion-title>
 </div>
-     
 </ion-col>
 </ion-row>
 </ion-grid> 
-  
-
 <ion-grid>
-  <ion-row>
-    <ion-col >
-      <ion-card class="ion-text-center">
-        <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/profile-1506810-1278719.png" width="100px"  />
-        
-        <ion-card-content>
-        
-          <section>
-            <ion-button   (click)="onCliente()"  expand="block">Cliente</ion-button>
-          </section>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-    <ion-col >
-      <ion-card class="ion-text-center">
-        <img src="https://image.flaticon.com/icons/png/512/560/560268.png" width="100px"  />
-        
-        <ion-card-content>
-        
-          <section>
-            <ion-button (click)="onEmpleado()"   expand="block">Empleado</ion-button>
-          </section>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-  </ion-row>
+ <div class="cont-sel-user">
+  <div class="cont-trg-type-user">
+    <ion-card class="ion-text-center">
+      <img class="icon-type-user" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/profile-1506810-1278719.png" width="100px"  />
+      <ion-card-content>
+        <section>
+          <ion-button   (click)="onCliente()"  expand="block">Cliente</ion-button>
+        </section>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="cont-trg-type-user">
+    <ion-card class="ion-text-center">
+      <img class="icon-type-user" src="https://image.flaticon.com/icons/png/512/560/560268.png" width="100px"  />
+      <ion-card-content>
+        <section>
+          <ion-button (click)="onEmpleado()"   expand="block">Empleado</ion-button>
+        </section>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</div>
 </ion-grid>
-
-
-
-
 </ion-content>
