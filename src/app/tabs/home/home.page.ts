@@ -5,7 +5,7 @@ import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
 import { ModalController } from "@ionic/angular";
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
 import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
-import { ToastController } from '@ionic/angular';
+import {Platform, ToastController } from '@ionic/angular';
 @Component({
   selector: "app-home",
   templateUrl: "./home.page.html",
@@ -33,7 +33,8 @@ export class HomePage  {
     public modalController: ModalController,
     private barcodeScanner:BarcodeScanner,
     private base64ToGallery:Base64ToGallery,
-    public toastController: ToastController
+    public toastController: ToastController,
+    private platform: Platform,
   
   ) {
     this.postData.token = HkApiproviderProvider.gettoken();
@@ -43,11 +44,20 @@ export class HomePage  {
   }
 
   scanCode(){
-    this.barcodeScanner.scan().then(
-      barcodeData=>{
-        this.scannedCode=barcodeData.text;
-      }
-    );
+// console.log(this.platform.is('cordova')==false);
+    if (this.platform.is('cordova')==false) {
+       alert("Amigo sólo funciona en movil");
+    }else{
+      this.barcodeScanner.scan().then(
+        barcodeData=>{
+          this.scannedCode=barcodeData.text;
+        }
+      );
+    }
+
+  
+
+
   }
  
   downloadQR() {

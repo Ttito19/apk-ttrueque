@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../src/app/lateral/lateral.page.scss"
-    ],
-    "names": [],
-    "file": "lateral.page.css"
-}

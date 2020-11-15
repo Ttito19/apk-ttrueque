@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../src/app/tabs/category/category.page.scss"
-    ],
-    "names": [],
-    "file": "category.page.css"
-}

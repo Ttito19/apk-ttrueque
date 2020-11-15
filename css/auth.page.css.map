@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAGY,WAHD,CACP,QAAQ,CACJ,eAAe,CACX,EAAE,AAAA,CACE,KAAK,CANZ,KAAK,CAOD,AALb,AAWgB,WAXL,CACP,QAAQ,CAMJ,gBAAgB,CAEZ,gBAAgB,CAEZ,UAAU,AAAA,CACN,OAAO,CAAE,KAAK,CACjB",
-    "sources": [
-        "../src/app/auth/auth.page.scss"
-    ],
-    "names": [],
-    "file": "auth.page.css"
-}

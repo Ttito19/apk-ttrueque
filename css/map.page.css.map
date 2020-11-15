@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../src/app/tabs/map/map.page.scss"
-    ],
-    "names": [],
-    "file": "map.page.css"
-}
