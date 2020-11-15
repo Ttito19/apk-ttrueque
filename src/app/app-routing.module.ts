@@ -16,6 +16,9 @@ const routes: Routes = [
     path: "tabs",
     loadChildren: "./tabs/tabs.module#TabsPageModule",
     canActivate: [AuthguardGuard],
+  },  {
+    path: 'modal-category',
+    loadChildren: () => import('./modal-category/modal-category.module').then( m => m.ModalCategoryPageModule)
   },
 
   {
