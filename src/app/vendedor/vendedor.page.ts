@@ -2,12 +2,13 @@ import { Component, OnInit, } from "@angular/core";
 import { NavController } from "@ionic/angular";
 // import { UserDetailService } from "../services/user-detail.service";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
+
 @Component({
-  selector: 'app-empleado',
-  templateUrl: './empleado.page.html',
-  styleUrls: ['./empleado.page.scss'],
+  selector: 'app-vendedor',
+  templateUrl: './vendedor.page.html',
+  styleUrls: ['./vendedor.page.scss'],
 })
-export class EmpleadoPage implements OnInit {
+export class VendedorPage implements OnInit {
 
   remember: boolean;
   resposeData: any;
