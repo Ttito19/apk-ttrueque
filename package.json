@@ -28,6 +28,9 @@
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 20595c5... new merge 003
     "@ionic-native/android-permissions": "^5.29.0",
     "@ionic-native/barcode-scanner": "^5.29.0",
     "@ionic-native/base64-to-gallery": "^5.29.0",
@@ -42,6 +45,7 @@
     "cordova-android": "8.1.0",
     "cordova-sqlite-storage": "^5.0.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "ngx-qrcode2": "^9.0.0",
 =======
     "@ionic-native/core": "^5.0.7",
@@ -51,6 +55,9 @@
 >>>>>>> ac861af... Initial commit
 =======
 >>>>>>> 0af88d9... integration qr
+=======
+    "ngx-qrcode2": "^9.0.0",
+>>>>>>> 20595c5... new merge 003
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -96,11 +103,17 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ac861af... Initial commit
 =======
+=======
+    "cordova-base64-to-gallery": "^4.1.3",
+    "cordova-plugin-android-permissions": "^1.1.0",
+>>>>>>> 20595c5... new merge 003
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^4.0.0",
+    "cordova-plugin-nativestorage": "^2.3.2",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
@@ -113,9 +126,13 @@
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "phonegap-plugin-barcodescanner": "^8.1.0",
 =======
 >>>>>>> ac861af... Initial commit
+=======
+    "phonegap-plugin-barcodescanner": "^8.1.0",
+>>>>>>> 20595c5... new merge 003
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
@@ -135,6 +152,9 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 20595c5... new merge 003
       "cordova-sqlite-storage": {},
       "phonegap-plugin-barcodescanner": {
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
@@ -143,14 +163,18 @@
       "cordova-plugin-camera": {},
       "cordova-plugin-android-permissions": {},
       "cordova-plugin-nativestorage": {}
+<<<<<<< HEAD
 =======
       "cordova-sqlite-storage": {}
 >>>>>>> 0af88d9... integration qr
+=======
+>>>>>>> 20595c5... new merge 003
     },
     "platforms": [
       "android"
     ]
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 =======
@@ -160,3 +184,6 @@
 =======
 }
 >>>>>>> 0af88d9... integration qr
+=======
+}
+>>>>>>> 20595c5... new merge 003
