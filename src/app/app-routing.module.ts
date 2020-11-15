@@ -21,9 +21,7 @@ const routes: Routes = [
   {
     path: 'intro',
     loadChildren: () => import('./tabs/intro/intro.module').then( m => m.IntroPageModule)
-  },
-
-
+  }
 
 
 ];
