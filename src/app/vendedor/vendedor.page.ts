@@ -2,7 +2,10 @@ import { Component, OnInit, } from "@angular/core";
 import { NavController } from "@ionic/angular";
 // import { UserDetailService } from "../services/user-detail.service";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
+<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
+=======
+>>>>>>> 975e1f0... new changes into merge 004
 
 @Component({
   selector: 'app-vendedor',
@@ -13,11 +16,16 @@ export class VendedorPage implements OnInit {
 
   remember: boolean;
   resposeData: any;
+<<<<<<< HEAD
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
   constructor(
    
+=======
+  userData = { email_cliente: "", telefono: "" };
+  constructor(
+>>>>>>> 975e1f0... new changes into merge 004
     private _navController: NavController,
     // private userDetailService: UserDetailService,
     private auth: HkApiproviderProvider
@@ -30,10 +38,14 @@ export class VendedorPage implements OnInit {
     }
   }
 
+<<<<<<< HEAD
   ngOnInit() {
   
     }
  
+=======
+  ngOnInit() {}
+>>>>>>> 975e1f0... new changes into merge 004
 
   onLogin() {
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
