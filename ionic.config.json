@@ -1,5 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "apk-ttrueque",
   "integrations": {},
+=======
+  "name": "myApp",
+<<<<<<< HEAD
+  "integrations": {
+    "cordova": {}
+  },
+=======
+  "integrations": {},
+>>>>>>> ac861af... Initial commit
+>>>>>>> 5fe909c... union changes branchs
   "type": "angular"
 }
