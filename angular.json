@@ -129,12 +129,18 @@
               "e2e/tsconfig.json"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "exclude": [
               "**/node_modules/**"
             ]
 =======
             "exclude": ["**/node_modules/**"]
 >>>>>>> ac861af... Initial commit
+=======
+            "exclude": [
+              "**/node_modules/**"
+            ]
+>>>>>>> 0af88d9... integration qr
           }
         },
         "e2e": {
@@ -181,11 +187,16 @@
   },
   "cli": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
     "defaultCollection": "@ionic/angular-toolkit"
 >>>>>>> ac861af... Initial commit
+=======
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+>>>>>>> 0af88d9... integration qr
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -196,7 +207,11 @@
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> ac861af... Initial commit
+=======
+}
+>>>>>>> 0af88d9... integration qr
