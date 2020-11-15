@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from "@ionic/angular";
+import { Router, NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.page.html',
@@ -8,7 +8,8 @@ import { NavController } from "@ionic/angular";
 export class IntroPage implements OnInit {
 
   constructor(
-    private _navController: NavController,
+  
+    private router: Router
 
   ) { }
 
@@ -16,10 +17,22 @@ export class IntroPage implements OnInit {
   }
 
   onCliente(){
-    this._navController.navigateRoot("/auth");
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        estado: "CLIENTE"
+      }
+    };
+
+    this.router.navigate(['/auth'],navigationExtras);
   }
   onEmpleado(){
-    this._navController.navigateRoot("/vendedor");
+    // this.rout.navigateRoot("/vendedor");
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        estado: "ACTIVO"
+      }
+    };
+    this.router.navigate(['/vendedor'],navigationExtras);
   }
 
 

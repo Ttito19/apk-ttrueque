@@ -2,7 +2,7 @@ import { Component, OnInit, } from "@angular/core";
 import { NavController } from "@ionic/angular";
 // import { UserDetailService } from "../services/user-detail.service";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
-
+import { Router, NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-vendedor',
   templateUrl: './vendedor.page.html',
@@ -14,6 +14,7 @@ export class VendedorPage implements OnInit {
   resposeData: any;
   userData = { email_cliente: "", telefono: "" };
   constructor(
+    private router: Router,
     private _navController: NavController,
     // private userDetailService: UserDetailService,
     private auth: HkApiproviderProvider
@@ -26,7 +27,14 @@ export class VendedorPage implements OnInit {
     }
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // this.router.queryParams.subscribe(params => {
+    //     console.log(params); 
+
+    //     this.brand = params.id;
+    //     console.log(this.brand); 
+    //   });
+    }
 
   onLogin() {
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
