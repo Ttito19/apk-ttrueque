@@ -29,6 +29,15 @@ export class AuthPage implements OnInit {
       this.userData.email_cliente = data.email_cliente;
       this.userData.telefono = data.telefono;
     }
+    this.sub = this.route
+    .queryParams
+    .subscribe(params => {
+      // Defaults to 0 if no query param provided.
+      this.page = params['estado'] ;
+      this.userData.estado= this.page;
+      
+    });
+    
   }
 
   ngOnInit() {
@@ -54,7 +63,7 @@ export class AuthPage implements OnInit {
       this.auth.postData(this.userData, "login").then(
         (result) => {
           this.resposeData = result;
-
+        
           if (this.resposeData.userData) {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
             this._navController.navigateRoot("/lateral");
