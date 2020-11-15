@@ -1,17 +1,5 @@
 {
-  "name": "myApp",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "integrations": {
-    "cordova": {}
-  },
-=======
+  "name": "apk-ttrueque",
   "integrations": {},
->>>>>>> ac861af... Initial commit
-=======
-  "integrations": {
-    "cordova": {}
-  },
->>>>>>> 0af88d9... integration qr
   "type": "angular"
 }
