@@ -7,6 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
+
 })
 export class AuthPage implements OnInit {
   remember: boolean;

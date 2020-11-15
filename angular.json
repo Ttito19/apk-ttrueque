@@ -130,6 +130,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "exclude": [
               "**/node_modules/**"
             ]
@@ -141,6 +142,11 @@
               "**/node_modules/**"
             ]
 >>>>>>> 0af88d9... integration qr
+=======
+            "exclude": [
+              "**/node_modules/**"
+            ]
+>>>>>>> ab4763e... new merge 005
           }
         },
         "e2e": {
@@ -188,6 +194,7 @@
   "cli": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
@@ -197,6 +204,10 @@
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 >>>>>>> 0af88d9... integration qr
+=======
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+>>>>>>> ab4763e... new merge 005
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -208,6 +219,7 @@
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
@@ -215,3 +227,6 @@
 =======
 }
 >>>>>>> 0af88d9... integration qr
+=======
+}
+>>>>>>> ab4763e... new merge 005
