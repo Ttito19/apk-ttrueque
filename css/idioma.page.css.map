@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,GAAG,AAAA,OAAO,AAAC,CACT,KAAK,CAAE,IAAI,CACZ",
+    "sources": [
+        "../src/app/idioma/idioma.page.scss"
+    ],
+    "names": [],
+    "file": "idioma.page.css"
+}
