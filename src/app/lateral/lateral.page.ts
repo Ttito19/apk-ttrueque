@@ -48,6 +48,8 @@ export class LateralPage implements OnInit {
     this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
     });
+    console.log(data.userData);
+    
   }
 
   ngOnInit() {}

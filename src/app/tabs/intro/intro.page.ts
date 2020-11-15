@@ -32,7 +32,7 @@ export class IntroPage implements OnInit {
         estado: "ACTIVO"
       }
     };
-    this.router.navigate(['/vendedor'],navigationExtras);
+    this.router.navigate(['/auth'],navigationExtras);
   }
 
 

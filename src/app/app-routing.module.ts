@@ -22,10 +22,7 @@ const routes: Routes = [
     path: 'intro',
     loadChildren: () => import('./tabs/intro/intro.module').then( m => m.IntroPageModule)
   },
-  {
-    path: 'vendedor',
-    loadChildren: () => import('./vendedor/vendedor.module').then( m => m.VendedorPageModule)
-  },
+
 
 
 
