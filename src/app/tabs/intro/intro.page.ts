@@ -19,7 +19,7 @@ export class IntroPage implements OnInit {
     this._navController.navigateRoot("/auth");
   }
   onEmpleado(){
-    this._navController.navigateRoot("/empleado");
+    this._navController.navigateRoot("/vendedor");
   }
 
 
