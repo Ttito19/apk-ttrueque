@@ -1,45 +1,67 @@
 /*VARIBLES - LOGIN*/
 $verde : green;
 
+
 .back-logg-usertype{
-    background: linear-gradient(0deg, #026BDE, #1AC0B3);
+    /*background: linear-gradient(0deg, #026BDE, #1AC0B3);*/
+    background-image: url(../../assets/img/login/img_bakground_ttrq_login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
-    ion-card{
-        background: transparent;
-        box-shadow:unset;
+    position: relative;
 
-        ion-card-header{
-            img{
-                width: 60%;
-                object-fit: contain;
-                object-position: center;
-            }
-        }
-        ion-card-content{
-            ion-list{    
-                background: transparent;
-                ion-item{
-                    background: #fff;
-                    padding: 0 .5rem .5rem .5rem;
-                    border-radius: .5rem;
-                    margin-bottom: 1rem;
-                    ion-input{
-                        text-align:center;
-                    }
+    &:before{
+        content:'';
+        width: 100%;
+        height: 100%;
+        position: absolute;        
+        background: #3E5D79;
+        opacity: 50%;
+    }
+    .cont-login-gen{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ion-card{
+            background: transparent;
+            box-shadow:unset;
+    
+            ion-card-header{
+                img{
+                    width: 60%;
+                    object-fit: contain;
+                    object-position: center;
                 }
-                
             }
-            .ion-padding-top{
-
-                button{
-                    background: #0032B6;
-                    color: #fff;
-                    font-size: 1rem;
-                    padding: 1rem 0;
-                    display: block;
-                    width: 100%;
-                    border-radius: .5rem;
+            ion-card-content{
+                ion-list{    
+                    background: transparent;
+                    ion-item{
+                        padding: 0 .5rem 0 .5rem;
+                        border-radius: .5rem;
+                        margin-bottom: 1rem;
+                        background: #fff;
+                        ion-input{
+                            text-align:center;
+                        }
+                    }
+                    
+                }
+                .ion-padding-top{
+    
+                    button{
+                        background: #0032B6;
+                        color: #fff;
+                        font-size: 1rem;
+                        padding: 1rem 0;
+                        display: block;
+                        width: 100%;
+                        border-radius: .5rem;
+                    }
                 }
             }
         }

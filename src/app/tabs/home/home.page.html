@@ -8,28 +8,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-item>
+
+<ion-item  *ngIf="userData.condicion!='ACTIVO'"    >
   <ion-input type="text" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
 </ion-item>
+
 <ion-content [fullscreen]="true">
 <ion-segment [(ngModel)]="elementType">
-<ion-segment-button  value="canvas" >
-  <ion-label>Canvas</ion-label>
+<ion-segment-button  value="canvas"   *ngIf="userData.condicion==='ACTIVO'"  >
+  <ion-label>Lector QR</ion-label>
 </ion-segment-button>
-<ion-segment-button  value="img" >
+<ion-segment-button  value="img"  *ngIf="userData.condicion==='undefined'"   >
   <ion-label>Image</ion-label>
 </ion-segment-button>
-<ion-segment-button  value="url" >
-  <ion-label>URL</ion-label>
-</ion-segment-button>
+
 
 </ion-segment>
 
-<ion-button expand="full" (click)="scanCode()" color="secondary"   >
+<ion-button expand="full" (click)="scanCode()" color="secondary" *ngIf="userData.condicion==='ACTIVO'"  >
   <ion-icon name="qr-scanner" >
   
   </ion-icon>
-Lector QR
+Abrir QR
 </ion-button>
 
 <ion-card *ngIf="qrData" class="ion-text-center"   >
@@ -37,6 +37,7 @@ Lector QR
     [elementType]="elementType" 
     [value]="qrData"
     cssClass="my-code"
+    *ngIf="userData.condicion!='ACTIVO'"  
     >
   </ngx-qrcode>
   <ion-card-content>
@@ -44,7 +45,7 @@ Lector QR
     expand="full"
     color="tertiary"
     (click)="downloadQR()"
-    *ngIf="elementType === 'canvas'"
+    *ngIf="userData.condicion==='ACTIVO'"
   >
     <ion-icon name="download" slot="start"></ion-icon>
     Descargar QR

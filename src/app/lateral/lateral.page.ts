@@ -18,7 +18,7 @@ export class LateralPage implements OnInit {
   userData = {
     nombre_cliente: "",
     apellido_cliente: "",
-    estado:""
+    condicion:""
   };
 
   constructor(private _navController: NavController, private router: Router) {
@@ -27,17 +27,19 @@ export class LateralPage implements OnInit {
       this.userDetails = data.userData;
       this.userData.nombre_cliente = this.userDetails.nombre_cliente;
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
-      this.userData.estado = this.userDetails.estado;
+      this.userData.condicion = this.userDetails.condicion;
     }
     this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
     });
     this.items();
+     console.log(this.userData);
      
   }
 
 items(){
-  if(this.userData.estado=="ACTIVO"){   
+
+  if(this.userData.condicion=="ACTIVO"){       
     this.pages = [
       {
         title: "Inicio",
@@ -45,7 +47,6 @@ items(){
         icon: "home",
       },
     ]
-  
   }else{
     this.pages = [
       {
@@ -71,13 +72,9 @@ items(){
       },
     ];
 
-    
   }  
 
-
 }
-
-
 
 
   ngOnInit() {}
