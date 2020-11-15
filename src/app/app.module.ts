@@ -49,7 +49,6 @@ export function createTranslateLoader(http: HttpClient) {
     HTTP,
     HkApiproviderProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    NativeStorage,
     LanguageService,
     BarcodeScanner,
     Base64ToGallery,
