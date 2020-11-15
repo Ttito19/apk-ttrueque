@@ -2,10 +2,7 @@ import { Component, OnInit, } from "@angular/core";
 import { NavController } from "@ionic/angular";
 // import { UserDetailService } from "../services/user-detail.service";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
-<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
-=======
->>>>>>> 975e1f0... new changes into merge 004
 
 @Component({
   selector: 'app-vendedor',
@@ -17,12 +14,17 @@ export class VendedorPage implements OnInit {
   remember: boolean;
   resposeData: any;
 <<<<<<< HEAD
+<<<<<<< HEAD
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
   constructor(
    
 =======
+=======
+  order: string;
+
+>>>>>>> c669313... new changes into merge 006
   userData = { email_cliente: "", telefono: "" };
   constructor(
 >>>>>>> 975e1f0... new changes into merge 004

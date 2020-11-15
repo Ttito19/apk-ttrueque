@@ -5,7 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { IonicModule } from "@ionic/angular";
 import { HomePage } from "./home.page";
 import { TranslateModule } from "@ngx-translate/core";
-import { NgxQRCodeModule } from "ngx-qrcode2";
+import {NgxQRCodeModule} from "ngx-qrcode2"
 const routes: Routes = [
   {
     path: "",
