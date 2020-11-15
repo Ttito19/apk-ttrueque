@@ -7,11 +7,12 @@ import { ActivatedRoute } from '@angular/router';
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
+
 })
 export class AuthPage implements OnInit {
   remember: boolean;
   resposeData: any;
-  userData = { email_cliente: "", telefono: "" };
+  userData = { email_cliente: "", telefono: "",estado:"" };
   sub:any;
   page;
   constructor(
@@ -20,7 +21,7 @@ export class AuthPage implements OnInit {
     // private userDetailService: UserDetailService,
     private auth: HkApiproviderProvider
   ) {
-    console.log(this.userData);
+   
     
     localStorage.setItem("userLogin", JSON.stringify(this.userData));
     if (localStorage.getItem("userLogin")) {
@@ -40,14 +41,7 @@ export class AuthPage implements OnInit {
   }
 
   ngOnInit() {
-    this.sub = this.route
-    .queryParams
-    .subscribe(params => {
-      // Defaults to 0 if no query param provided.
-      this.page = params['estado'] ;
-      console.log( this.page);
-      
-    });
+ 
     }
     ngOnDestroy() {
       this.sub.unsubscribe();
@@ -55,6 +49,8 @@ export class AuthPage implements OnInit {
 
 
   onLogin() {
+  
+
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
       if (this.remember == true) {
         localStorage.setItem("userLogin", JSON.stringify(this.userData));

@@ -9,33 +9,16 @@ import { Router, RouterEvent } from "@angular/router";
 export class LateralPage implements OnInit {
   selectedPath = "";
   //invocamos la ruta
+  
   pages = [
-    {
-      title: "Inicio",
-      url: "/lateral/home",
-      icon: "home",
-    },
-    {
-      title: "Tendencias",
-      url: "/lateral/trending",
-      icon: "trending-up",
-    },
-    {
-      title: "Sobre nosotros",
-      url: "/lateral/about",
-      icon: "information-circle",
-    },
-    {
-      title: "Ajustes",
-      url: "/lateral/settings",
-      icon: "settings-outline",
-    },
+ 
   ];
 
   public userDetails: any;
   userData = {
     nombre_cliente: "",
     apellido_cliente: "",
+    estado:""
   };
 
   constructor(private _navController: NavController, private router: Router) {
@@ -44,13 +27,58 @@ export class LateralPage implements OnInit {
       this.userDetails = data.userData;
       this.userData.nombre_cliente = this.userDetails.nombre_cliente;
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
+      this.userData.estado = this.userDetails.estado;
     }
     this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
     });
-    console.log(data.userData);
-    
+    this.items();
+     
   }
+
+items(){
+  if(this.userData.estado=="ACTIVO"){   
+    this.pages = [
+      {
+        title: "Inicio",
+        url: "/lateral/home",
+        icon: "home",
+      },
+    ]
+  
+  }else{
+    this.pages = [
+      {
+        title: "Inicio",
+        url: "/lateral/home",
+        icon: "home",
+      },
+      {
+        title: "Tendencias",
+        url: "/lateral/trending",
+        icon: "trending-up",
+      },
+      {
+        title: "Sobre nosotros",
+        url: "/lateral/about",
+        icon: "information-circle",
+      },
+      
+      {
+        title: "Ajustes",
+        url: "/lateral/settings",
+        icon: "settings-outline",
+      },
+    ];
+
+    
+  }  
+
+
+}
+
+
+
 
   ngOnInit() {}
   onLogout() {

@@ -44,6 +44,7 @@ export class HomePage  {
   }
 
   scanCode(){
+
     if (this.platform.is('cordova')==false) {
        alert("Amigo sólo funciona en movil");
     }else{

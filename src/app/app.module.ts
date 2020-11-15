@@ -15,17 +15,17 @@ import { LanguageService } from "./services/language-service";
 import { IonicStorageModule } from "@ionic/storage";
 import { CommonModule } from "@angular/common";
 import { IdiomaPage } from "./idioma/idioma.page";
-import { ModalCategoryPage } from "./modal-category/modal-category.page";
+
 import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
 import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
-import { NativeStorage } from '@ionic-native/native-storage/ngx';
+
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
 
 @NgModule({
-  declarations: [AppComponent, IdiomaPage, ModalCategoryPage],
+  declarations: [AppComponent, IdiomaPage],
   entryComponents: [],
   imports: [
     BrowserModule,
@@ -49,7 +49,6 @@ export function createTranslateLoader(http: HttpClient) {
     HTTP,
     HkApiproviderProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    NativeStorage,
     LanguageService,
     BarcodeScanner,
     Base64ToGallery,

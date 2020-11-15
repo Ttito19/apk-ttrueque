@@ -20,11 +20,8 @@
   "SETTINGS": {
     "title": "Ajustes",
     "dark": "Modo Oscuro"
-<<<<<<< HEAD
   },
   "LOGOUT": {
     "title": "Cerrar Sesión"
-=======
->>>>>>> 0af88d9... integration qr
   }
 }
