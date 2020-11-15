@@ -21,6 +21,15 @@ const routes: Routes = [
         ],
       },
       {
+        path: "profile",
+        children: [
+          {
+            path: "",
+            loadChildren: "../tabs/profile/profile.module#ProfilePageModule",
+          },
+        ],
+      },
+      {
         path: "trending",
         children: [
           {

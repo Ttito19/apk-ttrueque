@@ -55,7 +55,7 @@ export class HomePage  {
       this.userData.email = this.userDetails.email_cliente;
     }
     this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
-   console.log(this.userDetails);
+ 
    
     
     this.postData.token = HkApiproviderProvider.gettoken();

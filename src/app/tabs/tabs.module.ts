@@ -20,6 +20,15 @@ const routes: Routes = [
         ],
       },
       {
+        path: "profile",
+        children: [
+          {
+            path: "",
+            loadChildren: "./profile/profile.module#ProfilePageModule",
+          },
+        ],
+      },
+      {
         path: "trending",
         children: [
           {

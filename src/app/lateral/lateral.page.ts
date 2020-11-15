@@ -46,13 +46,24 @@ items(){
         url: "/lateral/home",
         icon: "home",
       },
+      {
+        title: "Perfil",
+        url: "/lateral/profile",
+        icon: "person-circle-outline",
+      }
     ]
   }else{
     this.pages = [
+     
       {
         title: "Inicio",
         url: "/lateral/home",
         icon: "home",
+      },
+      {
+        title: "Perfil",
+        url: "/lateral/profile",
+        icon: "person-circle-outline",
       },
       {
         title: "Tendencias",
