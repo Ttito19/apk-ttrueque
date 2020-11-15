@@ -13,6 +13,10 @@ const routes: Routes = [
     canActivate: [AuthguardGuard],
   },
   {
+    path: 'intro',
+    loadChildren: () => import('./tabs/intro/intro.module').then( m => m.IntroPageModule)
+  },
+  {
     path: "tabs",
     loadChildren: "./tabs/tabs.module#TabsPageModule",
     canActivate: [AuthguardGuard],
