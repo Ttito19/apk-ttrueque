@@ -128,13 +128,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-<<<<<<< HEAD
             "exclude": [
               "**/node_modules/**"
             ]
-=======
-            "exclude": ["**/node_modules/**"]
->>>>>>> ac861af... Initial commit
           }
         },
         "e2e": {
@@ -180,12 +176,8 @@
     }
   },
   "cli": {
-<<<<<<< HEAD
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
-=======
-    "defaultCollection": "@ionic/angular-toolkit"
->>>>>>> ac861af... Initial commit
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -195,8 +187,4 @@
       "styleext": "scss"
     }
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ac861af... Initial commit
