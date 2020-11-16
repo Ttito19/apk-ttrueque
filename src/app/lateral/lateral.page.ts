@@ -33,7 +33,7 @@ export class LateralPage implements OnInit {
       this.selectedPath = event.url;
     });
     this.items();
-     console.log(this.userData);
+    
      
   }
 

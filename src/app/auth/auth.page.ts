@@ -4,11 +4,12 @@ import { AlertController } from '@ionic/angular';
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
+
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
-​
+
 })
 export class AuthPage implements OnInit {
   remember: boolean;
@@ -41,6 +42,7 @@ export class AuthPage implements OnInit {
     });
     
   }
+
     ngOnInit() {
   
     }
@@ -86,6 +88,7 @@ export class AuthPage implements OnInit {
         
           if (this.resposeData.userData) {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
+
           let name =this.resposeData.userData.nombre_cliente;
             this.presentLoading(name);
           
@@ -103,6 +106,7 @@ export class AuthPage implements OnInit {
         }
       );
     } else {
+
       let msg="Campos vacíos";
       this.presentAlert(msg);
     

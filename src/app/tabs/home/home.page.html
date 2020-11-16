@@ -15,13 +15,11 @@
 
 <ion-content [fullscreen]="true">
 <ion-segment [(ngModel)]="elementType">
-<ion-segment-button  value="canvas"   *ngIf="userData.condicion==='ACTIVO'"  >
-  <ion-label>Lector QR</ion-label>
+<ion-segment-button  value="canvas"     >
+  <!-- *ngIf="userData.condicion==='undefined'"  -->
+  <ion-label   *ngIf="userData.condicion==='ACTIVO'"   >Lector QR</ion-label>
+  <ion-label   *ngIf="userData.condicion!='ACTIVO'"    >Image</ion-label>
 </ion-segment-button>
-<ion-segment-button  value="img"  *ngIf="userData.condicion==='undefined'"   >
-  <ion-label>Image</ion-label>
-</ion-segment-button>
-
 
 
 
@@ -39,7 +37,7 @@ Abrir QR
     [elementType]="elementType" 
     [value]="qrData"
     cssClass="my-code"
-    *ngIf="userData.condicion!='ACTIVO'"  
+   
     >
     <!-- *ngIf="userData.condicion!='ACTIVO'"   -->
   </ngx-qrcode>

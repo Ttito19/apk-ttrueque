@@ -1,36 +1,13 @@
-//VARIABLES GENERALES...
-$btn-color-hov: #3880FF;
-$black-color: #000;
-$whrite-color: #fff;
-
 .cont-sel-user{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-
+    
     .cont-trg-type-user{
         margin-bottom: 1.8rem;
-        width: calc(100% * 1/2 - 0px);
-        padding: 0 .5rem;
-        
-        button{
-            width: 100%;
-            padding: 1rem 0;
-            border-radius: .5rem;
-            background: #fff;
-            box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, .01);
-            outline: none;
-            
-            &:hover{
-                background: $btn-color-hov;
-                color: $whrite-color;
+
+        ion-card{
+
+            .icon-type-user{
+                padding-top: 2rem;
             }
         }
-    }
-}
-
-@media (max-width: 375px){
-    .cont-trg-type-user{
-        width: 100% !important;
     }
 }
