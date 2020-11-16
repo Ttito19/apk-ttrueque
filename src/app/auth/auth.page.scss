@@ -5,7 +5,7 @@ $fondo: #026BDE;
 
 .back-logg-usertype{
     
-    background-image: url(../../assets/img/logo/img_bakground_ttrq_login.jpg);
+    background-image: url(../../assets/img/utilities/img_bakground_ttrq_login.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,6 +63,7 @@ $fondo: #026BDE;
                         display: block;
                         width: 100%;
                         border-radius: .5rem;
+                        outline:none;
                     }
                 }
             }
