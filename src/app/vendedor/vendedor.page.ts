@@ -12,6 +12,8 @@ export class VendedorPage implements OnInit {
 
   remember: boolean;
   resposeData: any;
+  order: string;
+
   userData = { email_cliente: "", telefono: "" };
   constructor(
     private _navController: NavController,
