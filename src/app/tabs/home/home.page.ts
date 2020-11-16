@@ -5,7 +5,7 @@ import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
 import { ModalController } from "@ionic/angular";
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
 import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
-import {Platform, ToastController } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 @Component({
   selector: "app-home",
   templateUrl: "./home.page.html",
@@ -57,8 +57,7 @@ export class HomePage  {
     public modalController: ModalController,
     private barcodeScanner:BarcodeScanner,
     private base64ToGallery:Base64ToGallery,
-    public toastController: ToastController,
-    private platform: Platform,
+    public toastController: ToastController
   
   ) {
     var data = JSON.parse(localStorage.getItem("user"));
