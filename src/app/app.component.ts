@@ -59,7 +59,7 @@ export class AppComponent {
           this.statusBar.backgroundColorByHexString("#ba1f1a");
           this.splashScreen.hide();
         });
-        this._navController.navigateRoot("/auth");
+        this._navController.navigateRoot("/intro");
         this.splashScreen.hide();
       }
     });
