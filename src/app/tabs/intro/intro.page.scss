@@ -1,13 +1,67 @@
-.cont-sel-user{
-    
-    .cont-trg-type-user{
-        margin-bottom: 1.8rem;
+//VARIABLES GENERALES...
+$btn-opts-hov : #3880FF;
+$whrite: #fff;
+$grey: grey;
 
-        ion-card{
 
-            .icon-type-user{
-                padding-top: 2rem;
+.cont-t-sel-usertype{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-0deg, blue, steelblue, skyblue);
+
+    ion-grid{
+        .cont-title-sel-user{
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+            h1{
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: .3rem;  
+            }
+            h6{
+                margin: 0;
+                color: $grey;
+                font-size: .85rem;
             }
         }
+        .cont-sel-user{
+            display: flex;
+            flex-wrap: wrap;
+        
+            .cont-trg-type-user{
+                margin-bottom: 1.8rem;
+                width: calc(100% * 1/2);
+                padding: 0 .5rem;
+        
+                button{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: .5rem;
+                    background: #fff;
+                    box-shadow: 0 4px 40px 1px rgba(0, 0, 0, 0.11), 0 0 0 1px rgba(0, 0, 0, 0.01);
+                    padding: 1rem 0;
+                    outline: none;
+                    
+                    &:hover{
+                        /*background: $btn-opts-hov;
+                        color: $whrite;*/
+                        box-shadow: 0 0 10px 1px $whrite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px){
+    .cont-trg-type-user{
+        width: 100% !important;       
+    }
+    .cont-sel-user{
+        padding: 0 1rem;
     }
 }

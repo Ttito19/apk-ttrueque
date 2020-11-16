@@ -1,24 +1,26 @@
 <div class="back-logg-usertype">
-  <ion-card center>
-    <ion-card-header class="ion-text-center">
-      <img src="../../assets/img/Logo_TTRK.png" alt="logo_ttrueque">
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-          <ion-item>
-            <!--<ion-label fixed>Celular:</ion-label>-->
-            <ion-input [(ngModel)]="userData.email_cliente"  type="mail" placeholder="Email"></ion-input>
-          </ion-item>
-          <ion-item>
-            <!--<ion-label fixed>Contraseña:</ion-label>-->
-            <ion-input [(ngModel)]="userData.telefono"  type="text" placeholder="Telefono"></ion-input>
-          </ion-item>
-      </ion-list>
-      <div class="ion-padding-top ion-padding-bottom">
-        <button block (click)="onLogin()" class="no-ripple" id="btn-login" profile-button end>
-          Iniciar Sesión
-        </button>
-      </div>
-    </ion-card-content>
-  </ion-card>
+  <div class="cont-c-logg">
+    <ion-card center>
+      <ion-card-header class="ion-text-center">
+        <img src="../../assets/img/logo/Logo_TTRK.png" alt="logo_ttrueque">
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+            <ion-item>
+              <ion-icon name="person-outline"></ion-icon>
+              <ion-input [(ngModel)]="userData.email_cliente"  type="mail" placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="call-outline"></ion-icon>
+              <ion-input [(ngModel)]="userData.telefono"  type="text" placeholder="Telefono"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div class="ion-padding-top ion-padding-bottom">
+          <button block (click)="onLogin()" class="no-ripple" id="btn-login" profile-button end>
+            Iniciar Sesión
+          </button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </div>
