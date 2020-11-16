@@ -23,6 +23,8 @@
 </ion-segment-button>
 
 
+
+
 </ion-segment>
 
 <ion-button expand="full" (click)="scanCode()" color="secondary" *ngIf="userData.condicion==='ACTIVO'"  >
@@ -39,6 +41,7 @@ Abrir QR
     cssClass="my-code"
     *ngIf="userData.condicion!='ACTIVO'"  
     >
+    <!-- *ngIf="userData.condicion!='ACTIVO'"   -->
   </ngx-qrcode>
   <ion-card-content>
     <ion-button
