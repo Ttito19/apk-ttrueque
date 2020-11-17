@@ -67,9 +67,12 @@ $grey: grey;
                     z-index:9999;
                     
                     &:hover{
-                        /*background: $btn-opts-hov;
-                        color: $whrite;*/
                         box-shadow: 0 0 10px 1px $whrite;
+                    }
+
+                    &:active{
+                        background: #1E90FF;
+			            box-shadow: 0 0 30px 1px skyblue;
                     }
                 }
             }
