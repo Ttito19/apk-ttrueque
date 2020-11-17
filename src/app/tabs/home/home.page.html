@@ -8,6 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-item  *ngIf="userData.condicion!='ACTIVO'"    >
   <ion-input type="text" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
 </ion-item>
@@ -19,6 +20,7 @@
   <ion-label   *ngIf="userData.condicion==='ACTIVO'"   >Lector QR</ion-label>
   <ion-label   *ngIf="userData.condicion!='ACTIVO'"    >Image</ion-label>
 </ion-segment-button>
+
 
 
 </ion-segment>
@@ -68,6 +70,12 @@ Abrir QR
   <ion-card-content>
 Resultado de Scanner:{{scannedCode}}
   </ion-card-content>
+
+  <ion-button expand="full" (click)="confirm()" color="primary"   >
+    <ion-icon name="checkbox-outline"></ion-icon>
+Confirmar pago
+  </ion-button>
+
 
 </ion-card>
 
