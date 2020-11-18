@@ -29,27 +29,11 @@ export class HomePage  {
     id:"",
     email:""
   };
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   qrData="" ;
   scannedCode=null;
   elementType:"url"|"canvas"|"img"="canvas";
 
-=======
-​
-  qrData="" ;
-  scannedCode=null;
-  elementType:"url"|"canvas"|"img"="canvas";
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
-
-  qrData="" ;
-  scannedCode=null;
-  elementType:"url"|"canvas"|"img"="canvas";
-
->>>>>>> 239bd85... new changes into david 024
  
   constructor(
     private languageService: LanguageService,
@@ -69,14 +53,11 @@ export class HomePage  {
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
       this.userData.email = this.userDetails.email_cliente;
+     
+      
     }
     this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
-<<<<<<< HEAD
  
-=======
-   console.log(this.userDetails);
->>>>>>> 37e740c... new styles into 'intro'
-   
     
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
@@ -100,27 +81,18 @@ export class HomePage  {
 
 
   }
+
+  confirm(){
+    alert("Pago exitoso")
+  }
+
+
  
   downloadQR() {
     const canvas = document.querySelector('canvas') as HTMLCanvasElement;
     const imageData = canvas.toDataURL('image/jpeg').toString();
  
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
-
->>>>>>> 239bd85... new changes into david 024
-=======
->>>>>>> 4e3c003... new changes into david 013
-=======
-
->>>>>>> 5200461... new changes into pk-ttrueque
     let data = imageData.split(',')[1];
 
     this.base64ToGallery.base64ToGallery(data,
@@ -131,6 +103,10 @@ export class HomePage  {
         });
         toast.present();
     }, err => console.log('err: ', err))
+
+
+
+    
   };
  
 

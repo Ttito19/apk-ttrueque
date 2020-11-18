@@ -8,36 +8,30 @@
 </ion-header>
 <ion-content>
   <div class="cont-logostore-profile">
-    <div>
+    <div  *ngIf="userData.logo!=undefined"  >
       <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <h1>{{userData.nameStore}}</h1>
-=======
->>>>>>> dd311d3... new changes into styles for apk
-=======
-    <h1>{{userData.nameStore}}</h1>
->>>>>>> a36b8c7... new changes into styles
+    <div  *ngIf="userData.logo==undefined"  >
+      <img src="../../assets/img/utilities/user-default.jpg">
+    </div>
+    <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}}  </h1>
   </div>
   <div class="cont-infostore-profile">
-    <div class="cont-control-info">
-      <p>Username</p> 
-      <label>{{userData.nombre_cliente + ' ' + userData.apellido_cliente}}</label>
-    </div>
-    <div class="cont-control-info">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <p>Name Store</p> 
+    <div class="cont-control-info" *ngIf="userData.logo!=undefined"    >
+      <p>Tienda</p> 
       <label>{{userData.nameStore}}</label>
     </div>
     <div class="cont-control-info">
->>>>>>> dd311d3... new changes into styles for apk
-=======
->>>>>>> a36b8c7... new changes into styles
-      <p>Points Quantity</p> 
+      <p>Puntos</p> 
       <label>{{userData.puntos}}</label>
+    </div>
+    <div class="cont-control-info">
+      <p>Email</p> 
+      <label>{{userData.email}}</label>
+    </div>
+    <div class="cont-control-info">
+      <p>Celular</p> 
+      <label>{{userData.telefono}}</label>
     </div>
   </div>
 </ion-content>

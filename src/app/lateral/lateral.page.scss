@@ -1,125 +1,88 @@
-$transp : transparent !important;
+$transp: transparent !important;
 
-ion-content{
-    .back-sidebar-left-ttrq{
-        background-image: url(../../assets/img/utilities/backgrond_sidebarleft_ttrueque.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width:100%;
-        height:100%;
-        position:relative;
-        display:flex;
-        flex-direction:column;
+ion-content {
+  .back-sidebar-left-ttrq {
+    background-image: url(../../assets/img/utilities/backgrond_sidebarleft_ttrueque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-        &:before{
-            content: "";
-            width:100%;
-            height:100%;
-            background:steelblue;
-            opacity:50%;
-            position:absolute;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: steelblue;
+      opacity: 50%;
+      position: absolute;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      opacity: 50%;
+      position: absolute;
+    }
+
+    .cont-logo-sdlf-ttrq {
+      background: $transp;
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 9999;
+
+      img {
+        width: 165px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    ion-list {
+      background: transparent !important;
+      height: 100%;
+      z-index: 9999;
+
+      ion-menu-toggle {
+        background: $transp;
+
+        ion-item {
+          background: $transp;
+          ion-icon {
+            color: #fff;
+          }
+          ion-label {
+            color: #fff;
+            font-weight: bold;
+          }
         }
+      }
+    }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 747a36f... new changes into styles sidebarleft
-        &:after{
-            content: "";
-            width:100%;
-            height:100%;
-            background:rgba(0,0,0,.55);
-            opacity:50%;
-            position:absolute;
+    .footer-sdbl-ttrq {
+      background: $transp;
+      background: transparent !important;
+      font-size: 0.8rem;
+      text-align: center;
+      padding-bottom: 1.3rem;
+      z-index: 9999;
+      a {
+        color: #fff;
+        background: $transp;
+
+        span {
+          color: #fff;
+          background: $transp;
         }
-
-<<<<<<< HEAD
-=======
->>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
-=======
->>>>>>> 747a36f... new changes into styles sidebarleft
-        .cont-logo-sdlf-ttrq{
-            background: $transp;
-            height:30%;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            text-align:center;
-            z-index: 9999;
-
-            img{
-<<<<<<< HEAD
-<<<<<<< HEAD
-                width:165px;
-=======
-                width:150px;
->>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
-=======
-                width:165px;
->>>>>>> d127eef... new changes into styles apk-ttrueque
-                object-fit: contain;
-                object-position: center;   
-            }
-
-        }
-        
-        ion-list{
-            background: transparent !important;
-            height: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            z-index: 9999;
-=======
->>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
-=======
-            z-index: 9999;
->>>>>>> 747a36f... new changes into styles sidebarleft
-
-            ion-menu-toggle{
-                background: $transp;
-                
-                ion-item{
-                    background:$transp;
-                    ion-icon{
-                        color:#fff;
-                    }
-                    ion-label{
-                        color:#fff;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        
-        .footer-sdbl-ttrq{
-            background: $transp;
-            background: transparent !important;
-            font-size: .8rem;
-            text-align: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            padding-bottom: 1.3rem;
-            z-index: 9999;
-=======
-            padding-bottom: 1rem;
-<<<<<<< HEAD
->>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
-=======
-=======
-            padding-bottom: 1.3rem;
->>>>>>> a36b8c7... new changes into styles
-            z-index: 9999;
->>>>>>> 747a36f... new changes into styles sidebarleft
-            a{
-                color:#fff;
-                background: $transp;
-                
-                span{
-                    color:#fff;
-                    background: $transp;
-                }
-            }
-        }
-    }   
+      }
+    }
+  }
 }

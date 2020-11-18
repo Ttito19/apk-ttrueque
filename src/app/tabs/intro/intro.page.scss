@@ -1,232 +1,92 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 //VARIABLES GENERALES...
-<<<<<<< HEAD
-$btn-opts-hov : #3880FF;
+$btn-opts-hov: #3880ff;
 $whrite: #fff;
 $grey: grey;
 $azul-claro: dodgerblue;
 $azul-claro-shadow: 0 0 20px 1px dodgerblue;
 
+.cont-t-sel-usertype {
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient(-0deg, blue, steelblue, skyblue);*/
+  background-image: url(../../../assets/img/utilities/img_bakground_ttrq_login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 
-.cont-t-sel-usertype{
+  &:before {
+    content: "";
     width: 100%;
     height: 100%;
-    /*background: linear-gradient(-0deg, blue, steelblue, skyblue);*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d127eef... new changes into styles apk-ttrueque
-    background-image:url(../../../assets/img/utilities/img_bakground_ttrq_login.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position:relative;
-<<<<<<< HEAD
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+  }
 
-    &:before{
-        content: '';
-        width:100%;
-        height:100%;
-        position:absolute;
-        background:rgba(0,0,0,.2);
+  ion-grid {
+    z-index: 9999;
+    .cont-title-sel-user {
+      padding: 0 1rem;
+      margin-bottom: 1rem;
+      z-index: 9999;
+      text-align: center;
+      h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+        z-index: 9999;
+      }
+      h6 {
+        margin: 0;
+        color: $grey;
+        font-size: 0.85rem;
+        z-index: 9999;
+      }
     }
-    
-    ion-grid{
-        z-index:9999;
-        .cont-title-sel-user{
-            padding: 0 1rem;
-            margin-bottom: 1rem;
-            z-index:9999;
-            text-align: center;
-            h1{
-                font-size: 1.2rem;
-                font-weight: bold;
-                margin-bottom: .3rem;  
-                z-index:9999;
-            }
-            h6{
-                margin: 0;
-                color: $grey;
-                font-size: .85rem;
-                z-index:9999;
-=======
-$btn-color-hov: #3880FF;
-$black-color: #000;
-$whrite-color: #fff;
+    .cont-sel-user {
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 9999;
 
-=======
->>>>>>> 5200461... new changes into pk-ttrueque
-.cont-sel-user{
-    
-    .cont-trg-type-user{
+      .cont-trg-type-user {
         margin-bottom: 1.8rem;
-<<<<<<< HEAD
-        width: calc(100% * 1/2 - 0px);
-        padding: 0 .5rem;
-        
-        button{
-            width: 100%;
-            padding: 1rem 0;
-            border-radius: .5rem;
-            background: #fff;
-            box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, .01);
-            outline: none;
-            
-            &:hover{
-                background: $btn-color-hov;
-                color: $whrite-color;
->>>>>>> 37e740c... new styles into 'intro'
-            }
-        }
-        .cont-sel-user{
-            display: flex;
-            flex-wrap: wrap;
-            z-index:9999;
-        
-            .cont-trg-type-user{
-                margin-bottom: 1.8rem;
-                width: calc(100% * 1/2);
-                padding: 0 .5rem;
-                z-index:9999;
-        
-                button{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    border-radius: .5rem;
-                    background: #fff;
-                    /*box-shadow: 0 4px 40px 1px rgba(0, 0, 0, 0.11), 0 0 0 1px rgba(0, 0, 0, 0.01);*/
-                    padding: 1rem 0;
-                    outline: none;
-                    z-index:9999;
-                    box-shadow: $azul-claro-shadow;
-                    
-                    &:hover{
-                        box-shadow: $azul-claro-shadow;
-                    }
+        width: calc(100% * 1 / 2);
+        padding: 0 0.5rem;
+        z-index: 9999;
 
-                    &:active{
-                        background: $azul-claro;
-                    }
-                }
-            }
+        button {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border-radius: 0.5rem;
+          background: #fff;
+          /*box-shadow: 0 4px 40px 1px rgba(0, 0, 0, 0.11), 0 0 0 1px rgba(0, 0, 0, 0.01);*/
+          padding: 1rem 0;
+          outline: none;
+          z-index: 9999;
+          box-shadow: $azul-claro-shadow;
+
+          &:hover {
+            box-shadow: $azul-claro-shadow;
+          }
+
+          &:active {
+            background: $azul-claro;
+          }
         }
+      }
     }
+  }
 }
 
-@media (max-width:425px){
-    .cont-trg-type-user{
-        width: 100% !important;   
-            
-    }
-    .cont-sel-user{
-        padding: 0 1rem;
-    }
-}
-
-@media (max-width: 375px){
-    .cont-trg-type-user{
-        width: 100% !important;
-    }
-=======
-=======
-//VARIABLES GENERALES...
-$btn-opts-hov : #3880FF;
-$whrite: #fff;
-$grey: grey;
-
->>>>>>> dd311d3... new changes into styles for apk
-
-.cont-t-sel-usertype{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-0deg, blue, steelblue, skyblue);
-=======
->>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
-=======
->>>>>>> d127eef... new changes into styles apk-ttrueque
-
-    &:before{
-        content: '';
-        width:100%;
-        height:100%;
-        position:absolute;
-        background:rgba(0,0,0,.2);
-    }
-    
-    ion-grid{
-        z-index:9999;
-        .cont-title-sel-user{
-            padding: 0 1rem;
-            margin-bottom: 1rem;
-            z-index:9999;
-            text-align: center;
-            h1{
-                font-size: 1.2rem;
-                font-weight: bold;
-                margin-bottom: .3rem;  
-                z-index:9999;
-            }
-            h6{
-                margin: 0;
-                color: $grey;
-                font-size: .85rem;
-                z-index:9999;
-            }
-        }
-        .cont-sel-user{
-            display: flex;
-            flex-wrap: wrap;
-            z-index:9999;
-        
-            .cont-trg-type-user{
-                margin-bottom: 1.8rem;
-                width: calc(100% * 1/2);
-                padding: 0 .5rem;
-                z-index:9999;
-        
-                button{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    border-radius: .5rem;
-                    background: #fff;
-                    /*box-shadow: 0 4px 40px 1px rgba(0, 0, 0, 0.11), 0 0 0 1px rgba(0, 0, 0, 0.01);*/
-                    padding: 1rem 0;
-                    outline: none;
-                    z-index:9999;
-                    box-shadow: $azul-claro-shadow;
-                    
-                    &:hover{
-                        box-shadow: $azul-claro-shadow;
-                    }
-
-                    &:active{
-                        background: $azul-claro;
-                    }
-                }
-            }
-        }
-    }
-<<<<<<< HEAD
->>>>>>> 5200461... new changes into pk-ttrueque
-=======
-}
-
-@media (max-width:425px){
-    .cont-trg-type-user{
-        width: 100% !important;   
-            
-    }
-    .cont-sel-user{
-        padding: 0 1rem;
-    }
->>>>>>> dd311d3... new changes into styles for apk
+@media (max-width: 425px) {
+  .cont-trg-type-user {
+    width: 100% !important;
+  }
+  .cont-sel-user {
+    padding: 0 1rem;
+  }
 }
