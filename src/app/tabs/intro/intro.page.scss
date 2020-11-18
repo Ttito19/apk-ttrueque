@@ -1,4 +1,5 @@
 //VARIABLES GENERALES...
+<<<<<<< HEAD
 $btn-opts-hov : #3880FF;
 $whrite: #fff;
 $grey: grey;
@@ -42,6 +43,33 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
                 color: $grey;
                 font-size: .85rem;
                 z-index:9999;
+=======
+$btn-color-hov: #3880FF;
+$black-color: #000;
+$whrite-color: #fff;
+
+.cont-sel-user{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+    .cont-trg-type-user{
+        margin-bottom: 1.8rem;
+        width: calc(100% * 1/2 - 0px);
+        padding: 0 .5rem;
+        
+        button{
+            width: 100%;
+            padding: 1rem 0;
+            border-radius: .5rem;
+            background: #fff;
+            box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, .01);
+            outline: none;
+            
+            &:hover{
+                background: $btn-color-hov;
+                color: $whrite-color;
+>>>>>>> 37e740c... new styles into 'intro'
             }
         }
         .cont-sel-user{
@@ -90,5 +118,11 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
     }
     .cont-sel-user{
         padding: 0 1rem;
+    }
+}
+
+@media (max-width: 375px){
+    .cont-trg-type-user{
+        width: 100% !important;
     }
 }

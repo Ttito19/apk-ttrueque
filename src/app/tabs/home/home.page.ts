@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LanguageService } from "../../services/language-service";
-
+​
 import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
 import { ModalController } from "@ionic/angular";
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
@@ -10,12 +10,12 @@ import {Platform, ToastController } from '@ionic/angular';
   selector: "app-home",
   templateUrl: "./home.page.html",
   styleUrls: ["./home.page.scss"],
-
+​
 })
 export class HomePage  {
-
+​
   public resposeData: any;
-
+​
   data: any;
   postData = {
     token: "",
@@ -29,11 +29,19 @@ export class HomePage  {
     id:"",
     email:""
   };
+<<<<<<< HEAD
 
   qrData="" ;
   scannedCode=null;
   elementType:"url"|"canvas"|"img"="canvas";
 
+=======
+​
+  qrData="" ;
+  scannedCode=null;
+  elementType:"url"|"canvas"|"img"="canvas";
+​
+>>>>>>> 37e740c... new styles into 'intro'
  
   constructor(
     private languageService: LanguageService,
@@ -55,17 +63,21 @@ export class HomePage  {
       this.userData.email = this.userDetails.email_cliente;
     }
     this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
+<<<<<<< HEAD
  
+=======
+   console.log(this.userDetails);
+>>>>>>> 37e740c... new styles into 'intro'
    
     
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
-
-
+​
+​
   }
-
+​
   scanCode(){
-
+​
     if (this.platform.is('cordova')==false) {
        alert("Amigo sólo funciona en movil");
     }else{
@@ -75,19 +87,23 @@ export class HomePage  {
         }
       );
     }
-
+​
   
-
-
+​
+​
   }
  
   downloadQR() {
     const canvas = document.querySelector('canvas') as HTMLCanvasElement;
     const imageData = canvas.toDataURL('image/jpeg').toString();
  
+<<<<<<< HEAD
 
+=======
+​
+>>>>>>> 37e740c... new styles into 'intro'
     let data = imageData.split(',')[1];
-
+​
     this.base64ToGallery.base64ToGallery(data,
       { prefix: '_img', mediaScanner: true })
       .then(async res => {
@@ -98,6 +114,6 @@ export class HomePage  {
     }, err => console.log('err: ', err))
   };
  
-
-
+​
+​
 }
