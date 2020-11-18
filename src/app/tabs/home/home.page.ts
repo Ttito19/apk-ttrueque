@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LanguageService } from "../../services/language-service";
-
+​
 import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
 import { ModalController } from "@ionic/angular";
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
@@ -10,12 +10,12 @@ import {Platform, ToastController } from '@ionic/angular';
   selector: "app-home",
   templateUrl: "./home.page.html",
   styleUrls: ["./home.page.scss"],
-
+​
 })
 export class HomePage  {
-
+​
   public resposeData: any;
-
+​
   data: any;
   postData = {
     token: "",
@@ -80,12 +80,12 @@ export class HomePage  {
     
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
-
-
+​
+​
   }
-
+​
   scanCode(){
-
+​
     if (this.platform.is('cordova')==false) {
        alert("Amigo sólo funciona en movil");
     }else{
@@ -95,16 +95,17 @@ export class HomePage  {
         }
       );
     }
-
+​
   
-
-
+​
+​
   }
  
   downloadQR() {
     const canvas = document.querySelector('canvas') as HTMLCanvasElement;
     const imageData = canvas.toDataURL('image/jpeg').toString();
  
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -114,8 +115,10 @@ export class HomePage  {
 =======
 
 >>>>>>> 239bd85... new changes into david 024
+=======
+>>>>>>> 4e3c003... new changes into david 013
     let data = imageData.split(',')[1];
-
+​
     this.base64ToGallery.base64ToGallery(data,
       { prefix: '_img', mediaScanner: true })
       .then(async res => {
@@ -126,6 +129,6 @@ export class HomePage  {
     }, err => console.log('err: ', err))
   };
  
-
-
+​
+​
 }
