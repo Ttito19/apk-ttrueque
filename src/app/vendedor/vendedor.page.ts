@@ -4,17 +4,26 @@ import { NavController } from "@ionic/angular";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 =======
 >>>>>>> 6e50916... new changes into david 014
 =======
+=======
+>>>>>>> 1de353f... new changes into david 028
 =======
 <<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 =======
 >>>>>>> 975e1f0... new changes into merge 004
 >>>>>>> 84d61e0... new changes into merge 012
+<<<<<<< HEAD
 >>>>>>> c764d74... new changes into david 027
+=======
+=======
+import { ActivatedRoute } from '@angular/router';
+>>>>>>> e7d0c4c... new changes into merge 013
+>>>>>>> 1de353f... new changes into david 028
 
 @Component({
   selector: 'app-vendedor',
@@ -29,12 +38,15 @@ export class VendedorPage implements OnInit {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e7d0c4c... new changes into merge 013
 =======
 >>>>>>> c764d74... new changes into david 027
+=======
+>>>>>>> 1de353f... new changes into david 028
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
@@ -65,6 +77,10 @@ export class VendedorPage implements OnInit {
 =======
    
 =======
+=======
+  order: string;
+
+>>>>>>> c669313... new changes into merge 006
   userData = { email_cliente: "", telefono: "" };
   constructor(
 >>>>>>> 975e1f0... new changes into merge 004
