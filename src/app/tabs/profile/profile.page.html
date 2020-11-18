@@ -17,13 +17,21 @@
     <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}}  </h1>
   </div>
   <div class="cont-infostore-profile">
-    <div class="cont-control-info">
+    <div class="cont-control-info" *ngIf="userData.logo!=undefined"    >
       <p>Tienda</p> 
       <label>{{userData.nameStore}}</label>
     </div>
     <div class="cont-control-info">
-      <p>Points Quantity</p> 
+      <p>Puntos</p> 
       <label>{{userData.puntos}}</label>
+    </div>
+    <div class="cont-control-info">
+      <p>Email</p> 
+      <label>{{userData.email}}</label>
+    </div>
+    <div class="cont-control-info">
+      <p>Celular</p> 
+      <label>{{userData.telefono}}</label>
     </div>
   </div>
 </ion-content>
