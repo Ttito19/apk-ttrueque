@@ -97,5 +97,31 @@ Abrir QR
     <ion-card-content>
   Resultado de Scanner:{{scannedCode}}
     </ion-card-content>
+<<<<<<< HEAD
   </ion-card>
 </ion-content>
+=======
+    
+</ion-card>
+
+ 
+<ion-item  *ngIf="userData.condicion==='ACTIVO'"    >
+  <ion-label     >Puntos a pagar:</ion-label>
+  <ion-input type="tel" maxlength="15"   ></ion-input>
+</ion-item>
+
+
+
+
+
+ 
+<ion-card *ngIf="scannedCode"  >
+  <ion-card-content>
+Resultado de Scanner:{{scannedCode}}
+  </ion-card-content>
+
+</ion-card>
+
+
+</ion-content>
+>>>>>>> 55d7760... new changes into david 018

@@ -5,15 +5,19 @@ import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+
+>>>>>>> 55d7760... new changes into david 018
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
-​
+
 })
 export class AuthPage implements OnInit {
   remember: boolean;
@@ -47,10 +51,14 @@ export class AuthPage implements OnInit {
     
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+
+>>>>>>> 55d7760... new changes into david 018
     ngOnInit() {
   
     }
@@ -69,16 +77,22 @@ export class AuthPage implements OnInit {
       this._navController.navigateRoot("/lateral");
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55d7760... new changes into david 018
 
 
 
 
+<<<<<<< HEAD
 =======
 ​
 ​
 ​
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+>>>>>>> 55d7760... new changes into david 018
  async presentAlert(msg) {
       const alert = await this.alertController.create({
         cssClass: 'my-custom-class',
@@ -96,7 +110,7 @@ export class AuthPage implements OnInit {
   
 =======
   
-​
+
   onLogin() {
   
 >>>>>>> 37e740c... new styles into 'intro'
@@ -111,10 +125,14 @@ export class AuthPage implements OnInit {
           if (this.resposeData.userData) {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+
+>>>>>>> 55d7760... new changes into david 018
           let name =this.resposeData.userData.nombre_cliente;
             this.presentLoading(name);
           
@@ -133,10 +151,14 @@ export class AuthPage implements OnInit {
       );
     } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+
+>>>>>>> 55d7760... new changes into david 018
       let msg="Campos vacíos";
       this.presentAlert(msg);
     
