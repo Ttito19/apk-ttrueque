@@ -2,7 +2,10 @@ import { Component, OnInit, } from "@angular/core";
 import { NavController } from "@ionic/angular";
 // import { UserDetailService } from "../services/user-detail.service";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
+<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
+=======
+>>>>>>> 6e50916... new changes into david 014
 
 @Component({
   selector: 'app-vendedor',
@@ -13,6 +16,7 @@ export class VendedorPage implements OnInit {
 
   remember: boolean;
   resposeData: any;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -34,6 +38,10 @@ export class VendedorPage implements OnInit {
   constructor(
 >>>>>>> 975e1f0... new changes into merge 004
 >>>>>>> e7d0c4c... new changes into merge 013
+=======
+  userData = { email_cliente: "", telefono: "" };
+  constructor(
+>>>>>>> 6e50916... new changes into david 014
     private _navController: NavController,
     // private userDetailService: UserDetailService,
     private auth: HkApiproviderProvider
@@ -46,10 +54,14 @@ export class VendedorPage implements OnInit {
     }
   }
 
+<<<<<<< HEAD
   ngOnInit() {
   
     }
  
+=======
+  ngOnInit() {}
+>>>>>>> 6e50916... new changes into david 014
 
   onLogin() {
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
