@@ -7,6 +7,7 @@ import { LoadingController } from '@ionic/angular';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -16,11 +17,14 @@ import { LoadingController } from '@ionic/angular';
 >>>>>>> 55d7760... new changes into david 018
 =======
 >>>>>>> 4e3c003... new changes into david 013
+=======
+
+>>>>>>> 5200461... new changes into pk-ttrueque
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
-​
+
 })
 export class AuthPage implements OnInit {
   remember: boolean;
@@ -56,6 +60,7 @@ export class AuthPage implements OnInit {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -65,6 +70,9 @@ export class AuthPage implements OnInit {
 >>>>>>> 55d7760... new changes into david 018
 =======
 >>>>>>> 4e3c003... new changes into david 013
+=======
+
+>>>>>>> 5200461... new changes into pk-ttrueque
     ngOnInit() {
   
     }
@@ -133,6 +141,7 @@ export class AuthPage implements OnInit {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -142,6 +151,9 @@ export class AuthPage implements OnInit {
 >>>>>>> 55d7760... new changes into david 018
 =======
 >>>>>>> 4e3c003... new changes into david 013
+=======
+
+>>>>>>> 5200461... new changes into pk-ttrueque
           let name =this.resposeData.userData.nombre_cliente;
             this.presentLoading(name);
           
@@ -162,6 +174,7 @@ export class AuthPage implements OnInit {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -171,6 +184,9 @@ export class AuthPage implements OnInit {
 >>>>>>> 55d7760... new changes into david 018
 =======
 >>>>>>> 4e3c003... new changes into david 013
+=======
+
+>>>>>>> 5200461... new changes into pk-ttrueque
       let msg="Campos vacíos";
       this.presentAlert(msg);
     

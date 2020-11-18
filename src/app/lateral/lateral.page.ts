@@ -34,10 +34,14 @@ export class LateralPage implements OnInit {
     });
     this.items();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
      console.log(this.userData);
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+    
+>>>>>>> 5200461... new changes into pk-ttrueque
      
   }
 

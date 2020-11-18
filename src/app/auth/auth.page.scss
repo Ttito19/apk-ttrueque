@@ -3,8 +3,8 @@ $write:#fff;
 $blue: #0032B6;
 $fondo: #026BDE;
 
-
 .back-logg-usertype{
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     background-image: url(../../assets/img/utilities/img_bakground_ttrq_login.jpg);
@@ -30,10 +30,16 @@ $fondo: #026BDE;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+=======
+    background: linear-gradient(0deg, #026BDE, #1AC0B3);
+>>>>>>> 5200461... new changes into pk-ttrueque
     height: 100%;
     width: 100%;
-    position: relative;
+    ion-card{
+        background: transparent;
+        box-shadow:unset;
 
+<<<<<<< HEAD
     &:before{
         content:'';
         width: 100%;
@@ -82,9 +88,28 @@ $fondo: #026BDE;
                         ion-input{
                             text-align:center;
                         }
+=======
+        ion-card-header{
+            img{
+                width: 60%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        ion-card-content{
+            ion-list{    
+                background: transparent;
+                ion-item{
+                    background: #fff;
+                    padding: 0 .5rem .5rem .5rem;
+                    border-radius: .5rem;
+                    margin-bottom: 1rem;
+                    ion-input{
+                        text-align:center;
+>>>>>>> 5200461... new changes into pk-ttrueque
                     }
-                    
                 }
+<<<<<<< HEAD
                 .ion-padding-top{
     
                     button{
@@ -105,6 +130,20 @@ $fondo: #026BDE;
 =======
 >>>>>>> 37e740c... new styles into 'intro'
                     }
+=======
+                
+            }
+            .ion-padding-top{
+
+                button{
+                    background: #0032B6;
+                    color: #fff;
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                    display: block;
+                    width: 100%;
+                    border-radius: .5rem;
+>>>>>>> 5200461... new changes into pk-ttrueque
                 }
             }
         }
