@@ -21,6 +21,7 @@ ion-content{
             position:absolute;
         }
 
+<<<<<<< HEAD
         &:after{
             content: "";
             width:100%;
@@ -30,6 +31,8 @@ ion-content{
             position:absolute;
         }
 
+=======
+>>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
         .cont-logo-sdlf-ttrq{
             background: $transp;
             height:30%;
@@ -40,7 +43,11 @@ ion-content{
             z-index: 9999;
 
             img{
+<<<<<<< HEAD
                 width:165px;
+=======
+                width:150px;
+>>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
                 object-fit: contain;
                 object-position: center;   
             }
@@ -50,7 +57,10 @@ ion-content{
         ion-list{
             background: transparent !important;
             height: 100%;
+<<<<<<< HEAD
             z-index: 9999;
+=======
+>>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
 
             ion-menu-toggle{
                 background: $transp;
@@ -73,8 +83,12 @@ ion-content{
             background: transparent !important;
             font-size: .8rem;
             text-align: center;
+<<<<<<< HEAD
             padding-bottom: 1.3rem;
             z-index: 9999;
+=======
+            padding-bottom: 1rem;
+>>>>>>> 37ac368... new styles into sidebarleft apk ttrueque
             a{
                 color:#fff;
                 background: $transp;
