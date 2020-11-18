@@ -3,27 +3,27 @@
     <ion-title> Perfil</ion-title>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-  
+    </ion-buttons>  
   </ion-toolbar>
 </ion-header>
-
-
 <ion-content>
-  <div>
-    <ion-label>{{userData.nombre_cliente}}</ion-label>
+  <div class="cont-logostore-profile">
+    <div  *ngIf="userData.logo!=undefined"  >
+      <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
+    </div>
+    <div  *ngIf="userData.logo==undefined"  >
+      <img src="../../assets/img/utilities/user-default.jpg">
+    </div>
+    <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}}  </h1>
   </div>
-<div>
-  <ion-label>{{userData.apellido_cliente}}</ion-label>
-</div>
-<div>
-  <img  src="http://trueque.ga/shop/images/store/{{userData.logo}}" width="100px"  >
-</div>
-<div>
-  <ion-label>{{userData.nameStore}}</ion-label>
-</div>
-<div>
-<ion-label>{{userData.puntos }}</ion-label>  
-</div>
-
+  <div class="cont-infostore-profile">
+    <div class="cont-control-info">
+      <p>Tienda</p> 
+      <label>{{userData.nameStore}}</label>
+    </div>
+    <div class="cont-control-info">
+      <p>Points Quantity</p> 
+      <label>{{userData.puntos}}</label>
+    </div>
+  </div>
 </ion-content>

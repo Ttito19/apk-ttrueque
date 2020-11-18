@@ -29,8 +29,6 @@ export class ProfilePage implements OnInit {
 
       this.userData.condicion = this.userDetails.condicion;
     }
-
-    console.log(this.userDetails);
     
    }
  
