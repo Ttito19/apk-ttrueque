@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LanguageService } from "../../services/language-service";
-​
+
 import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
 import { ModalController } from "@ionic/angular";
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
@@ -10,12 +10,12 @@ import {Platform, ToastController } from '@ionic/angular';
   selector: "app-home",
   templateUrl: "./home.page.html",
   styleUrls: ["./home.page.scss"],
-​
+
 })
 export class HomePage  {
-​
+
   public resposeData: any;
-​
+
   data: any;
   postData = {
     token: "",
@@ -30,6 +30,7 @@ export class HomePage  {
     email:""
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   qrData="" ;
   scannedCode=null;
@@ -42,6 +43,13 @@ export class HomePage  {
   elementType:"url"|"canvas"|"img"="canvas";
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+
+  qrData="" ;
+  scannedCode=null;
+  elementType:"url"|"canvas"|"img"="canvas";
+
+>>>>>>> 239bd85... new changes into david 024
  
   constructor(
     private languageService: LanguageService,
@@ -72,12 +80,12 @@ export class HomePage  {
     
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
-​
-​
+
+
   }
-​
+
   scanCode(){
-​
+
     if (this.platform.is('cordova')==false) {
        alert("Amigo sólo funciona en movil");
     }else{
@@ -87,10 +95,10 @@ export class HomePage  {
         }
       );
     }
-​
+
   
-​
-​
+
+
   }
  
   downloadQR() {
@@ -98,12 +106,16 @@ export class HomePage  {
     const imageData = canvas.toDataURL('image/jpeg').toString();
  
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
 >>>>>>> 37e740c... new styles into 'intro'
+=======
+
+>>>>>>> 239bd85... new changes into david 024
     let data = imageData.split(',')[1];
-​
+
     this.base64ToGallery.base64ToGallery(data,
       { prefix: '_img', mediaScanner: true })
       .then(async res => {
@@ -114,6 +126,6 @@ export class HomePage  {
     }, err => console.log('err: ', err))
   };
  
-​
-​
+
+
 }
