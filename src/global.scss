@@ -16,7 +16,11 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
+<<<<<<< HEAD
 @import "~@ionic/angular/css/display.css";
+=======
+@import '~@ionic/angular/css/display.css';
+>>>>>>> ac861af... Initial commit
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,9 +28,12 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+<<<<<<< HEAD
 input.searchbar-input.sc-ion-searchbar-md {
   --border-radius: 20px;
   --box-shadow: inherit;
   --background: #f4f4f4;
   -webkit-box-shadow: inherit;
 }
+=======
+>>>>>>> ac861af... Initial commit
