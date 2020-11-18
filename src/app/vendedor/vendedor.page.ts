@@ -13,11 +13,27 @@ export class VendedorPage implements OnInit {
 
   remember: boolean;
   resposeData: any;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e7d0c4c... new changes into merge 013
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
   constructor(
    
+<<<<<<< HEAD
+=======
+=======
+=======
+  order: string;
+
+>>>>>>> c669313... new changes into merge 006
+  userData = { email_cliente: "", telefono: "" };
+  constructor(
+>>>>>>> 975e1f0... new changes into merge 004
+>>>>>>> e7d0c4c... new changes into merge 013
     private _navController: NavController,
     // private userDetailService: UserDetailService,
     private auth: HkApiproviderProvider
