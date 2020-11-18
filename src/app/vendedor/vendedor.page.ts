@@ -3,9 +3,18 @@ import { NavController } from "@ionic/angular";
 // import { UserDetailService } from "../services/user-detail.service";
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 =======
 >>>>>>> 6e50916... new changes into david 014
+=======
+=======
+<<<<<<< HEAD
+import { ActivatedRoute } from '@angular/router';
+=======
+>>>>>>> 975e1f0... new changes into merge 004
+>>>>>>> 84d61e0... new changes into merge 012
+>>>>>>> c764d74... new changes into david 027
 
 @Component({
   selector: 'app-vendedor',
@@ -19,14 +28,18 @@ export class VendedorPage implements OnInit {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e7d0c4c... new changes into merge 013
+=======
+>>>>>>> c764d74... new changes into david 027
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
   constructor(
+<<<<<<< HEAD
    
 <<<<<<< HEAD
 =======
@@ -47,6 +60,16 @@ export class VendedorPage implements OnInit {
   userData = { email_cliente: "", telefono: "" };
   constructor(
 >>>>>>> 6e50916... new changes into david 014
+=======
+<<<<<<< HEAD
+=======
+   
+=======
+  userData = { email_cliente: "", telefono: "" };
+  constructor(
+>>>>>>> 975e1f0... new changes into merge 004
+>>>>>>> 84d61e0... new changes into merge 012
+>>>>>>> c764d74... new changes into david 027
     private _navController: NavController,
     // private userDetailService: UserDetailService,
     private auth: HkApiproviderProvider
@@ -60,13 +83,24 @@ export class VendedorPage implements OnInit {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  ngOnInit() {}
+=======
+<<<<<<< HEAD
+>>>>>>> c764d74... new changes into david 027
   ngOnInit() {
   
     }
  
 =======
   ngOnInit() {}
+<<<<<<< HEAD
 >>>>>>> 6e50916... new changes into david 014
+=======
+>>>>>>> 975e1f0... new changes into merge 004
+>>>>>>> 84d61e0... new changes into merge 012
+>>>>>>> c764d74... new changes into david 027
 
   onLogin() {
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
