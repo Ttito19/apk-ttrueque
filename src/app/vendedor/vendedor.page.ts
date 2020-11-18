@@ -18,6 +18,7 @@ export class VendedorPage implements OnInit {
   resposeData: any;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -34,6 +35,10 @@ export class VendedorPage implements OnInit {
   order: string;
 
 >>>>>>> c669313... new changes into merge 006
+=======
+  order: string;
+
+>>>>>>> 1766998... new changes into david 022
   userData = { email_cliente: "", telefono: "" };
   constructor(
 >>>>>>> 975e1f0... new changes into merge 004
