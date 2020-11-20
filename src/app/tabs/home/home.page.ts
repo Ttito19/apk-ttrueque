@@ -37,6 +37,9 @@ export class HomePage  {
 
   qrData="" ;
   scannedCode=null;
+  client=null;
+
+  nameclient=null;
   elementType:"url"|"canvas"|"img"="canvas";
 
  
@@ -57,10 +60,10 @@ export class HomePage  {
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
-      this.userData.email = this.userDetails.email_cliente; 
+      this.userData.email = this.userDetails.nombre_cliente+" , "+this.userData.apellido_cliente; 
     }
     // this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
-    this.qrData= this.userData.id
+    this.qrData= this.userData.id+"/"+this.userData.email;
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
   
@@ -84,6 +87,11 @@ export class HomePage  {
       this.barcodeScanner.scan(options).then(
         barcodeData=>{
           this.scannedCode=barcodeData.text;
+          let get= this.scannedCode.split("/");
+
+          this.nameclient=get[1];
+          this.client=get[0];
+
         }
       );
     }
@@ -98,7 +106,7 @@ export class HomePage  {
 	
     this.userDataConfirm = {
      
-      idclient:this.scannedCode,
+      idclient:this.client,
       store:this.userDetails.id_cliente,
       puntostotales:this.userData.puntos,
       token:this.userDetails.token
