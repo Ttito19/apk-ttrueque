@@ -18,7 +18,7 @@ import { IdiomaPage } from "./idioma/idioma.page";
 
 import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
 import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
-import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
+// import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -51,7 +51,7 @@ export function createTranslateLoader(http: HttpClient) {
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     LanguageService,
     BarcodeScanner,
-    Base64ToGallery,
+    // Base64ToGallery,
     AndroidPermissions
   ],
   bootstrap: [AppComponent],
