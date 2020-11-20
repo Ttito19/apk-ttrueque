@@ -28,15 +28,7 @@ const routes: Routes = [
           },
         ],
       },
-      {
-        path: "trending",
-        children: [
-          {
-            path: "",
-            loadChildren: "./trending/trending.module#TrendingPageModule",
-          },
-        ],
-      },
+    
       {
         path: "about",
         children: [
