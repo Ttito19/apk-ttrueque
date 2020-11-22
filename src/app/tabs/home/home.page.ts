@@ -3,8 +3,8 @@ import { LanguageService } from "../../services/language-service";
 
 import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
 import { ModalController } from "@ionic/angular";
-import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
-import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
+import { BarcodeScanner,BarcodeScannerOptions } from "@ionic-native/barcode-scanner/ngx";
+// import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
 import {Platform, ToastController } from '@ionic/angular';
 @Component({
   selector: "app-home",
@@ -20,6 +20,7 @@ export class HomePage  {
   postData = {
     token: "",
   };
+  userDataConfirm = {};
  public bannerFullData: any;
   public userDetails: any;
   userData = {
@@ -27,11 +28,18 @@ export class HomePage  {
     apellido_cliente: "",
     condicion:"",
     id:"",
-    email:""
+    email:"",
+    puntos:"",
+    
   };
+
+ 
 
   qrData="" ;
   scannedCode=null;
+  client=null;
+
+  nameclient=null;
   elementType:"url"|"canvas"|"img"="canvas";
 
  
@@ -40,7 +48,7 @@ export class HomePage  {
     private auth: HkApiproviderProvider,
     public modalController: ModalController,
     private barcodeScanner:BarcodeScanner,
-    private base64ToGallery:Base64ToGallery,
+    // private base64ToGallery:Base64ToGallery,
     public toastController: ToastController,
     private platform: Platform,
   
@@ -52,27 +60,38 @@ export class HomePage  {
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
-      this.userData.email = this.userDetails.email_cliente;
-     
-      
+      this.userData.email = this.userDetails.nombre_cliente+" , "+this.userData.apellido_cliente; 
     }
-    this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
- 
-    
+    // this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
+    this.qrData= this.userData.id+"/"+this.userData.email;
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
-
+  
 
   }
 
   scanCode(){
-
+    const options: BarcodeScannerOptions = {
+      preferFrontCamera: false,
+      showFlipCameraButton: false,
+      showTorchButton: false,
+      torchOn: false,
+      prompt: 'Coloque un código de barras dentro del área de escaneo',
+      resultDisplayDuration: 500,
+      formats: 'EAN_13,EAN_8,QR_CODE,PDF_417 ',
+      orientation: 'portrait',
+    };
     if (this.platform.is('cordova')==false) {
        alert("Amigo sólo funciona en movil");
     }else{
-      this.barcodeScanner.scan().then(
+      this.barcodeScanner.scan(options).then(
         barcodeData=>{
           this.scannedCode=barcodeData.text;
+          let get= this.scannedCode.split("/");
+
+          this.nameclient=get[1];
+          this.client=get[0];
+
         }
       );
     }
@@ -82,33 +101,28 @@ export class HomePage  {
 
   }
 
-  confirm(){
-    alert("Pago exitoso")
-  }
 
+  confirm() {
+	
+    this.userDataConfirm = {
+     
+      idclient:this.client,
+      store:this.userDetails.id_cliente,
+      puntostotales:this.userData.puntos,
+      token:this.userDetails.token
+    }
 
- 
-  downloadQR() {
-    const canvas = document.querySelector('canvas') as HTMLCanvasElement;
-    const imageData = canvas.toDataURL('image/jpeg').toString();
- 
-
-    let data = imageData.split(',')[1];
-
-    this.base64ToGallery.base64ToGallery(data,
-      { prefix: '_img', mediaScanner: true })
-      .then(async res => {
-        let toast = await this.toastController.create({
-          header: 'QR code saved to Photolibrary'
-        });
-        toast.present();
-    }, err => console.log('err: ', err))
-
-
-
-    
-  };
- 
-
+		this.auth.postData(this.userDataConfirm, 'restpoints').then(
+			(result) => { 
+        this.resposeData = result;
+       alert("Pago con éxito")
+			
+			},
+			(err) => {
+				console.log(err);
+        
+			}
+		);
+	}
 
 }

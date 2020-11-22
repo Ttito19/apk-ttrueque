@@ -54,11 +54,7 @@ items(){
         url: "/lateral/home",
         icon: "home",
       },
-      {
-        title: "Tendencias",
-        url: "/lateral/trending",
-        icon: "trending-up",
-      },
+     
       {
         title: "Sobre nosotros",
         url: "/lateral/about",
