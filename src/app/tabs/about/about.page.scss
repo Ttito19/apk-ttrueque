@@ -4,4 +4,17 @@
   height: 56px;
   width: 100%;
   color: #fff;
+
+  ion-title{
+  	text-align: center;
+    font-weight: 800;
+  }
+}
+.cont-info-about{
+	margin-top: 0px; 
+	padding: 27px;
+	h1{
+		font-weight: bold;
+		color: #444;
+	}
 }

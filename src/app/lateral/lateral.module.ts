@@ -48,7 +48,15 @@ const routes: Routes = [
           },
         ],
       },
-  
+      {
+        path: "confirm",
+        children: [
+          {
+            path: "",
+            loadChildren: "../tabs/confirm/confirm.module#ConfirmPageModule",
+          },
+        ],
+      },
       {
         path: "",
         redirectTo: "/lateral/home",

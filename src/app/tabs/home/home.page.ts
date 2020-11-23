@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import { LanguageService } from "../../services/language-service";
-
+import { Router } from '@angular/router';
 import { HkApiproviderProvider } from "../../services/hk-apiprovider.service";
-import { ModalController } from "@ionic/angular";
+import { ModalController,Platform, ToastController,NavController } from "@ionic/angular";
 import { BarcodeScanner,BarcodeScannerOptions } from "@ionic-native/barcode-scanner/ngx";
 // import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
-import {Platform, ToastController } from '@ionic/angular';
+
 @Component({
   selector: "app-home",
   templateUrl: "./home.page.html",
@@ -49,8 +49,10 @@ export class HomePage  {
     public modalController: ModalController,
     private barcodeScanner:BarcodeScanner,
     // private base64ToGallery:Base64ToGallery,
+    private _navController: NavController,
     public toastController: ToastController,
     private platform: Platform,
+    private router: Router
   
   ) {
     var data = JSON.parse(localStorage.getItem("user"));
@@ -60,6 +62,7 @@ export class HomePage  {
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
+      this.userData.puntos = this.userDetails.puntos;
       this.userData.email = this.userDetails.nombre_cliente+" , "+this.userData.apellido_cliente; 
     }
     // this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
@@ -95,11 +98,9 @@ export class HomePage  {
         }
       );
     }
-
-  
-
-
   }
+
+
 
 
   confirm() {
@@ -115,7 +116,7 @@ export class HomePage  {
 		this.auth.postData(this.userDataConfirm, 'restpoints').then(
 			(result) => { 
         this.resposeData = result;
-       alert("Pago con éxito")
+        this._navController.navigateRoot("/lateral/confirm");
 			
 			},
 			(err) => {
@@ -125,4 +126,9 @@ export class HomePage  {
 		);
 	}
 
+ 
+
+  reloadpoints(){
+    location.reload();
+  }
 }

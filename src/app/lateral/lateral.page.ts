@@ -46,6 +46,7 @@ items(){
         url: "/lateral/home",
         icon: "home",
       },
+    
     ]
   }else{
     this.pages = [

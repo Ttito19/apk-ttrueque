@@ -73,7 +73,7 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
           box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
 
           &:hover{
-            transform: scale(1.09);
+            transform: scale(.95);
           }
           &:active{
             transform: scale(.95);
@@ -119,6 +119,7 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
     }
   }
   .cont-sel-user {
+    padding: 0 !important; 
     .cont-trg-type-user {
       button {
         .icon-cont-typeuser{
@@ -140,8 +141,10 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
     }
   }
   .cont-sel-user {
+    padding: 0 !important; 
     .cont-trg-type-user {
       button {
+        height: 145px !important;
         .icon-cont-typeuser{
           left: -29px !important;
           width: 175px !important;

@@ -1,4 +1,3 @@
-  
 <ion-header>
   <ion-toolbar>
     <div class="header-cust-ttrqapk">
@@ -11,11 +10,18 @@
 </ion-header>
 
 
-<ion-item  *ngIf="userData.condicion!='ACTIVO'"    >
+
+
+<ion-item  class="cont-hidden" *ngIf="userData.condicion!='ACTIVO'"    >
   <ion-input type="hidden" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
 </ion-item>
-
 <ion-content [fullscreen]="true" class="cont-lectorqr-home">
+  <ion-card class="cont-info-points">
+    <button class="cont-points" type="button" (click)="reloadpoints()">
+      <h4>Saldo: {{userData.puntos}} Puntos </h4>
+      <span><ion-icon name="reload-outline"></ion-icon></span>
+    </button>
+  </ion-card>
   <ion-segment [(ngModel)]="elementType" class="title-qrscanner-home">
     <ion-segment-button  value="canvas" class="title-lectorqr">
       <!-- *ngIf="userData.condicion==='undefined'"  -->
@@ -24,13 +30,11 @@
     </ion-segment-button>
   </ion-segment>
 
-<ion-button expand="full" (click)="scanCode()" color="secondary" *ngIf="userData.condicion==='ACTIVO'"  >
-  <ion-icon name="qr-scanner" >
-  
-  </ion-icon>
-Abrir QR
-</ion-button>
 
+<ion-button expand="full" (click)="scanCode()" color="secondary" *ngIf="userData.condicion==='ACTIVO'"  >
+  <ion-icon name="qr-scanner" ></ion-icon>
+Abrir Lector QR
+</ion-button>
 <ion-card *ngIf="qrData" class="ion-text-center cont-img-qr">
   <div class="cont-qr-image">
     <ngx-qrcode 
@@ -55,27 +59,19 @@ Abrir QR
     </ion-card-content> -->
     
 </ion-card>
-
-
 <ion-card *ngIf="scannedCode"  >
   <!-- <ion-card  > -->
   <ion-card-content>
 Nombre de confirmación: {{nameclient}}
-  </ion-card-content>
-
- 
+  </ion-card-content> 
   <ion-item  *ngIf="userData.condicion==='ACTIVO'"    >
     <ion-label >Puntos a pagar:</ion-label>
     <ion-input type="tel" maxlength="15" [(ngModel)]="userData.puntos"  ></ion-input>
   </ion-item>
-  
   <ion-button expand="full" (click)="confirm()" color="primary"   >
     <ion-icon name="checkbox-outline"></ion-icon>
 Confirmar pago
   </ion-button>
-
-
 </ion-card>
-
 
 </ion-content>
