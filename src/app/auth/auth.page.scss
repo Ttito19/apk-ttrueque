@@ -12,24 +12,18 @@ $fondo: #026bde;
   height: 100%;
   width: 100%;
 
-  &:before {
-    content: "";
-    position: absolute;
-    background: $fondo;
-    width: 100%;
-    height: 100%;
-    opacity: 20%;
-  }
   .cont-c-logg {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(255,255,255,.84);
 
     ion-card {
       background: transparent;
       box-shadow: unset;
+      padding: 0 1rem;
 
       ion-card-header {
         img {
@@ -42,10 +36,12 @@ $fondo: #026bde;
         ion-list {
           background: transparent;
           ion-item {
-            background: $write;
-            padding: 0 0.5rem 0 0.5rem;
+            /*background: $write;
+            padding: 0 0.5rem 0 0.5rem;*/
             border-radius: 0.5rem;
             margin-bottom: 0.9rem;
+            --ion-background-color: transparent !important;
+            
             ion-input {
               text-align: center;
             }
@@ -55,12 +51,45 @@ $fondo: #026bde;
           button {
             background: $blue;
             color: $write;
-            font-size: 1rem;
             padding: 1rem 0;
             display: block;
             width: 100%;
-            border-radius: 0.5rem;
+            border-radius: 1.5rem;
             outline: none;
+            font-weight: 800;
+
+            &:hover{
+              background: #3F65C8;
+            }
+            &:active{
+              background: #3F65C8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .back-logg-usertype {
+    .cont-c-logg {
+      ion-card {
+        padding: 0 !important;
+        ion-card-header {
+          img {
+          }
+        }
+        ion-card-content {
+          ion-list {
+            ion-item {
+              ion-input {
+              }
+            }
+          }
+          .ion-padding-top {
+            button {
+            }
           }
         }
       }
