@@ -10,13 +10,21 @@
     font-weight: 800;
   }
 }
-.cont-info-about{
-	margin-top: 0px; 
-	padding: 27px;
-	h1{
-		font-weight: bold;
-		color: #444;
-	}
+.cont-total-about{
+  --ion-background-color: #1E90FF !important;
+  .cont-info-about{
+  	padding: 1.6rem;
+    background: #fff;
+    color: #444;
+    border-radius: .5rem;
+    width: 90%;
+    margin: 1rem auto auto auto;
+
+  	h1{
+  		font-weight: bold;
+      margin: 0 0 .5rem 0;
+  	}
+  }
 }
 
 @media (max-width: 425px) {
