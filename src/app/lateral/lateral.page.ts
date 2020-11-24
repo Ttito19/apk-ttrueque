@@ -18,7 +18,8 @@ export class LateralPage implements OnInit {
   userData = {
     nombre_cliente: "",
     apellido_cliente: "",
-    condicion:""
+    condicion:"",
+    logo:""
   };
 
   constructor(private _navController: NavController, private router: Router) {
@@ -28,6 +29,7 @@ export class LateralPage implements OnInit {
       this.userData.nombre_cliente = this.userDetails.nombre_cliente;
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
       this.userData.condicion = this.userDetails.condicion;
+      this.userData.logo = this.userDetails.logo;
     }
     this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;

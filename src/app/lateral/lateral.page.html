@@ -3,8 +3,14 @@
     <ion-content>
       <div class="back-sidebar-left-ttrq">
         <div class="cont-more-info">
-          <div class="cont-logo-sdlf-ttrq">
+          <!-- <div class="cont-logo-sdlf-ttrq">
             <img src="../../assets/img/utilities/user-default.jpg" alt="">
+          </div> -->
+          <div class="cont-logo-sdlf-ttrq" *ngIf="userData.logo!=undefined"  >
+            <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
+          </div>
+          <div class="cont-logo-sdlf-ttrq" *ngIf="userData.logo==undefined"  >
+            <img src="../../assets/img/utilities/user-default.jpg">
           </div>
           <div class="cont-info-client">
             <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}} </h1>

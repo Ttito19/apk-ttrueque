@@ -8,17 +8,13 @@
     </div>
   </ion-toolbar>
 </ion-header>
-
-
-
-
 <ion-item  class="cont-hidden" *ngIf="userData.condicion!='ACTIVO'"    >
   <ion-input type="hidden" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
 </ion-item>
 <ion-content [fullscreen]="true" class="cont-lectorqr-home">
   <ion-card class="cont-info-points">
     <button class="cont-points" type="button" (click)="reloadpoints()">
-      <h4>Saldo: {{userData.puntos}} Puntos </h4>
+      <h4>Saldo: {{userData.points}} Puntos </h4>
       <span><ion-icon name="reload-outline"></ion-icon></span>
     </button>
   </ion-card>

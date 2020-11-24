@@ -30,10 +30,11 @@ export class HomePage  {
     id:"",
     email:"",
     puntos:"",
+    points:""
     
   };
-
- 
+  public datauser: any;
+  selectuser = {};
 
   qrData="" ;
   scannedCode=null;
@@ -62,7 +63,7 @@ export class HomePage  {
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
-      this.userData.puntos = this.userDetails.puntos;
+    
       this.userData.email = this.userDetails.nombre_cliente+" , "+this.userData.apellido_cliente; 
     }
     // this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
@@ -70,7 +71,7 @@ export class HomePage  {
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
   
-
+this.getUserId()
   }
 
   scanCode(){
@@ -126,7 +127,26 @@ export class HomePage  {
 		);
 	}
 
- 
+  getUserId(){
+
+    this.selectuser={
+      id_cliente: this.userDetails.id_cliente,
+      token:this.userDetails.token
+    }
+      this.auth.postData(this.selectuser, "selectuserid").then(
+        (result) => {
+          this.resposeData = result;
+          this.datauser= this.resposeData.userData;
+          this.userData.points=this.datauser.puntos
+        },
+        (err) => {
+        console.log(err);
+        
+        
+        }
+      );
+    }
+    
 
   reloadpoints(){
     location.reload();
