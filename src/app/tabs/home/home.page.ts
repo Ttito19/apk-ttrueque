@@ -102,29 +102,28 @@ this.getUserId()
   }
 
 
-
-
   confirm() {
+    this._navController.navigateRoot("/lateral/confirm");
 	
-    this.userDataConfirm = {
+    // this.userDataConfirm = {
      
-      idclient:this.client,
-      store:this.userDetails.id_cliente,
-      puntostotales:this.userData.puntos,
-      token:this.userDetails.token
-    }
+    //   idclient:this.client,
+    //   store:this.userDetails.id_cliente,
+    //   puntostotales:this.userData.puntos,
+    //   token:this.userDetails.token
+    // }
 
-		this.auth.postData(this.userDataConfirm, 'restpoints').then(
-			(result) => { 
-        this.resposeData = result;
-        this._navController.navigateRoot("/lateral/confirm");
+		// this.auth.postData(this.userDataConfirm, 'restpoints').then(
+		// 	(result) => { 
+    //     this.resposeData = result;
+    //     this._navController.navigateRoot("/lateral/confirm");
 			
-			},
-			(err) => {
-				console.log(err);
+		// 	},
+		// 	(err) => {
+		// 		console.log(err);
         
-			}
-		);
+		// 	}
+		// );
 	}
 
   getUserId(){

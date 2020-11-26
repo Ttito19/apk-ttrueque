@@ -59,6 +59,7 @@ $principal-color: dodgerblue;
 
         h4{
           margin: 0;
+          font-size: 1.094rem;
         }
         span{
           ion-icon{
@@ -77,7 +78,7 @@ $principal-color: dodgerblue;
         text-align: center;
         padding: .65rem 0;
         color: #fff;
-        background: lawngreen;
+        background: blue;
         border-radius: .4rem;
         display: flex;
         align-items: center;
@@ -86,10 +87,15 @@ $principal-color: dodgerblue;
 
         h4{
           margin: 0;
+          font-size: 1.094rem;
         }
 
         &:hover{
-          background: #9BFD3D;
+          background: #4D4DFF;
+        }
+
+        &:active{
+          background: #4D4DFF;
         }
       }
     }
@@ -131,11 +137,14 @@ $principal-color: dodgerblue;
       }
     }
 
+    .cont-infocli-payer{
+
+    }
+
     .cont-btn-confirm{
-      width: 100%;
-      padding: .1rem;
+      
       .btn-go-to_confirm{
-        background: #3880FF;
+        background: #7CFC00;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -145,7 +154,8 @@ $principal-color: dodgerblue;
         width: 100%;
         padding: .61rem 2rem;
         border-radius: .1rem;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        
 
         &:hover{
           background: #488AFF;
