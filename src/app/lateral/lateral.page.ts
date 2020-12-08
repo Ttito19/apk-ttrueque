@@ -64,11 +64,11 @@ items(){
         icon: "information-circle",
       },
       
-      {
-        title: "Ajustes",
-        url: "/lateral/settings",
-        icon: "settings-outline",
-      },
+      // {
+      //   title: "Ajustes",
+      //   url: "/lateral/settings",
+      //   icon: "settings-outline",
+      // },
     ];
 
   }  

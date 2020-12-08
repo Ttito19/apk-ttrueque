@@ -95,7 +95,7 @@ export class AuthPage implements OnInit {
            
           } else if (this.resposeData.error) {
            
-        let msg="Email o clave incorrecta";
+        let msg="Email o télefono incorrecta";
         this.presentAlert(msg);
           }
         },

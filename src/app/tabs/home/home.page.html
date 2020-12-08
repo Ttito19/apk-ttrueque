@@ -12,16 +12,18 @@
   <ion-input type="hidden" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
 </ion-item>
 <ion-content [fullscreen]="true" class="cont-lectorqr-home">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" *ngIf="userData.condicion!='ACTIVO'"     >
+    <ion-refresher-content   >
+ </ion-refresher-content>
+</ion-refresher>
   <div class="cont-total-card">
   <ion-card class="cont-info-points">
-    <button class="cont-points" type="button" (click)="reloadpoints()">
+    <button class="cont-points" type="button" >
       <h4>Saldo: {{userData.points}} Puntos </h4>
-      <span><ion-icon name="reload-outline"></ion-icon></span>
     </button>
   </ion-card>
   <ion-segment [(ngModel)]="elementType" class="title-qrscanner-home">
     <ion-segment-button  value="canvas" class="title-lectorqr">
-      <!-- *ngIf="userData.condicion==='undefined'"  -->
       <ion-label    *ngIf="userData.condicion==='ACTIVO'"   >Lector QR</ion-label>
       <ion-label   *ngIf="userData.condicion!='ACTIVO'"    >Image</ion-label>
     </ion-segment-button>
@@ -44,37 +46,27 @@
       cssClass="my-code"
      
       >
-      <!-- *ngIf="userData.condicion!='ACTIVO'"   -->
     </ngx-qrcode>
     </div>
-    <!-- <ion-card-content>
-      <ion-button
-      expand="full"
-      color="tertiary"
-      (click)="downloadQR()"
-      *ngIf="userData.condicion==='ACTIVO'"
-    >
-      <ion-icon name="download" slot="start"></ion-icon>
-      Descargar QR
-    </ion-button>
-      </ion-card-content> -->
+
   </ion-card>
-  <!-- <ion-card *ngIf="scannedCode"  > -->
-  <ion-card class="cont-infocli-payer">
+  <ion-card class="cont-infocli-payer"  *ngIf="scannedCode"  >
+
     <div class="cont-info-paymentdata">
-      <p>Nombre de confirmación</p>
-      <ion-input readonly type="text" placeholder="Nombre de usuario">{{nameclient}}</ion-input>
+      <h5 class="name">Nombre del cliente</h5>
+      <p class="text-center"  >{{userData.fullnamegenerado}}</p>
     </div> 
     <div class="cont-total-payment" *ngIf="userData.condicion==='ACTIVO'"    >
       <p>Puntos a pagar</p>
       <input type="tel" placeholder="Monto a pagar" maxlength="15" [(ngModel)]="userData.puntos"  >
     </div>
   </ion-card>
-  <ion-card class="cont-btn-confirm">
+  <ion-card class="cont-btn-confirm" *ngIf="userData.condicion=='ACTIVO'"    >
     <button class="btn-go-to_confirm" expand="full" (click)="confirm()" color="primary"   >
       <ion-icon name="checkbox-outline"></ion-icon>
       Confirmar pago
     </button>
   </ion-card>
 </div>
+
 </ion-content>

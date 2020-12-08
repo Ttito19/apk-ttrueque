@@ -1,5 +1,8 @@
 $principal-color: dodgerblue;
-
+.name{
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 .header-cust-ttrqapk {
   background: $principal-color;
@@ -144,7 +147,8 @@ $principal-color: dodgerblue;
       .cont-info-paymentdata{
         text-align: center !important;
         p{
-          margin: 0 !important;
+          // margin: 0 !important;
+          margin: 2px !important;
         }
       }
       .cont-total-payment{

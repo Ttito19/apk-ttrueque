@@ -13,8 +13,9 @@
             <img src="../../assets/img/utilities/user-default.jpg">
           </div>
           <div class="cont-info-client">
-            <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}} </h1>
-            <p>Tienda</p>
+            <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}} </h1>  
+            <p *ngIf="userData.logo!=undefined"  >Tienda</p>    
+            <p *ngIf="userData.logo==undefined"  >Cliente</p>     
           </div>
         </div>
         <ion-list lines="none">
