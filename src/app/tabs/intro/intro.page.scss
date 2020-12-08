@@ -9,19 +9,8 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
   width: 100%;
   height: 100%;
   /*background: linear-gradient(-0deg, blue, steelblue, skyblue);*/
-  background-image: url(../../../assets/img/utilities/img_bakground_ttrq_login.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #fff;
   position: relative;
-
-  &:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.2);
-  }
 
   ion-grid {
     z-index: 9999;
@@ -31,10 +20,12 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
       z-index: 9999;
       text-align: center;
       h1 {
-        font-size: 1.2rem;
-        font-weight: bold;
         margin-bottom: 0.3rem;
         z-index: 9999;
+        width: 69%;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 800;
       }
       h6 {
         margin: 0;
@@ -54,27 +45,58 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
         padding: 0 0.5rem;
         z-index: 9999;
 
+        &:first-child{
+          button{
+            background: #4FCAAE;
+          }
+        }
+        &:last-child{
+          button{
+            background: #F8E1D9;
+          }  
+        }
+
         button {
           width: 100%;
           display: flex;
-          flex-direction: column;
           align-items: center;
-          justify-content: center;
+          justify-content: space-around;
           text-align: center;
-          border-radius: 0.5rem;
-          background: #fff;
-          /*box-shadow: 0 4px 40px 1px rgba(0, 0, 0, 0.11), 0 0 0 1px rgba(0, 0, 0, 0.01);*/
-          padding: 1rem 0;
+          border-radius: 0.8rem;
+          padding: 1rem 2rem;
           outline: none;
           z-index: 9999;
-          box-shadow: $azul-claro-shadow;
+          height: 165px;
+          overflow: hidden;
+          position: relative;
+          transition: all ease .3s;
+          box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
 
-          &:hover {
-            box-shadow: $azul-claro-shadow;
+          &:hover{
+            transform: scale(.95);
+          }
+          &:active{
+            transform: scale(.95);
           }
 
-          &:active {
-            background: $azul-claro;
+          .icon-cont-typeuser{
+            position: absolute;
+            left: -27px;
+            width: 200px;
+            bottom: 0px;
+
+            img{
+              width: 100%;
+            }
+          }
+
+          h1{
+            position: absolute;
+            right: 10%;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 1px 1px 0 rgba(0,0,0,.4);
           }
         }
       }
@@ -88,5 +110,51 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
   }
   .cont-sel-user {
     padding: 0 1rem;
+  }
+}
+@media (max-width: 375px){
+  .cont-title-sel-user{
+    h1{
+      width: 100% !important;     
+    }
+  }
+  .cont-sel-user {
+    padding: 0 !important; 
+    .cont-trg-type-user {
+      button {
+        .icon-cont-typeuser{
+          left: -27px;
+          width: 200px;
+        }
+        h1{
+          font-size: 1.8rem !important;
+          right: 8%!important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px){
+  .cont-title-sel-user{
+    h1{
+      width: 100% !important;
+    }
+  }
+  .cont-sel-user {
+    padding: 0 !important; 
+    .cont-trg-type-user {
+      button {
+        height: 145px !important;
+        .icon-cont-typeuser{
+          left: -29px !important;
+          width: 175px !important;
+          bottom: unset !important;  
+        }
+        h1{
+          font-size: 1.8rem !important;
+          right: 8%!important;
+        }
+      }
+    }
   }
 }

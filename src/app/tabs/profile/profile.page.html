@@ -1,37 +1,43 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title> Perfil</ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>  
+    <div class="header-cust-ttrqapk">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>  
+      <ion-title> Perfil</ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div class="cont-logostore-profile">
-    <div  *ngIf="userData.logo!=undefined"  >
-      <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
+  <div class="cont-card-profile">
+    <div class="cont-logostore-profile">
+      <div  *ngIf="userData.logo!=undefined"  >
+        <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
+      </div>
+      <div  *ngIf="userData.logo==undefined"  >
+        <img src="../../assets/img/utilities/user-default.jpg">
+      </div>
+      <h1>{{userData.nombre_cliente + ' ' + userData.apellido_cliente}}</h1>
     </div>
-    <div  *ngIf="userData.logo==undefined"  >
-      <img src="../../assets/img/utilities/user-default.jpg">
-    </div>
-    <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}}  </h1>
-  </div>
-  <div class="cont-infostore-profile">
-    <div class="cont-control-info" *ngIf="userData.logo!=undefined"    >
-      <p>Tienda</p> 
-      <label>{{userData.nameStore}}</label>
-    </div>
-    <div class="cont-control-info">
-      <p>Puntos</p> 
-      <label>{{userData.puntos}}</label>
-    </div>
-    <div class="cont-control-info">
-      <p>Email</p> 
-      <label>{{userData.email}}</label>
-    </div>
-    <div class="cont-control-info">
-      <p>Celular</p> 
-      <label>{{userData.telefono}}</label>
+    <div class="content-bottom-card">
+      <div class="cont-infostore-profile">
+        <div class="cont-control-info" *ngIf="userData.logo!=undefined">
+          <p>Tienda</p> 
+          <label>{{userData.nameStore}}</label>
+        </div>
+        <div class="cont-control-info">
+          <p>Puntos</p> 
+          <label>{{userData.puntos}}</label>
+        </div>
+        <div class="cont-control-info">
+          <p>Email</p> 
+          <label>{{userData.email}}</label>
+        </div>
+        <div class="cont-control-info">
+          <p>Celular</p> 
+          <label>{{userData.telefono}}</label>
+        </div>
+      </div>
     </div>
   </div>
 </ion-content>
