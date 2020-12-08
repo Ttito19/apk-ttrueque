@@ -15,7 +15,7 @@ import { AlertController } from '@ionic/angular';
 export class HomePage  {
 
   public resposeData: any;
-
+  public resposeDataGenerado: any;
   data: any;
   postData = {
     token: "",
@@ -31,12 +31,14 @@ export class HomePage  {
     email:"",
     puntos:"",
     points:"",
-    // puntoscliente:""
+    pointsgenerado:"",
+    fullnamegenerado:""
     
   };
   public datauser: any;
   selectuser = {};
 
+  selectusergenerado={};
   qrData="" ;
   scannedCode=null;
   client=null;
@@ -67,16 +69,12 @@ export class HomePage  {
       this.userData.apellido_cliente = this.userDetails.apellido_cliente;
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
-
       this.userData.email = this.userDetails.nombre_cliente+" , "+this.userData.apellido_cliente; 
     }
-
-    
-    this.postData.token = HkApiproviderProvider.gettoken();
-    this.languageService.setInitiallanguage();
-  
-this.getUserId()
-  }
+      this.postData.token = HkApiproviderProvider.gettoken();
+      this.languageService.setInitiallanguage();
+      this.getUserId()
+    }
 
  
 
@@ -99,16 +97,34 @@ this.getUserId()
         barcodeData=>{
           this.scannedCode=barcodeData.text;
           let get= this.scannedCode.split("/");   
-          this.puntoscliente=get[2];
-          this.nameclient=get[1];
-          this.client=get[0];
+        //  traer los datos del cliente leídos por el lector QR
 
-
+        this.client= get[0];
+          this.selectusergenerado={
+            id_cliente: get[0],
+            token:this.userDetails.token
+          }
+         
+          this.auth.postData(this.selectusergenerado, "selectuserid").then(
+            (result) => {
+              this.resposeDataGenerado = result;
+              this.datauser= this.resposeDataGenerado.userData;
+              this.userData.pointsgenerado=this.datauser.puntos;
+              this.userData.fullnamegenerado=this.datauser.nombre_cliente+" , "+this.datauser.apellido_cliente;  ;
+            
+                       
+            },
+            (err) => {
+            console.log(err);
+            
+            
+            }
+          );
         }
       );
     }
   }
-
+// MENSAJE 
   async presentAlert(msg) {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
@@ -120,80 +136,65 @@ this.getUserId()
     await alert.present();
   }
 
-
+// botom para confirmar el pago
   confirm() {
+      // validar si hay monto en el input
+        if(this.userData.puntos==""){
+            let msg="Escribir monto a cobrar";
+            this.presentAlert(msg);
+        }else{
+          if(parseInt(this.userData.pointsgenerado)<parseInt(this.userData.puntos)){
+              let msg="El cliente no tiene puntos suficientes...";
+              this.presentAlert(msg);
+          }else if(this.userData.pointsgenerado=="0"){
 
-
-  if( this.userData.puntos==""){
-  let msg="Escribir monto a cobrar";
-    this.presentAlert(msg);
-  
-  }else{
-
-
-    if(parseInt(this.puntoscliente)<parseInt(this.userData.puntos)){
-      let msg="El cliente no tiene puntos suficientes...";
-      this.presentAlert(msg);
-    }  else if(parseInt(this.puntoscliente)==0){
-
-      let msg="El cliente no tiene puntos...";
-      this.presentAlert(msg);
-    } else{
-      this._navController.navigateRoot("/lateral/confirm");
-	
-    this.userDataConfirm = {
-     
-      idclient:this.client,
-      store:this.userDetails.id_cliente,
-      puntostotales:this.userData.puntos,
-      token:this.userDetails.token
-    }
-
-		this.auth.postData(this.userDataConfirm, 'restpoints').then(
-			(result) => { 
-        this.resposeData = result;
-        this._navController.navigateRoot("/lateral/confirm");
-			
-			},
-			(err) => {
-				console.log(err);
-        
-			}
-		);
-    }
-
-  
-  }
-
-   
+              let msg="El cliente no tiene puntos...";
+              this.presentAlert(msg);
+          }else{
+      // obtener los datos y restas puntos al cliente y sumar al vendedor
+              this.userDataConfirm = {   
+                idclient:this.client,
+                store:this.userDetails.id_cliente,
+                puntostotales:this.userData.puntos,
+                token:this.userDetails.token
+              }
+              this.auth.postData(this.userDataConfirm, 'restpoints').then(
+                (result) => { 
+                  this.resposeData = result;
+                  this._navController.navigateRoot("/lateral/confirm");
+                
+                },
+                (err) => {
+                  console.log(err);
+                  let msg="Lo sentimos ha ocurrido un error...";
+                  this.presentAlert(msg);     
+                }
+              );
+          }
+        }  
 	}
 
-  getUserId(){
-   
-//  console.log(this.selectuser)
-    this.selectuser={
-      id_cliente: this.userDetails.id_cliente,
-      token:this.userDetails.token
-    }
-      this.auth.postData(this.selectuser, "selectuserid").then(
-        (result) => {
-          this.resposeData = result;
-          this.datauser= this.resposeData.userData;
-          this.userData.points=this.datauser.puntos;
-          this.qrData= this.userData.id+"/"+this.userData.email+"/"+this.userData.points;
-        },
-        (err) => {
-        console.log(err);
-        
-        
-        }
-      );
+    getUserId(){
+      this.selectuser={
+        id_cliente: this.userDetails.id_cliente,
+        token:this.userDetails.token
+      }
+        this.auth.postData(this.selectuser, "selectuserid").then(
+          (result) => {
+            this.resposeData = result;
+            this.datauser= this.resposeData.userData;
+            this.userData.points=this.datauser.puntos;
+            this.qrData= this.userData.id+"/"+this.userData.email+"/"+this.userData.points;
+          },
+          (err) => {
+          console.log(err); 
+          }
+        );
     }
     
 
-
-    doRefresh(event) {
-      
+   // Actualizar puntos scroleando hacia abajo
+    doRefresh(event) {  
       this.getUserId();
       setTimeout(() => {
         console.log('Async operation has ended');
