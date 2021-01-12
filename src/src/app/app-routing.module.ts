@@ -18,6 +18,7 @@ const routes: Routes = [
     canActivate: [AuthguardGuard],
 <<<<<<< HEAD:src/src/app/app-routing.module.ts
 <<<<<<< HEAD:src/src/app/app-routing.module.ts
+<<<<<<< HEAD:src/src/app/app-routing.module.ts
   },  {
     path: 'modal-category',
     loadChildren: () => import('./modal-category/modal-category.module').then( m => m.ModalCategoryPageModule)
@@ -29,6 +30,9 @@ const routes: Routes = [
     loadChildren: () => import('./modal-category/modal-category.module').then( m => m.ModalCategoryPageModule)
 >>>>>>> 6dac046... new merge 001:src/app/app-routing.module.ts
   },
+=======
+  }
+>>>>>>> 73319f4... new merge for david:src/app/app-routing.module.ts
 
   {
     path: 'intro',
