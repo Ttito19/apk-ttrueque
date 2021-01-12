@@ -20,12 +20,20 @@ export class HomePage  {
   postData = {
     token: "",
   };
+ public bannerFullData: any;
+  public userDetails: any;
+  userData = {
+    nombre_cliente: "",
+    apellido_cliente: "",
+    condicion:"",
+    id:"",
+    email:""
+  };
 
-  qrData="https://trueque.ga/home/";
+  qrData="" ;
   scannedCode=null;
   elementType:"url"|"canvas"|"img"="canvas";
 
-  public bannerFullData: any;
  
   constructor(
     private languageService: LanguageService,
@@ -37,6 +45,19 @@ export class HomePage  {
     private platform: Platform,
   
   ) {
+    var data = JSON.parse(localStorage.getItem("user"));
+    if (data) {
+      this.userDetails = data.userData;
+      this.userData.nombre_cliente = this.userDetails.nombre_cliente;
+      this.userData.apellido_cliente = this.userDetails.apellido_cliente;
+      this.userData.condicion = this.userDetails.condicion;
+      this.userData.id = this.userDetails.id_cliente;
+      this.userData.email = this.userDetails.email_cliente;
+    }
+    this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
+   console.log(this.userDetails);
+   
+    
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
 
@@ -63,7 +84,7 @@ export class HomePage  {
   downloadQR() {
     const canvas = document.querySelector('canvas') as HTMLCanvasElement;
     const imageData = canvas.toDataURL('image/jpeg').toString();
-    console.log('data: ', imageData);
+ 
 
     let data = imageData.split(',')[1];
 
