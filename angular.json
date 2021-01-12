@@ -130,17 +130,23 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 09ad79d... union changes branchs 003
             "exclude": [
               "**/node_modules/**"
             ]
 =======
             "exclude": ["**/node_modules/**"]
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 =======
             "exclude": [
               "**/node_modules/**"
             ]
 >>>>>>> 0af88d9... integration qr
+=======
+>>>>>>> 09ad79d... union changes branchs 003
           }
         },
         "e2e": {
@@ -188,6 +194,7 @@
   "cli": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
@@ -197,6 +204,13 @@
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 >>>>>>> 0af88d9... integration qr
+=======
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+=======
+    "defaultCollection": "@ionic/angular-toolkit"
+>>>>>>> ac861af... Initial commit
+>>>>>>> 09ad79d... union changes branchs 003
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -208,10 +222,16 @@
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 09ad79d... union changes branchs 003
 }
 =======
 }
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 =======
 }
 >>>>>>> 0af88d9... integration qr
+=======
+>>>>>>> 09ad79d... union changes branchs 003

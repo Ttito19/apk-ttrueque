@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "myApp",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,5 +14,20 @@
     "cordova": {}
   },
 >>>>>>> 0af88d9... integration qr
+=======
+<<<<<<< HEAD
+  "name": "apk-ttrueque",
+  "integrations": {},
+=======
+  "name": "myApp",
+<<<<<<< HEAD
+  "integrations": {
+    "cordova": {}
+  },
+=======
+  "integrations": {},
+>>>>>>> ac861af... Initial commit
+>>>>>>> 5fe909c... union changes branchs
+>>>>>>> 09ad79d... union changes branchs 003
   "type": "angular"
 }

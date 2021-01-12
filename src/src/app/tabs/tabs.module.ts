@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD
 =======
 >>>>>>> 0af88d9... integration qr
+=======
+>>>>>>> 09ad79d... union changes branchs 003:src/app/tabs/tabs.module.ts
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -76,6 +79,7 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+<<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 =======
 >>>>>>> 0af88d9... integration qr
 
@@ -93,5 +97,17 @@ import { TabsPage } from './tabs.page';
 =======
   declarations: [TabsPage],
 >>>>>>> 0af88d9... integration qr
+=======
+
+@NgModule({
+  imports: [
+    IonicModule,
+    CommonModule,
+    FormsModule,
+    TabsPageRoutingModule
+  ],
+  declarations: [TabsPage]
+>>>>>>> ac861af... Initial commit
+>>>>>>> 09ad79d... union changes branchs 003:src/app/tabs/tabs.module.ts
 })
 export class TabsPageModule {}
