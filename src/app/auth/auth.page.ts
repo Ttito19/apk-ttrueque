@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Component, OnInit, } from "@angular/core";
-=======
-import { Component, OnInit } from "@angular/core";
->>>>>>> 0af88d9... integration qr
 import { NavController } from "@ionic/angular";
 import { AlertController } from '@ionic/angular';
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
@@ -21,6 +17,7 @@ import { LoadingController } from '@ionic/angular';
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,6 +82,8 @@ import { LoadingController } from '@ionic/angular';
 =======
 >>>>>>> 0af88d9... integration qr
 >>>>>>> f96863e... new changes repair 039
+=======
+>>>>>>> cde51c8... new changes into david 025
 })
 export class AuthPage implements OnInit {
   remember: boolean;
