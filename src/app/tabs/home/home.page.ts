@@ -80,6 +80,12 @@ export class HomePage  {
 
 
   }
+
+  confirm(){
+    alert("Pago exitoso")
+  }
+
+
  
   downloadQR() {
     const canvas = document.querySelector('canvas') as HTMLCanvasElement;
@@ -96,6 +102,10 @@ export class HomePage  {
         });
         toast.present();
     }, err => console.log('err: ', err))
+
+
+
+    
   };
  
 
