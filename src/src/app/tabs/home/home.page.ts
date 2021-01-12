@@ -71,10 +71,46 @@ export class HomePage  {
       this.userData.id = this.userDetails.id_cliente;
       this.userData.email = this.userDetails.nombre_cliente+" , "+this.userData.apellido_cliente; 
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
+<<<<<<< HEAD
+   console.log(this.userDetails);
+   
+=======
+ 
+>>>>>>> c703003... changes 2
+    
+=======
+    // this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
+<<<<<<< HEAD
+    this.qrData= this.userData.id
+>>>>>>> 976d9d9... changes
+=======
+    this.qrData= this.userData.id+"/"+this.userData.email;
+>>>>>>> 4c2b2d9... get name qr
+=======
+
+    
+>>>>>>> a2d0231... validate points
+    this.postData.token = HkApiproviderProvider.gettoken();
+    this.languageService.setInitiallanguage();
+  
+this.getUserId()
+  }
+=======
+>>>>>>> e3e5553... changes failed
       this.postData.token = HkApiproviderProvider.gettoken();
       this.languageService.setInitiallanguage();
       this.getUserId()
     }
+<<<<<<< HEAD
+=======
+>>>>>>> c79ceb1... arreglos qr
+>>>>>>> e3e5553... changes failed
 
  
 
@@ -204,4 +240,8 @@ export class HomePage  {
   
   
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e3e5553... changes failed

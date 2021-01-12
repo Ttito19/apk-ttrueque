@@ -5,6 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { IonicModule } from "@ionic/angular";
 import { HomePage } from "./home.page";
 import { TranslateModule } from "@ngx-translate/core";
+<<<<<<< HEAD
 <<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
 <<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
 <<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
@@ -27,6 +28,9 @@ import {NgxQRCodeModule} from "ngx-qrcode2"
 =======
 import {NgxQRCodeModule} from "ngx-qrcode2"
 >>>>>>> c800254... new changes repair 037:src/app/tabs/home/home.module.ts
+=======
+import {NgxQRCodeModule} from "ngx-qrcode2"
+>>>>>>> e3e5553... changes failed
 const routes: Routes = [
   {
     path: "",

@@ -19,4 +19,8 @@ export class ConfirmPage implements OnInit {
 
     this._navController.navigateRoot("/lateral/home");
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e3e5553... changes failed

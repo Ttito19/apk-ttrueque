@@ -21,10 +21,16 @@
     "title": "Ajustes",
     "dark": "Modo Oscuro"
 <<<<<<< HEAD
+<<<<<<< HEAD
   },
   "LOGOUT": {
     "title": "Cerrar Sesión"
 =======
 >>>>>>> 0af88d9... integration qr
+=======
+  },
+  "LOGOUT": {
+    "title": "Cerrar Sesión"
+>>>>>>> e3e5553... changes failed
   }
 }

@@ -64,6 +64,7 @@ export class AppComponent {
     //   document.body.classList.toggle("dark");
     // }
   }
+<<<<<<< HEAD
 <<<<<<< HEAD:src/src/app/app.component.ts
 <<<<<<< HEAD:src/src/app/app.component.ts
 <<<<<<< HEAD:src/src/app/app.component.ts
@@ -136,3 +137,6 @@ export class AppComponent {
 =======
 }
 >>>>>>> 00a464c... new changes repair 014:src/app/app.component.ts
+=======
+}
+>>>>>>> e3e5553... changes failed

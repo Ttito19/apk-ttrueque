@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e3e5553... changes failed
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,6 +14,7 @@ export class TabsPage implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+<<<<<<< HEAD
 =======
 import { Component } from '@angular/core';
 =======
@@ -30,4 +34,6 @@ export class TabsPage implements OnInit {
 =======
   ngOnInit() {}
 >>>>>>> 0af88d9... integration qr
+=======
+>>>>>>> e3e5553... changes failed
 }

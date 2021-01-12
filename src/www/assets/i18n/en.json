@@ -19,10 +19,16 @@
     "title": "Settings",
     "dark": "Dark mode"
 <<<<<<< HEAD
+<<<<<<< HEAD
   },
   "LOGOUT": {
     "title": "Logout"
 =======
 >>>>>>> 0af88d9... integration qr
+=======
+  },
+  "LOGOUT": {
+    "title": "Logout"
+>>>>>>> e3e5553... changes failed
   }
 }

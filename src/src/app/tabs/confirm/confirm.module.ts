@@ -22,4 +22,8 @@ const routes: Routes = [
   ],
   declarations: [ConfirmPage]
 })
+<<<<<<< HEAD
 export class ConfirmPageModule {}
+=======
+export class ConfirmPageModule {}
+>>>>>>> e3e5553... changes failed
