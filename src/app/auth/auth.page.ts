@@ -4,22 +4,7 @@ import { AlertController } from '@ionic/angular';
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
-
->>>>>>> 55d7760... new changes into david 018
-=======
->>>>>>> 4e3c003... new changes into david 013
-=======
-
->>>>>>> 5200461... new changes into pk-ttrueque
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
@@ -142,22 +127,7 @@ export class AuthPage implements OnInit {
     });
     
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
-
->>>>>>> 55d7760... new changes into david 018
-=======
->>>>>>> 4e3c003... new changes into david 013
-=======
-
->>>>>>> 5200461... new changes into pk-ttrueque
     ngOnInit() {
   
     }
@@ -175,23 +145,10 @@ export class AuthPage implements OnInit {
       const { role, data } = await loading.onDidDismiss();
       this._navController.navigateRoot("/lateral");
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 55d7760... new changes into david 018
 
 
 
 
-<<<<<<< HEAD
-=======
-​
-​
-​
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
->>>>>>> 55d7760... new changes into david 018
  async presentAlert(msg) {
       const alert = await this.alertController.create({
         cssClass: 'my-custom-class',
@@ -202,17 +159,10 @@ export class AuthPage implements OnInit {
   
       await alert.present();
     }
-<<<<<<< HEAD
   
 
   onLogin() {
   
-=======
-  
-
-  onLogin() {
-  
->>>>>>> 37e740c... new styles into 'intro'
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
       if (this.remember == true) {
         localStorage.setItem("userLogin", JSON.stringify(this.userData));
@@ -223,22 +173,7 @@ export class AuthPage implements OnInit {
         
           if (this.resposeData.userData) {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
-
->>>>>>> 55d7760... new changes into david 018
-=======
->>>>>>> 4e3c003... new changes into david 013
-=======
-
->>>>>>> 5200461... new changes into pk-ttrueque
           let name =this.resposeData.userData.nombre_cliente;
             this.presentLoading(name);
           
@@ -256,22 +191,7 @@ export class AuthPage implements OnInit {
         }
       );
     } else {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-​
->>>>>>> 37e740c... new styles into 'intro'
-=======
-
->>>>>>> 55d7760... new changes into david 018
-=======
->>>>>>> 4e3c003... new changes into david 013
-=======
-
->>>>>>> 5200461... new changes into pk-ttrueque
       let msg="Campos vacíos";
       this.presentAlert(msg);
     

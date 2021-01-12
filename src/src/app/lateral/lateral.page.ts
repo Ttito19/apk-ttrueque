@@ -35,15 +35,7 @@ export class LateralPage implements OnInit {
       this.selectedPath = event.url;
     });
     this.items();
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-     console.log(this.userData);
->>>>>>> 37e740c... new styles into 'intro'
-=======
-    
->>>>>>> 5200461... new changes into pk-ttrueque
      
   }
 
