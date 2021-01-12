@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3ff6c71... new repair into json 005
 =======
@@ -84,5 +85,10 @@
 >>>>>>> 3ca7bc4... new changes david 013
 =======
 >>>>>>> f98a07d... new changes repair 036
+=======
+  "integrations": {
+    "cordova": {}
+  },
+>>>>>>> 84377cd... new changes repair 045
   "type": "angular"
 }
