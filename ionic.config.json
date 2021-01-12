@@ -42,6 +42,7 @@
   "integrations": {},
 >>>>>>> ac861af... Initial commit
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5fe909c... union changes branchs
 >>>>>>> 09ad79d... union changes branchs 003
 =======
@@ -50,10 +51,13 @@
 >>>>>>> 6dac046... new merge 001
 =======
 =======
+>>>>>>> fca9d39... new changes repair 017
+=======
   "integrations": {
     "cordova": {}
   },
 >>>>>>> 0af88d9... integration qr
+<<<<<<< HEAD
 >>>>>>> fc6e842... new changes repair 005
 =======
   "integrations": {
@@ -62,5 +66,7 @@
 >>>>>>> 53f4fb0... new changes repair 008
 =======
 >>>>>>> b53ea37... new changes for david
+=======
+>>>>>>> fca9d39... new changes repair 017
   "type": "angular"
 }

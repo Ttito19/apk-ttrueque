@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 import { Component } from "@angular/core";
 import { Platform, NavController } from "@ionic/angular";
 import { SplashScreen } from "@ionic-native/splash-screen/ngx";
 import { StatusBar } from "@ionic-native/status-bar/ngx";
-
+import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
 @Component({
   selector: "app-root",
   templateUrl: "app.component.html",
@@ -19,8 +18,8 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private _navController: NavController
-  
+    private _navController: NavController,
+    private androidPermissions: AndroidPermissions
   ) {
     this.initializeApp();
 
@@ -34,7 +33,16 @@ export class AppComponent {
 
   initializeApp() {
 
- 
+    this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
+      (result) =>{
+          if(!result.hasPermission){
+            console.log('Has permission?',result.hasPermission);
+          }
+      },
+      
+      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
+    );
+    
 
     this.platform.ready().then(() => {
       setTimeout(() => {
@@ -45,13 +53,13 @@ export class AppComponent {
       if (userExist) {
         this.splashScreen.hide();
         this._navController.navigateRoot("/lateral/home");
-      } else {        
+      } else {
         this.platform.ready().then(() => {
           this.statusBar.styleDefault();
           this.statusBar.backgroundColorByHexString("#ba1f1a");
           this.splashScreen.hide();
         });
-        this._navController.navigateRoot("/intro");
+        this._navController.navigateRoot("/auth");
         this.splashScreen.hide();
       }
     });
@@ -65,32 +73,4 @@ export class AppComponent {
     //   document.body.classList.toggle("dark");
     // }
   }
-=======
-import { Component } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
-})
-export class AppComponent {
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
-  ) {
-    this.initializeApp();
-  }
-
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
->>>>>>> ac861af... Initial commit
 }
