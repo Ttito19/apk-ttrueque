@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3ff6c71... new repair into json 005
 =======
@@ -50,5 +51,10 @@
   },
 >>>>>>> 0af88d9... integration qr
 >>>>>>> fc6e842... new changes repair 005
+=======
+  "integrations": {
+    "cordova": {}
+  },
+>>>>>>> 53f4fb0... new changes repair 008
   "type": "angular"
 }
