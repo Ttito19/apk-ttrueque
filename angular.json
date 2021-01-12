@@ -136,6 +136,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
@@ -144,12 +145,15 @@
 >>>>>>> fc6e842... new changes repair 005
 =======
 >>>>>>> 15bc888... new changes repair 007
+=======
+>>>>>>> b53ea37... new changes for david
             "exclude": [
               "**/node_modules/**"
             ]
 =======
             "exclude": ["**/node_modules/**"]
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,6 +188,8 @@
               "**/node_modules/**"
             ]
 >>>>>>> 53f4fb0... new changes repair 008
+=======
+>>>>>>> b53ea37... new changes for david
           }
         },
         "e2e": {
@@ -237,6 +243,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15bc888... new changes repair 007
     "defaultCollection": "@ionic/angular-toolkit",
@@ -283,6 +290,13 @@
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 >>>>>>> 53f4fb0... new changes repair 008
+=======
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+=======
+    "defaultCollection": "@ionic/angular-toolkit"
+>>>>>>> ac861af... Initial commit
+>>>>>>> b53ea37... new changes for david
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -300,6 +314,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
@@ -308,10 +323,13 @@
 >>>>>>> fc6e842... new changes repair 005
 =======
 >>>>>>> 15bc888... new changes repair 007
+=======
+>>>>>>> b53ea37... new changes for david
 }
 =======
 }
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -339,3 +357,5 @@
 =======
 }
 >>>>>>> 53f4fb0... new changes repair 008
+=======
+>>>>>>> b53ea37... new changes for david

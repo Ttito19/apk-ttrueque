@@ -56,6 +56,7 @@
 <<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD:src/src/polyfills.ts
+<<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD
 <<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD:src/src/polyfills.ts
@@ -71,10 +72,14 @@
 =======
 <<<<<<< HEAD
 >>>>>>> 53f4fb0... new changes repair 008:src/polyfills.ts
+=======
+<<<<<<< HEAD
+>>>>>>> b53ea37... new changes for david:src/polyfills.ts
 import './zone-flags.ts';
 =======
 import './zone-flags';
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD:src/src/polyfills.ts
 <<<<<<< HEAD:src/src/polyfills.ts
@@ -99,6 +104,8 @@ import './zone-flags.ts';
 >>>>>>> 15bc888... new changes repair 007:src/polyfills.ts
 =======
 >>>>>>> 53f4fb0... new changes repair 008:src/polyfills.ts
+=======
+>>>>>>> b53ea37... new changes for david:src/polyfills.ts
 
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
