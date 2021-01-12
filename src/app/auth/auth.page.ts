@@ -15,12 +15,15 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ["./auth.page.scss"],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 0af88d9... integration qr
 =======
 
 >>>>>>> 7954b0a... new changes repair 021
+=======
+>>>>>>> 58c4d09... new changes repair 022
 })
 export class AuthPage implements OnInit {
   remember: boolean;
