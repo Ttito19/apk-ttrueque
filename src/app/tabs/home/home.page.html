@@ -23,7 +23,7 @@
 
 
 <ion-item  *ngIf="userData.condicion!='ACTIVO'"    >
-  <ion-input type="text" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
+  <ion-input type="hidden" placeholder="Mi Qr"  [(ngModel)]="qrData"    ></ion-input>
 </ion-item>
 
 <ion-content [fullscreen]="true" class="cont-lectorqr-home">
@@ -53,7 +53,7 @@ Abrir QR
     <!-- *ngIf="userData.condicion!='ACTIVO'"   -->
   </ngx-qrcode>
   </div>
-  <ion-card-content>
+  <!-- <ion-card-content>
     <ion-button
     expand="full"
     color="tertiary"
@@ -63,10 +63,11 @@ Abrir QR
     <ion-icon name="download" slot="start"></ion-icon>
     Descargar QR
   </ion-button>
-    </ion-card-content>
+    </ion-card-content> -->
     
 </ion-card>
 
+<<<<<<< HEAD
  
 <ion-item  *ngIf="userData.condicion==='ACTIVO'"    >
   <ion-label >Puntos a pagar:</ion-label>
@@ -132,3 +133,28 @@ Abrir QR
 </div>
 
 </ion-content>
+=======
+
+<ion-card *ngIf="scannedCode"  >
+  <!-- <ion-card  > -->
+  <ion-card-content>
+Resultado de Scanner:{{scannedCode}}
+  </ion-card-content>
+
+ 
+  <ion-item  *ngIf="userData.condicion==='ACTIVO'"    >
+    <ion-label >Puntos a pagar:</ion-label>
+    <ion-input type="tel" maxlength="15" [(ngModel)]="userData.puntos"  ></ion-input>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="confirm()" color="primary"   >
+    <ion-icon name="checkbox-outline"></ion-icon>
+Confirmar pago
+  </ion-button>
+
+
+</ion-card>
+
+
+</ion-content>
+>>>>>>> 976d9d9... changes
