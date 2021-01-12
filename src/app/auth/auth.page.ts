@@ -4,11 +4,16 @@ import { AlertController } from '@ionic/angular';
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
+<<<<<<< HEAD
 
+=======
+​
+>>>>>>> 37e740c... new styles into 'intro'
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +57,9 @@ import { LoadingController } from '@ionic/angular';
 =======
 
 >>>>>>> 856e3e3... new changes repair 034
+=======
+​
+>>>>>>> 4d8bb94... new changes repair 035
 })
 export class AuthPage implements OnInit {
   remember: boolean;
@@ -84,7 +92,11 @@ export class AuthPage implements OnInit {
     });
     
   }
+<<<<<<< HEAD
 
+=======
+​
+>>>>>>> 37e740c... new styles into 'intro'
     ngOnInit() {
   
     }
@@ -102,10 +114,17 @@ export class AuthPage implements OnInit {
       const { role, data } = await loading.onDidDismiss();
       this._navController.navigateRoot("/lateral");
     }
+<<<<<<< HEAD
 
 
 
 
+=======
+​
+​
+​
+​
+>>>>>>> 37e740c... new styles into 'intro'
  async presentAlert(msg) {
       const alert = await this.alertController.create({
         cssClass: 'my-custom-class',
@@ -116,10 +135,17 @@ export class AuthPage implements OnInit {
   
       await alert.present();
     }
+<<<<<<< HEAD
   
 
   onLogin() {
   
+=======
+  
+​
+  onLogin() {
+  
+>>>>>>> 37e740c... new styles into 'intro'
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
       if (this.remember == true) {
         localStorage.setItem("userLogin", JSON.stringify(this.userData));
@@ -130,7 +156,11 @@ export class AuthPage implements OnInit {
         
           if (this.resposeData.userData) {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
+<<<<<<< HEAD
 
+=======
+​
+>>>>>>> 37e740c... new styles into 'intro'
           let name =this.resposeData.userData.nombre_cliente;
             this.presentLoading(name);
           
@@ -148,7 +178,11 @@ export class AuthPage implements OnInit {
         }
       );
     } else {
+<<<<<<< HEAD
 
+=======
+​
+>>>>>>> 37e740c... new styles into 'intro'
       let msg="Campos vacíos";
       this.presentAlert(msg);
     
