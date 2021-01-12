@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { Platform, NavController } from "@ionic/angular";
 import { SplashScreen } from "@ionic-native/splash-screen/ngx";
 import { StatusBar } from "@ionic-native/status-bar/ngx";
-import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+
 @Component({
   selector: "app-root",
   templateUrl: "app.component.html",
@@ -18,8 +18,8 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private _navController: NavController,
-    private androidPermissions: AndroidPermissions
+    private _navController: NavController
+  
   ) {
     this.initializeApp();
 
@@ -33,16 +33,7 @@ export class AppComponent {
 
   initializeApp() {
 
-    this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
-      (result) =>{
-          if(!result.hasPermission){
-            console.log('Has permission?',result.hasPermission);
-          }
-      },
-      
-      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
-    );
-    
+ 
 
     this.platform.ready().then(() => {
       setTimeout(() => {
@@ -53,7 +44,7 @@ export class AppComponent {
       if (userExist) {
         this.splashScreen.hide();
         this._navController.navigateRoot("/lateral/home");
-      } else {
+      } else {        
         this.platform.ready().then(() => {
           this.statusBar.styleDefault();
           this.statusBar.backgroundColorByHexString("#ba1f1a");
@@ -73,6 +64,7 @@ export class AppComponent {
     //   document.body.classList.toggle("dark");
     // }
   }
+<<<<<<< HEAD:src/src/app/app.component.ts
 <<<<<<< HEAD:src/src/app/app.component.ts
 <<<<<<< HEAD:src/src/app/app.component.ts
 <<<<<<< HEAD:src/src/app/app.component.ts
@@ -141,3 +133,6 @@ export class AppComponent {
 =======
 }
 >>>>>>> fc6e842... new changes repair 005:src/app/app.component.ts
+=======
+}
+>>>>>>> 00a464c... new changes repair 014:src/app/app.component.ts
