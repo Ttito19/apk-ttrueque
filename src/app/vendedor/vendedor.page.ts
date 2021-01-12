@@ -21,12 +21,17 @@ export class VendedorPage implements OnInit {
   resposeData: any;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
   constructor(
    
 =======
+=======
+  order: string;
+
+>>>>>>> 3d05768... new changes into david 022
   userData = { email_cliente: "", telefono: "" };
   constructor(
 >>>>>>> 975e1f0... new changes into merge 004
