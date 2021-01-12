@@ -36,6 +36,7 @@ import { LoadingController } from '@ionic/angular';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 0af88d9... integration qr
@@ -91,6 +92,9 @@ import { LoadingController } from '@ionic/angular';
 >>>>>>> 948e6b1... new changes repair 040
 =======
 >>>>>>> d2a0983... new changes repair 041
+=======
+
+>>>>>>> d0abc01... new changes repair 042
 })
 export class AuthPage implements OnInit {
   remember: boolean;
