@@ -1,83 +1,65 @@
-<<<<<<< HEAD
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { RouteReuseStrategy } from "@angular/router";
-import { IonicModule, IonicRouteStrategy } from "@ionic/angular";
-import { SplashScreen } from "@ionic-native/splash-screen/ngx";
-import { StatusBar } from "@ionic-native/status-bar/ngx";
-import { HttpClientModule, HttpClient } from "@angular/common/http";
-import { AppComponent } from "./app.component";
-import { AppRoutingModule } from "./app-routing.module";
-import { HTTP } from "@ionic-native/http/ngx";
-import { HkApiproviderProvider } from "./services/hk-apiprovider.service";
-import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
-import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-import { LanguageService } from "./services/language-service";
-import { IonicStorageModule } from "@ionic/storage";
-import { CommonModule } from "@angular/common";
-import { IdiomaPage } from "./idioma/idioma.page";
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-content>
+      <div class="back-sidebar-left-ttrq">
+        <div class="cont-more-info">
+          <!-- <div class="cont-logo-sdlf-ttrq">
+            <img src="../../assets/img/utilities/user-default.jpg" alt="">
+          </div> -->
+          <div class="cont-logo-sdlf-ttrq" *ngIf="userData.logo!=undefined"  >
+            <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
+          </div>
+          <div class="cont-logo-sdlf-ttrq" *ngIf="userData.logo==undefined"  >
+            <img src="../../assets/img/utilities/user-default.jpg">
+          </div>
+          <div class="cont-info-client">
+            <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}} </h1>  
+            <p *ngIf="userData.logo!=undefined"  >Tienda</p>    
+            <p *ngIf="userData.logo==undefined"  >Cliente</p>     
+          </div>
+        </div>
+        <ion-list lines="none">
+          <ion-menu-toggle>
+            <ion-item color="ion-transparent" routerLink="/lateral/profile" routerDirection="root"  >
+              <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+              <ion-label>Mi Cuenta</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle *ngFor="let p of pages">
+            <ion-item color="ion-transparent" routerLink="{{p.url}}" routerDirection="root">
+              <ion-icon name="{{p.icon}}" slot="start"></ion-icon>
+              <ion-label>{{p.title}}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item color="ion-transparent" (click)="onLogout()" button>
+              <ion-icon name="log-out" slot="start"></ion-icon>
+              <ion-label>{{ 'LOGOUT.title' | translate }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <!-- <div class="footer-sdbl-ttrq">
+          <a class="link-a" onclick="window.open('https://csscreativos.com', '_system', 'location=yes')">
+            <span>Desarrollado por CSS CREATIVOS&copy;</span>
+          </a>
+        </div> -->
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 
-import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
-import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx";
-// import { Base64ToGallery } from "@ionic-native/base64-to-gallery/ngx";
+  <ion-tabs   *ngIf="userData.condicion==ACTIVO" >
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button tab="home" >
+        <ion-icon name="home" ></ion-icon>
+        <ion-label>{{ 'HOME.title' | translate }}</ion-label>
+      </ion-tab-button>
 
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
-}
 
-@NgModule({
-  declarations: [AppComponent, IdiomaPage],
-  entryComponents: [],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(),
-    IonicStorageModule.forRoot(),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpClient],
-      },
-    }),
-    AppRoutingModule,
-    HttpClientModule,
-    CommonModule,
-  ],
-  exports: [],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    HTTP,
-    HkApiproviderProvider,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    LanguageService,
-    BarcodeScanner,
-    // Base64ToGallery,
-    AndroidPermissions
-  ],
-  bootstrap: [AppComponent],
-=======
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
-  bootstrap: [AppComponent]
->>>>>>> ac861af... Initial commit
-})
-export class AppModule {}
+      <ion-tab-button tab="about"  >
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>{{ 'ABOUT.title' | translate }}</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>

@@ -18,8 +18,11 @@
   "SETTINGS": {
     "title": "Settings",
     "dark": "Dark mode"
+<<<<<<< HEAD
   },
   "LOGOUT": {
     "title": "Logout"
+=======
+>>>>>>> 0af88d9... integration qr
   }
 }

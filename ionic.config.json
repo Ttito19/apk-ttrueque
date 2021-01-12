@@ -29,17 +29,26 @@
 =======
   "name": "myApp",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "integrations": {
     "cordova": {}
   },
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 >>>>>>> 5fe909c... union changes branchs
 >>>>>>> 09ad79d... union changes branchs 003
 =======
 >>>>>>> 3ff6c71... new repair into json 005
 =======
 >>>>>>> 6dac046... new merge 001
+=======
+=======
+  "integrations": {
+    "cordova": {}
+  },
+>>>>>>> 0af88d9... integration qr
+>>>>>>> fc6e842... new changes repair 005
   "type": "angular"
 }

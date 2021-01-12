@@ -133,10 +133,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
 >>>>>>> 6dac046... new merge 001
+=======
+>>>>>>> fc6e842... new changes repair 005
             "exclude": [
               "**/node_modules/**"
             ]
@@ -145,11 +148,15 @@
 >>>>>>> ac861af... Initial commit
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fc6e842... new changes repair 005
 =======
             "exclude": [
               "**/node_modules/**"
             ]
 >>>>>>> 0af88d9... integration qr
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
@@ -159,6 +166,8 @@
 >>>>>>> eae84f8... new changes repair 003
 =======
 >>>>>>> 6dac046... new merge 001
+=======
+>>>>>>> fc6e842... new changes repair 005
           }
         },
         "e2e": {
@@ -209,6 +218,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
@@ -230,12 +240,21 @@
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 >>>>>>> eae84f8... new changes repair 003
 =======
+=======
+>>>>>>> fc6e842... new changes repair 005
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
     "defaultCollection": "@ionic/angular-toolkit"
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 >>>>>>> 6dac046... new merge 001
+=======
+=======
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+>>>>>>> 0af88d9... integration qr
+>>>>>>> fc6e842... new changes repair 005
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -250,14 +269,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
 >>>>>>> 6dac046... new merge 001
+=======
+>>>>>>> fc6e842... new changes repair 005
 }
 =======
 }
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -270,3 +293,8 @@
 >>>>>>> eae84f8... new changes repair 003
 =======
 >>>>>>> 6dac046... new merge 001
+=======
+=======
+}
+>>>>>>> 0af88d9... integration qr
+>>>>>>> fc6e842... new changes repair 005
