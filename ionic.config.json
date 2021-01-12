@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3ff6c71... new repair into json 005
 =======
@@ -37,6 +38,8 @@
   "integrations": {},
 =======
   "name": "myApp",
+=======
+>>>>>>> f98a07d... new changes repair 036
   "integrations": {
     "cordova": {}
   },
@@ -44,6 +47,7 @@
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5fe909c... union changes branchs
@@ -56,10 +60,13 @@
 =======
 >>>>>>> fca9d39... new changes repair 017
 =======
+>>>>>>> f98a07d... new changes repair 036
+=======
   "integrations": {
     "cordova": {}
   },
 >>>>>>> 0af88d9... integration qr
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> fc6e842... new changes repair 005
 =======
@@ -75,5 +82,7 @@
 >>>>>>> 1dc7183... new changes repair 026
 =======
 >>>>>>> 3ca7bc4... new changes david 013
+=======
+>>>>>>> f98a07d... new changes repair 036
   "type": "angular"
 }
