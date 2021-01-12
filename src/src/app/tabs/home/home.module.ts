@@ -8,6 +8,7 @@ import { TranslateModule } from "@ngx-translate/core";
 <<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
 <<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
 <<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
+<<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
 import { NgxQRCodeModule } from "ngx-qrcode2";
 =======
 =======
@@ -23,6 +24,9 @@ import {NgxQRCodeModule} from "ngx-qrcode2"
 >>>>>>> f10c034... new changes repair 033:src/app/tabs/home/home.module.ts
 =======
 >>>>>>> f98a07d... new changes repair 036:src/app/tabs/home/home.module.ts
+=======
+import {NgxQRCodeModule} from "ngx-qrcode2"
+>>>>>>> c800254... new changes repair 037:src/app/tabs/home/home.module.ts
 const routes: Routes = [
   {
     path: "",
@@ -37,10 +41,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     TranslateModule,
-<<<<<<< HEAD
     NgxQRCodeModule,
-=======
->>>>>>> 0af88d9... integration qr
   ],
   declarations: [HomePage],
 })
