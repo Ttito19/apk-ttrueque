@@ -134,12 +134,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
 >>>>>>> 6dac046... new merge 001
 =======
 >>>>>>> fc6e842... new changes repair 005
+=======
+>>>>>>> 15bc888... new changes repair 007
             "exclude": [
               "**/node_modules/**"
             ]
@@ -157,17 +160,24 @@
             ]
 >>>>>>> 0af88d9... integration qr
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
+=======
+>>>>>>> 15bc888... new changes repair 007
 =======
             "exclude": [
               "**/node_modules/**"
             ]
+<<<<<<< HEAD
 >>>>>>> eae84f8... new changes repair 003
 =======
 >>>>>>> 6dac046... new merge 001
 =======
 >>>>>>> fc6e842... new changes repair 005
+=======
+>>>>>>> ab4763e... new merge 005
+>>>>>>> 15bc888... new changes repair 007
           }
         },
         "e2e": {
@@ -219,6 +229,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15bc888... new changes repair 007
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
@@ -231,6 +244,7 @@
 =======
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+<<<<<<< HEAD
 =======
     "defaultCollection": "@ionic/angular-toolkit"
 >>>>>>> ac861af... Initial commit
@@ -255,6 +269,9 @@
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 >>>>>>> 0af88d9... integration qr
 >>>>>>> fc6e842... new changes repair 005
+=======
+>>>>>>> ab4763e... new merge 005
+>>>>>>> 15bc888... new changes repair 007
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -270,12 +287,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
 =======
 >>>>>>> 6dac046... new merge 001
 =======
 >>>>>>> fc6e842... new changes repair 005
+=======
+>>>>>>> 15bc888... new changes repair 007
 }
 =======
 }
@@ -297,4 +317,10 @@
 =======
 }
 >>>>>>> 0af88d9... integration qr
+<<<<<<< HEAD
 >>>>>>> fc6e842... new changes repair 005
+=======
+=======
+}
+>>>>>>> ab4763e... new merge 005
+>>>>>>> 15bc888... new changes repair 007

@@ -1,5 +1,6 @@
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
+<<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
@@ -18,6 +19,8 @@
 =======
 >>>>>>> 0af88d9... integration qr
 >>>>>>> fc6e842... new changes repair 005:src/app/tabs/tabs.module.ts
+=======
+>>>>>>> 15bc888... new changes repair 007:src/app/tabs/tabs.module.ts
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -72,7 +75,6 @@ const routes: Routes = [
     pathMatch: "full",
   },
 ];
-<<<<<<< HEAD
 
 @NgModule({
   imports: [
@@ -83,6 +85,7 @@ const routes: Routes = [
     TranslateModule,
   ],
   declarations: [TabsPage],
+<<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 =======
@@ -147,5 +150,7 @@ import { TabsPage } from './tabs.page';
   declarations: [TabsPage],
 >>>>>>> 0af88d9... integration qr
 >>>>>>> fc6e842... new changes repair 005:src/app/tabs/tabs.module.ts
+=======
+>>>>>>> 15bc888... new changes repair 007:src/app/tabs/tabs.module.ts
 })
 export class TabsPageModule {}
