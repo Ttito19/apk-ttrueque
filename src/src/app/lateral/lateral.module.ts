@@ -30,6 +30,7 @@ const routes: Routes = [
         ],
       },
     
+<<<<<<< HEAD:src/src/app/lateral/lateral.module.ts
       {
         path: "about",
         children: [
@@ -39,6 +40,8 @@ const routes: Routes = [
           },
         ],
       },
+=======
+>>>>>>> ee02797... changes:src/app/lateral/lateral.module.ts
       {
         path: "settings",
         children: [
