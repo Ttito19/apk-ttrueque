@@ -5,7 +5,14 @@ import { Routes, RouterModule } from "@angular/router";
 import { IonicModule } from "@ionic/angular";
 import { HomePage } from "./home.page";
 import { TranslateModule } from "@ngx-translate/core";
+<<<<<<< HEAD:src/src/app/tabs/home/home.module.ts
 import { NgxQRCodeModule } from "ngx-qrcode2";
+=======
+<<<<<<< HEAD
+import {NgxQRCodeModule} from "ngx-qrcode2"
+=======
+>>>>>>> 0af88d9... integration qr
+>>>>>>> e8f51b8... new changes repair 032:src/app/tabs/home/home.module.ts
 const routes: Routes = [
   {
     path: "",
@@ -20,7 +27,10 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     TranslateModule,
+<<<<<<< HEAD
     NgxQRCodeModule,
+=======
+>>>>>>> 0af88d9... integration qr
   ],
   declarations: [HomePage],
 })
