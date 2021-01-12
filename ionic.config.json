@@ -33,11 +33,10 @@
   "integrations": {},
 =======
   "name": "myApp",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "integrations": {
     "cordova": {}
   },
+<<<<<<< HEAD
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
@@ -68,5 +67,7 @@
 >>>>>>> b53ea37... new changes for david
 =======
 >>>>>>> fca9d39... new changes repair 017
+=======
+>>>>>>> 1dc7183... new changes repair 026
   "type": "angular"
 }
