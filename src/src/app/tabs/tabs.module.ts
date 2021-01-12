@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD
 <<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 <<<<<<< HEAD
@@ -5,6 +6,8 @@
 >>>>>>> 0af88d9... integration qr
 =======
 >>>>>>> 09ad79d... union changes branchs 003:src/app/tabs/tabs.module.ts
+=======
+>>>>>>> eae84f8... new changes repair 003:src/app/tabs/tabs.module.ts
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -70,6 +73,7 @@ const routes: Routes = [
     TranslateModule,
   ],
   declarations: [TabsPage],
+<<<<<<< HEAD:src/src/app/tabs/tabs.module.ts
 =======
 import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
@@ -109,5 +113,7 @@ import { TabsPage } from './tabs.page';
   declarations: [TabsPage]
 >>>>>>> ac861af... Initial commit
 >>>>>>> 09ad79d... union changes branchs 003:src/app/tabs/tabs.module.ts
+=======
+>>>>>>> eae84f8... new changes repair 003:src/app/tabs/tabs.module.ts
 })
 export class TabsPageModule {}

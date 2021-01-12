@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 import { Platform, NavController } from "@ionic/angular";
 import { SplashScreen } from "@ionic-native/splash-screen/ngx";
 import { StatusBar } from "@ionic-native/status-bar/ngx";
-import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+
 @Component({
   selector: "app-root",
   templateUrl: "app.component.html",
@@ -19,8 +19,8 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private _navController: NavController,
-    private androidPermissions: AndroidPermissions
+    private _navController: NavController
+  
   ) {
     this.initializeApp();
 
@@ -34,16 +34,7 @@ export class AppComponent {
 
   initializeApp() {
 
-    this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
-      (result) =>{
-          if(!result.hasPermission){
-            console.log('Has permission?',result.hasPermission);
-          }
-      },
-      
-      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
-    );
-    
+ 
 
     this.platform.ready().then(() => {
       setTimeout(() => {
@@ -54,7 +45,7 @@ export class AppComponent {
       if (userExist) {
         this.splashScreen.hide();
         this._navController.navigateRoot("/lateral/home");
-      } else {
+      } else {        
         this.platform.ready().then(() => {
           this.statusBar.styleDefault();
           this.statusBar.backgroundColorByHexString("#ba1f1a");
