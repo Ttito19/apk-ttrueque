@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 export class HkApiproviderProvider {
   /*******  CHANGE URL HERE ***************/
 
-  url = "https://trueque.ga";
+  url = "https://ttrueque.com";
   static token =
     "dfd65117f5a90cf87c1664e5f6db4d68b2d1e70e6bc2e96f9a5e40e995b0c066";
 

@@ -5,7 +5,7 @@ keytool -genkey -v -keystore ttrueque.keystore -alias ttrueque -keyalg RSA -keys
 clave:ttrueque20
 
 ¿Cuáles son su nombre y su apellido?
- csscreativos
+ css
 ¿Cuál es el nombre de su unidad de organización? 
 css
 ¿Cuál es el nombre de su organización?
