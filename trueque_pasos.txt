@@ -24,4 +24,4 @@ Enter Passphrase for keystore:ttrueque20
 zipalign -v 4 app-release-unsigned.apk ttrueque.apk
 
 
-se firmo a las 19 y 26 pm del 03/02/2020
+se firmo a las 12 y 45 pm del 30/11/2020

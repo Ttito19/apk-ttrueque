@@ -10,3 +10,5 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ttrueque.keysto
 ttrueque20
 
 zipalign -v 4 app-release-unsigned.apk ttrueque.apk
+
+
