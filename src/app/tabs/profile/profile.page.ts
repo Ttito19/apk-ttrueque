@@ -13,6 +13,8 @@ export class ProfilePage implements OnInit {
     condicion:"",
     logo:"",
     nameStore:"",
+    email:"",
+    telefono:"",
     puntos:""
   };
 
@@ -25,8 +27,8 @@ export class ProfilePage implements OnInit {
       this.userData.logo = this.userDetails.logo;
       this.userData.nameStore = this.userDetails.nombre_tienda;
       this.userData.puntos = this.userDetails.puntos;
-    
-
+      this.userData.email = this.userDetails.email_cliente;
+      this.userData.telefono = this.userDetails.telefono;
       this.userData.condicion = this.userDetails.condicion;
     }
     

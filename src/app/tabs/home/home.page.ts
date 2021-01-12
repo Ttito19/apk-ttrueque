@@ -53,10 +53,16 @@ export class HomePage  {
       this.userData.condicion = this.userDetails.condicion;
       this.userData.id = this.userDetails.id_cliente;
       this.userData.email = this.userDetails.email_cliente;
+     
+      
     }
     this.qrData="https://trueque.ga/home/"+ this.userData.id+"/"+this.userData.email;
+<<<<<<< HEAD
    console.log(this.userDetails);
    
+=======
+ 
+>>>>>>> c703003... changes 2
     
     this.postData.token = HkApiproviderProvider.gettoken();
     this.languageService.setInitiallanguage();
