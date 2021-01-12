@@ -13,13 +13,17 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@angular-devkit/architect": "^0.901.11",
+=======
+>>>>>>> ac861af... Initial commit
     "@angular/common": "~9.1.6",
     "@angular/core": "~9.1.6",
     "@angular/forms": "~9.1.6",
     "@angular/platform-browser": "~9.1.6",
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
+<<<<<<< HEAD
     "@ionic-native/android-permissions": "^5.29.0",
     "@ionic-native/barcode-scanner": "^5.29.0",
     "@ionic-native/base64-to-gallery": "^5.29.0",
@@ -33,17 +37,28 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "cordova-sqlite-storage": "^5.0.1",
     "ngx-qrcode2": "^9.0.0",
+=======
+    "@ionic-native/core": "^5.0.7",
+    "@ionic-native/splash-screen": "^5.0.0",
+    "@ionic-native/status-bar": "^5.0.0",
+    "@ionic/angular": "^5.0.0",
+>>>>>>> ac861af... Initial commit
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
+<<<<<<< HEAD
     "@angular/cli": "^9.1.5",
+=======
+    "@angular/cli": "~9.1.5",
+>>>>>>> ac861af... Initial commit
     "@angular/compiler": "~9.1.6",
     "@angular/compiler-cli": "~9.1.6",
     "@angular/language-service": "~9.1.6",
     "@ionic/angular-toolkit": "^2.1.1",
+<<<<<<< HEAD
     "@ionic/app-scripts": "^3.2.4",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
@@ -59,6 +74,7 @@
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,6 +118,14 @@
 >>>>>>> 3ff6c71... new repair into json 005
 =======
 >>>>>>> bcaa2cb... new repair into json 006
+=======
+=======
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^5.1.2",
+>>>>>>> ac861af... Initial commit
+>>>>>>> 6dac046... new merge 001
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -109,12 +133,16 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+<<<<<<< HEAD
     "phonegap-plugin-barcodescanner": "^8.1.0",
+=======
+>>>>>>> ac861af... Initial commit
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
+<<<<<<< HEAD
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
@@ -138,3 +166,7 @@
     ]
   }
 }
+=======
+  "description": "An Ionic project"
+}
+>>>>>>> ac861af... Initial commit

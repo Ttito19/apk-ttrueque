@@ -132,14 +132,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
+=======
+>>>>>>> 6dac046... new merge 001
             "exclude": [
               "**/node_modules/**"
             ]
 =======
             "exclude": ["**/node_modules/**"]
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             "exclude": [
@@ -153,6 +157,8 @@
               "**/node_modules/**"
             ]
 >>>>>>> eae84f8... new changes repair 003
+=======
+>>>>>>> 6dac046... new merge 001
           }
         },
         "e2e": {
@@ -202,6 +208,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 =======
@@ -222,6 +229,13 @@
     "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
 >>>>>>> eae84f8... new changes repair 003
+=======
+    "defaultCollection": "@ionic/angular-toolkit",
+    "analytics": "f826e136-931b-4813-ad15-dd6b88a342b1"
+=======
+    "defaultCollection": "@ionic/angular-toolkit"
+>>>>>>> ac861af... Initial commit
+>>>>>>> 6dac046... new merge 001
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
@@ -235,12 +249,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 09ad79d... union changes branchs 003
+=======
+>>>>>>> 6dac046... new merge 001
 }
 =======
 }
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 }
@@ -250,3 +268,5 @@
 =======
 }
 >>>>>>> eae84f8... new changes repair 003
+=======
+>>>>>>> 6dac046... new merge 001

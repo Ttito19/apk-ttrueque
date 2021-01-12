@@ -4,14 +4,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3ff6c71... new repair into json 005
+=======
+>>>>>>> 6dac046... new merge 001
   "integrations": {
     "cordova": {}
   },
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   "integrations": {
@@ -35,5 +39,7 @@
 >>>>>>> 09ad79d... union changes branchs 003
 =======
 >>>>>>> 3ff6c71... new repair into json 005
+=======
+>>>>>>> 6dac046... new merge 001
   "type": "angular"
 }
