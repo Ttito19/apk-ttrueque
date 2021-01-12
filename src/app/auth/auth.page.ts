@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -13,10 +14,13 @@ import { LoadingController } from '@ionic/angular';
 =======
 
 >>>>>>> 55d7760... new changes into david 018
+=======
+>>>>>>> 4e3c003... new changes into david 013
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
   styleUrls: ["./auth.page.scss"],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,6 +99,9 @@ import { LoadingController } from '@ionic/angular';
 =======
 
 >>>>>>> d0abc01... new changes repair 042
+=======
+​
+>>>>>>> 9c73b0d... new changes repair 043
 })
 export class AuthPage implements OnInit {
   remember: boolean;
@@ -129,6 +136,7 @@ export class AuthPage implements OnInit {
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -136,6 +144,8 @@ export class AuthPage implements OnInit {
 =======
 
 >>>>>>> 55d7760... new changes into david 018
+=======
+>>>>>>> 4e3c003... new changes into david 013
     ngOnInit() {
   
     }
@@ -203,6 +213,7 @@ export class AuthPage implements OnInit {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -210,6 +221,8 @@ export class AuthPage implements OnInit {
 =======
 
 >>>>>>> 55d7760... new changes into david 018
+=======
+>>>>>>> 4e3c003... new changes into david 013
           let name =this.resposeData.userData.nombre_cliente;
             this.presentLoading(name);
           
@@ -229,6 +242,7 @@ export class AuthPage implements OnInit {
     } else {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ​
@@ -236,6 +250,8 @@ export class AuthPage implements OnInit {
 =======
 
 >>>>>>> 55d7760... new changes into david 018
+=======
+>>>>>>> 4e3c003... new changes into david 013
       let msg="Campos vacíos";
       this.presentAlert(msg);
     
