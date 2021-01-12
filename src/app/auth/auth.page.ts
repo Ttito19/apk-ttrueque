@@ -1,8 +1,10 @@
 import { Component, OnInit, } from "@angular/core";
 import { NavController } from "@ionic/angular";
-// import { UserDetailService } from "../services/user-detail.service";
+import { AlertController } from '@ionic/angular';
 import { HkApiproviderProvider } from "../services/hk-apiprovider.service";
 import { ActivatedRoute } from '@angular/router';
+import { LoadingController } from '@ionic/angular';
+
 @Component({
   selector: "app-auth",
   templateUrl: "./auth.page.html",
@@ -18,8 +20,9 @@ export class AuthPage implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private _navController: NavController,
-    // private userDetailService: UserDetailService,
-    private auth: HkApiproviderProvider
+    public alertController: AlertController,
+    private auth: HkApiproviderProvider,
+    public loadingController: LoadingController
   ) {
    
     
@@ -40,17 +43,41 @@ export class AuthPage implements OnInit {
     
   }
 
-  ngOnInit() {
- 
+    ngOnInit() {
+  
     }
     ngOnDestroy() {
       this.sub.unsubscribe();
     }
+    async presentLoading(name) {
+      const loading = await this.loadingController.create({
+        cssClass: 'my-custom-class',
+        message: 'Bienvenido '+  name  + ' le estamos redirigiendo... ',
+        duration: 1000
+      });
+      await loading.present();
+  
+      const { role, data } = await loading.onDidDismiss();
+      this._navController.navigateRoot("/lateral");
+    }
 
+
+
+
+ async presentAlert(msg) {
+      const alert = await this.alertController.create({
+        cssClass: 'my-custom-class',
+        header: 'Mensaje',    
+        message: msg,
+        buttons: ['OK']
+      });
+  
+      await alert.present();
+    }
+  
 
   onLogin() {
   
-
     if (this.userData.email_cliente != "" && this.userData.telefono != "") {
       if (this.remember == true) {
         localStorage.setItem("userLogin", JSON.stringify(this.userData));
@@ -61,17 +88,29 @@ export class AuthPage implements OnInit {
         
           if (this.resposeData.userData) {
             localStorage.setItem("user", JSON.stringify(this.resposeData));
-            this._navController.navigateRoot("/lateral");
+
+          let name =this.resposeData.userData.nombre_cliente;
+            this.presentLoading(name);
+          
+           
           } else if (this.resposeData.error) {
-            console.log("error");
+           
+        let msg="Email o clave incorrecta";
+        this.presentAlert(msg);
           }
         },
         (err) => {
-          console.log(err);
+          let msg="Error, favor de intentar más tarde";
+          this.presentAlert(msg);
+        
         }
       );
     } else {
-      console.log("campos vavios");
+
+      let msg="Campos vacíos";
+      this.presentAlert(msg);
+    
+      
     }
   }
 }
