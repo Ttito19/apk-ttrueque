@@ -3,12 +3,16 @@
   "name": "myApp",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3ff6c71... new repair into json 005
   "integrations": {
     "cordova": {}
   },
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 =======
   "integrations": {
     "cordova": {}
@@ -29,5 +33,7 @@
 >>>>>>> ac861af... Initial commit
 >>>>>>> 5fe909c... union changes branchs
 >>>>>>> 09ad79d... union changes branchs 003
+=======
+>>>>>>> 3ff6c71... new repair into json 005
   "type": "angular"
 }
