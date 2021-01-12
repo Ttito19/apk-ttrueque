@@ -7,18 +7,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3ff6c71... new repair into json 005
 =======
 >>>>>>> 6dac046... new merge 001
 =======
 >>>>>>> b53ea37... new changes for david
+=======
+>>>>>>> 3ca7bc4... new changes david 013
   "integrations": {
     "cordova": {}
   },
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,5 +73,7 @@
 >>>>>>> fca9d39... new changes repair 017
 =======
 >>>>>>> 1dc7183... new changes repair 026
+=======
+>>>>>>> 3ca7bc4... new changes david 013
   "type": "angular"
 }
