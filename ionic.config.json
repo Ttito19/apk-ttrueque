@@ -1,11 +1,17 @@
 {
   "name": "myApp",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "integrations": {
     "cordova": {}
   },
 =======
   "integrations": {},
 >>>>>>> ac861af... Initial commit
+=======
+  "integrations": {
+    "cordova": {}
+  },
+>>>>>>> 0af88d9... integration qr
   "type": "angular"
 }
