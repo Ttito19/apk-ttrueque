@@ -8,9 +8,11 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
 .cont-t-sel-usertype {
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(-0deg, blue, steelblue, skyblue);*/
-  background: #fff;
+  background-image: url(../../../assets/img/utilities/image-backgr-intro.png);
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   ion-grid {
     z-index: 9999;
@@ -52,7 +54,7 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
         }
         &:last-child{
           button{
-            background: #F8E1D9;
+            background: pink;
           }  
         }
 
@@ -70,7 +72,7 @@ $azul-claro-shadow: 0 0 20px 1px dodgerblue;
           overflow: hidden;
           position: relative;
           transition: all ease .3s;
-          box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
+          box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.4);
 
           &:hover{
             transform: scale(.95);
