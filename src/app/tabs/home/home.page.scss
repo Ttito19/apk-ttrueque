@@ -1,0 +1,38 @@
+.header-cust-ttrqapk {
+  background: dodgerblue;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  flex-flow: row-reverse;
+  color: #fff;
+}
+.cont-lectorqr-home {
+  .title-qrscanner-home {
+    .title-lectorqr {
+      display: none;
+    }
+  }
+  .cont-img-qr {
+    height: 70%;
+    .cont-qr-image {
+      height: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+ngx-qrcode[cssclass="my-code"] {
+  div.my-code {
+    canvas {
+      height: 200px !important;
+      width: 200px !important;
+    }
+  }
+}
+canvas {
+  height: 200px !important;
+  width: 200px !important;
+}

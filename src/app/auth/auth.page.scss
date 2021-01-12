@@ -1,0 +1,69 @@
+/*VARIBLES - LOGIN*/
+$write: #fff;
+$blue: #0032b6;
+$fondo: #026bde;
+
+.back-logg-usertype {
+  background-image: url(../../assets/img/utilities/img_bakground_ttrq_login.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: $fondo;
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+  }
+  .cont-c-logg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-card {
+      background: transparent;
+      box-shadow: unset;
+
+      ion-card-header {
+        img {
+          width: 60%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      ion-card-content {
+        ion-list {
+          background: transparent;
+          ion-item {
+            background: $write;
+            padding: 0 0.5rem 0 0.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.9rem;
+            ion-input {
+              text-align: center;
+            }
+          }
+        }
+        .ion-padding-top {
+          button {
+            background: $blue;
+            color: $write;
+            font-size: 1rem;
+            padding: 1rem 0;
+            display: block;
+            width: 100%;
+            border-radius: 0.5rem;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

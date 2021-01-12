@@ -1,35 +1,29 @@
 <ion-content>
-  <ion-grid>
-    <ion-row>
-      <ion-col class="ion-padding-top">
-<div class="ion-text-center"  >
-  <ion-title>Seleccione tipo de usuario</ion-title>
-</div>
-</ion-col>
-</ion-row>
-</ion-grid> 
-<ion-grid>
- <div class="cont-sel-user">
-  <div class="cont-trg-type-user">
-    <ion-card class="ion-text-center">
-      <img class="icon-type-user" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/profile-1506810-1278719.png" width="100px"  />
-      <ion-card-content>
-        <section>
-          <ion-button   (click)="onCliente()"  expand="block">Cliente</ion-button>
-        </section>
-      </ion-card-content>
-    </ion-card>
+  <div class="cont-t-sel-usertype">
+    <ion-grid>
+      <div class="cont-title-sel-user">
+        <h1>Selecciona el tipo de usuario</h1>
+      </div> 
+    </ion-grid>
+    <ion-grid>
+      <div class="cont-sel-user">
+        <div class="cont-trg-type-user">
+          <button (click)="onCliente()"  expand="block">
+            <div class="icon-cont-typeuser">
+              <img class="icon-type-user" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/profile-1506810-1278719.png" width="100px"  />
+            </div>
+            <h1>Cliente</h1>
+          </button>
+        </div>
+        <div class="cont-trg-type-user">
+          <button (click)="onEmpleado()"   expand="block">
+            <div class="icon-cont-typeuser">
+              <img class="icon-type-user" src="https://image.flaticon.com/icons/png/512/560/560268.png" width="100px"  />
+            </div>
+            <h1>Vendedor</h1>
+          </button>
+        </div>
+      </div>
+    </ion-grid>
   </div>
-  <div class="cont-trg-type-user">
-    <ion-card class="ion-text-center">
-      <img class="icon-type-user" src="https://image.flaticon.com/icons/png/512/560/560268.png" width="100px"  />
-      <ion-card-content>
-        <section>
-          <ion-button (click)="onEmpleado()"   expand="block">Vendedor</ion-button>
-        </section>
-      </ion-card-content>
-    </ion-card>
-  </div>
-</div>
-</ion-grid>
 </ion-content>

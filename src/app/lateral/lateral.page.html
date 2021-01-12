@@ -2,6 +2,7 @@
   <ion-menu side="start" content-id="main-content">
     <ion-content>
       <div class="back-sidebar-left-ttrq">
+<<<<<<< HEAD
         <div class="cont-more-info">
           <!-- <div class="cont-logo-sdlf-ttrq">
             <img src="../../assets/img/utilities/user-default.jpg" alt="">
@@ -17,12 +18,20 @@
             <p *ngIf="userData.logo!=undefined"  >Tienda</p>    
             <p *ngIf="userData.logo==undefined"  >Cliente</p>     
           </div>
+=======
+        <div class="cont-logo-sdlf-ttrq">
+          <img src="../../assets/img/logo/logo.png" alt="" width="100px">
+>>>>>>> 66cfaea... changes 3
         </div>
         <ion-list lines="none">
           <ion-menu-toggle>
             <ion-item color="ion-transparent" routerLink="/lateral/profile" routerDirection="root"  >
               <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+<<<<<<< HEAD
               <ion-label>Mi Cuenta</ion-label>
+=======
+              <ion-label>{{userData.nombre_cliente}}</ion-label>
+>>>>>>> 66cfaea... changes 3
             </ion-item>
           </ion-menu-toggle>
           <ion-menu-toggle *ngFor="let p of pages">
@@ -38,11 +47,19 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+<<<<<<< HEAD
         <!-- <div class="footer-sdbl-ttrq">
           <a class="link-a" onclick="window.open('https://csscreativos.com', '_system', 'location=yes')">
             <span>Desarrollado por CSS CREATIVOS&copy;</span>
           </a>
         </div> -->
+=======
+        <div class="footer-sdbl-ttrq">
+          <a class="link-a" onclick="window.open('https://csscreativos.com', '_system', 'location=yes')">
+            <span>Desarrollado por CSS CREATIVOS&copy;</span>
+          </a>
+        </div>
+>>>>>>> 66cfaea... changes 3
       </div>
     </ion-content>
   </ion-menu>
