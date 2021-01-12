@@ -22,6 +22,12 @@ export class VendedorPage implements OnInit {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 007c70a... new changes david 017
+<<<<<<< HEAD
   order: string;
 
   userData = { email_cliente: "", telefono: "" };
@@ -31,7 +37,15 @@ export class VendedorPage implements OnInit {
 =======
   order: string;
 
+<<<<<<< HEAD
 >>>>>>> 3d05768... new changes into david 022
+=======
+>>>>>>> c669313... new changes into merge 006
+=======
+  order: string;
+
+>>>>>>> 1766998... new changes into david 022
+>>>>>>> 007c70a... new changes david 017
   userData = { email_cliente: "", telefono: "" };
   constructor(
 >>>>>>> 975e1f0... new changes into merge 004
