@@ -1,0 +1,21 @@
+.popover-content {
+  background: #222;
+}
+
+.my-custom-class .popover-content {
+  background: #222;
+}
+
+.my-custom-class {
+  --background: #222;
+}
+
+@font-face {
+	font-family: 'Spartan';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../assets/fonts/spartan-mb/Spartan-VariableFont_wght.ttf'),
+	url('../assets/fonts/spartan-mb/static/Spartan-SemiBold.ttf') format('truetype'),
+	url('../assets/fonts/spartan-mb/static/Spartan-Medium.ttf') format('truetype'),
+	url('../assets/fonts/spartan-mb/static/Spartan-Light.ttf') format('truetype');
+}

@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="cont-total-seltypeuser">
+	  <div class="cont-t-sel-usertype">
+      <div class="cont-logotype-ttrq">
+        <img class="icon-type-user" src="../../assets/img/logo/el-trueque-logotipo.svg"/>
+      </div>
+      <div class="cont-bottom">
+	      <div class="cont-title-sel-user">
+	        <h5>SELECCIONA EL TIPO DE USUARIO</h5>
+	      </div> 
+	      <div class="cont-sel-user">
+	        <div class="cont-trg-type-user">
+	          <button (click)="onCliente()"  expand="block">
+	            <div class="icon-cont-typeuser">
+	              <img src="../../assets/img/login/el-trueque-app-icono-1.svg" class="icon-login">
+	            </div>
+	            <div class="cont-name-usertype">
+	            	<h5>Cliente</h5>
+	            </div>
+	          </button>
+	        </div>
+	        <div class="cont-trg-type-user">
+	          <button (click)="onEmpleado()"   expand="block">
+	            <div class="icon-cont-typeuser">
+	              <ion-icon class="icon-login" name="cart-outline"></ion-icon>
+	            </div>
+	            <div class="cont-name-usertype">
+	            	<h5>Vendedor</h5>
+	            </div>
+	          </button>
+	        </div>
+	      </div>
+      </div>
+	  </div>
+  </div>
+</ion-content>

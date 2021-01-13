@@ -1,0 +1,71 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-content>
+      <div class="back-sidebar-left-ttrq">
+        <div class="cont-more-info">
+          <!-- <div class="cont-logo-sdlf-ttrq">
+            <img src="../../assets/img/utilities/user-default.jpg" alt="">
+          </div> -->
+          <div class="cont-logo-sdlf-ttrq" *ngIf="userData.logo!=undefined"  >
+            <img src="http://trueque.ga/shop/images/store/{{userData.logo}}">
+          </div>
+          <div class="cont-logo-sdlf-ttrq" *ngIf="userData.logo==undefined"  >
+            <img src="../../assets/img/utilities/user-default.jpg">
+          </div>
+          <div class="cont-info-client">
+            <h1> {{userData.nombre_cliente + ' ' + userData.apellido_cliente}} </h1>  
+            <p *ngIf="userData.logo!=undefined"  >Tienda</p>    
+            <p *ngIf="userData.logo==undefined"  >Cliente</p>     
+          </div>
+        </div>
+        <ion-list lines="none">
+          <ion-menu-toggle>
+            <ion-item color="ion-transparent item-list-cont" routerLink="/lateral/profile" routerDirection="root"  >
+              <div class="cont-item-listside">
+                <img src="../../assets/img/icons/el-trueque-app-icono-1.svg" alt="">
+                <span>Mi Cuenta</span>
+              </div>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle *ngFor="let p of pages">
+            <ion-item color="ion-transparent item-list-cont" routerLink="{{p.url}}" routerDirection="root">
+              <div class="cont-item-listside">
+                <img name="{{p.img}}" src="{{p.img}}" alt="">
+                <span>{{p.title}}</span>
+              </div>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item color="ion-transparent item-list-cont" (click)="onLogout()" button>
+              <div class="cont-item-listside">
+                <img src="../../assets/img/icons/el-trueque-app-icono-4.svg" name="log-out">
+                <span>{{ 'LOGOUT.title' | translate }}</span>
+              </div>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <!-- <div class="footer-sdbl-ttrq">
+          <a class="link-a" onclick="window.open('https://csscreativos.com', '_system', 'location=yes')">
+            <span>Desarrollado por CSS CREATIVOS&copy;</span>
+          </a>
+        </div> -->
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+  <ion-tabs   *ngIf="userData.condicion==ACTIVO" >
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button tab="home" >
+        <ion-icon name="home" ></ion-icon>
+        <ion-label>{{ 'HOME.title' | translate }}</ion-label>
+      </ion-tab-button>
+
+
+      <ion-tab-button tab="about"  >
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>{{ 'ABOUT.title' | translate }}</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>

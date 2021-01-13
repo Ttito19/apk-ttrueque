@@ -1,0 +1,123 @@
+//NUEVAS PALETA DE COLORES...
+$primary-clr:   #0A141D;
+$secondary-clr: #FE1417;
+$tertiary-clr:  #FFFFFF;
+$coral:         #FF394C;
+$pink:          #E6010C;
+
+//FUENTE SECUNDARIA...
+$font-spartan:  'Spartan';
+
+.header-cust-ttrqapk {
+  background-color: $primary-clr;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  color: #fff;
+  ion-title{
+    text-align: center;
+    font-weight: 800;
+  }
+}
+ion-content {
+  --ion-background-color: #0A141D !important;
+  
+  .cont-card-profile{
+    width: 90%;
+    margin: 1rem auto auto auto;
+    background: transparent;
+    border-radius: .5rem;
+    padding: 0 0 0 0;
+
+    .cont-logostore-profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+      height: 50%;
+
+      div {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          -o-object-fit: cover;
+          object-fit: cover;
+          -o-object-position: center;
+          object-position: center;
+          width: 100%;
+          -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+          height: 100%;
+          background: #eee;
+          text-align: center;
+        }
+      }
+
+      h1 {
+        color: $primary-clr;
+        background-color: $tertiary-clr;
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+        border-radius: 1.5rem;
+        text-transform: capitalize;
+        font-weight: 800;
+      }
+    }
+    .content-bottom-card{
+      border-radius: .6rem;
+      background-color: $tertiary-clr;
+      padding: .5rem 0 .5rem 0;
+
+      .cont-infostore-profile {
+        padding: 0 1.3rem;
+        .cont-control-info {
+          margin-bottom: 1rem;
+          p {
+            color: rgba(0, 0, 0, 0.3);
+            padding: 0;
+            margin-bottom: 0.3rem;
+            font-size: 0.9rem;
+          }
+          label {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            width: 100%;
+            display: block;
+            padding: 0 0 0.6rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 2.8rem;
+    }
+  }  
+}
+@media (max-width: 375px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 2.8rem;
+    }
+  }  
+}
+@media (max-width: 320px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 2.8rem;
+    }
+  }  
+}

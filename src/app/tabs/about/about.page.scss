@@ -1,0 +1,60 @@
+//NUEVAS PALETA DE COLORES...
+$primary-clr:   #0A141D;
+$secondary-clr: #FE1417;
+$tertiary-clr:  #FFFFFF;
+$coral:         #FF394C;
+$pink:          #E6010C;
+
+//FUENTE SECUNDARIA...
+$font-spartan:  'Spartan';
+
+.header-cust-ttrqapk {
+  background-color: $primary-clr;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  color: $tertiary-clr;
+
+  ion-title{
+  	text-align: center;
+    font-weight: 800;
+  }
+}
+.cont-total-about{
+  --ion-background-color: #0A141D !important;
+  .cont-info-about{
+  	padding: 1.6rem;
+    background-color: $tertiary-clr;
+    color: $primary-clr;
+    border-radius: .5rem;
+    width: 90%;
+    margin: 1rem auto auto auto;
+
+  	h1{
+  		font-weight: bold;
+      margin: 0 0 .5rem 0;
+  	}
+  }
+}
+
+@media (max-width: 425px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 1.8rem;
+    }
+  }  
+}
+@media (max-width: 375px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 1.8rem;
+    }
+  }  
+}
+@media (max-width: 320px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 1.8rem;
+    }
+  }  
+}

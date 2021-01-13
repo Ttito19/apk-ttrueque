@@ -1,0 +1,263 @@
+$principal-color: dodgerblue;
+
+//NUEVAS PALETA DE COLORES...
+$primary-clr:   #0A141D;
+$secondary-clr: #FE1417;
+$tertiary-clr:  #FFFFFF;
+
+//BOTONES...
+$blue-btn:      #044DCE;
+$green-btn:     #54CA04;
+
+//FUENTE SECUNDARIA...
+$font-spartan:  'Spartan';
+
+
+.name{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header-cust-ttrqapk {
+  background-color: $primary-clr;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  color: $tertiary-clr;
+  
+  ion-title{
+    text-align: center;
+    font-weight: 800;
+  }
+}
+
+.cont-hidden{
+  display: none;
+}
+
+
+.cont-lectorqr-home {
+  --ion-background-color: #0A141D !important;
+  
+  .cont-total-card{
+    height: 100%;
+    padding: .5rem 1rem 1rem 1rem;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .cont-info-points{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      padding: 0 !important;
+      margin: 0 0.625rem !important;
+
+      .cont-points{
+        color: $tertiary-clr;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: .9rem 1rem;
+        border: none;
+        background: red;
+        transition: all ease .3s;
+        border-radius: 1.5rem;
+        outline: none;
+
+        &:hover{
+          background: #FF5555;
+          color: #fff;
+        }
+        &:active{
+          background: #FF5555;
+          color: #fff;
+        }
+
+        h4{
+          margin: 0;
+          font-size: .9rem;
+          font-weight: 800;
+          font-family: $font-spartan;
+        }
+        span{
+          ion-icon{
+            font-size: 1.7rem;
+
+          }
+        }
+      }
+    }
+
+    .btn-open-qr-reader{
+      --ion-background-color: transparent !important;
+      margin-bottom: 0 !important;
+
+      button{
+        width: 100%;
+        text-align: center;
+        padding: .9rem 0;
+        color: #fff;
+        background: $blue-btn;
+        border-radius: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+
+        h4{
+          margin: 0;
+          font-size: .9rem;
+          font-weight: 800;
+          font-family: $font-spartan;
+        }
+
+        &:hover{
+          background: #4D4DFF;
+        }
+
+        &:active{
+          background: #4D4DFF;
+        }
+      }
+    }
+
+    .title-qrscanner-home {
+        display: none;
+      .title-lectorqr {
+      }
+    }
+
+    .cont-img-qr {
+      --ion-background-color: #fff !important;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09) inset;
+      padding: 1.5rem 0 2rem 0;
+      border-radius: 1.2rem;
+
+      .cont-namedata-cli{
+        margin-bottom: 0 !important;
+        
+        h1{
+          font-size: 1.35rem;
+          font-weight: bold;
+          color: $primary-clr;
+          margin: 0 0 .1rem 0;
+        }
+        p{
+          color: $primary-clr;
+          margin: 0;
+          font-size: .8rem;
+        }
+      }
+      
+      .cont-qr-image {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    .cont-infocli-payer{
+      --ion-background-color: #fff !important;
+      padding: 1rem !important;
+      border-radius: .5rem !important;
+      .cont-info-paymentdata{
+        text-align: center !important;
+        p{
+          // margin: 0 !important;
+          margin: 2px !important;
+        }
+      }
+      .cont-total-payment{
+        text-align: center !important;
+        p{
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        input{
+          text-align: center !important;
+          outline: none;
+          width: 100%;
+          border: 2px solid transparent;
+          padding: 0 0 .5rem 0;
+
+          &:focus{
+            border-bottom: 2px solid #2DD36F !important;
+          }
+        }
+      }
+    }
+
+    .cont-btn-confirm{
+      margin-top: 0 !important;
+      .btn-go-to_confirm{
+        background: $green-btn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .9rem;
+        text-transform: uppercase;
+        color: #ffff;
+        width: 100%;
+        padding: .9rem 2rem;
+        font-weight: bold;
+        border-radius: 1.5rem;
+        outline: none !important;
+
+        h4{
+          margin: 0;
+          font-size: .75rem !important;
+          font-weight: bold;
+          font-family: "Spartan";
+        }
+
+        &:hover{
+          background: #9BFD3D;
+        }
+        &:active{
+          background: #9BFD3D;
+        }
+        
+        ion-icon{
+          font-size: 1.25rem;
+          color: #fff;
+          margin-right: 1rem;
+        }
+        span{
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 1.8rem;
+    }
+  }  
+}
+@media (max-width: 375px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 1.8rem;
+    }
+  }  
+}
+@media (max-width: 320px) {
+  .header-cust-ttrqapk {
+    ion-title{
+      margin-right: 1.8rem;
+    }
+  }  
+}
