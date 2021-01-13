@@ -172,8 +172,11 @@ $font-spartan:  'Spartan';
       border-radius: .5rem !important;
       .cont-info-paymentdata{
         text-align: center !important;
+        h5{
+          color: $primary-clr;
+        }
+
         p{
-          // margin: 0 !important;
           margin: 2px !important;
         }
       }
@@ -182,6 +185,7 @@ $font-spartan:  'Spartan';
         p{
           font-size: 1rem;
           font-weight: bold;
+          color: $primary-clr;
         }
         input{
           text-align: center !important;

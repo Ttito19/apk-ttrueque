@@ -30,8 +30,8 @@ $font-spartan:	'Spartan';
 
 	  .cont-logotype-ttrq{
     	z-index: 9999;
-      width: 100%;
-      margin: 0 auto 1.5rem auto;
+      width: 48%;
+      margin: 0 auto 0 auto;
       display: flex;
       flex-direction: column;
       img{
@@ -42,6 +42,7 @@ $font-spartan:	'Spartan';
 
     .cont-bottom{
       width: 70%;
+      margin: 4.5rem 0 0 0;
       .cont-title-sel-user {
         padding: 0 1rem;
   	    margin: 0 auto 2.9rem auto !important;
@@ -49,13 +50,12 @@ $font-spartan:	'Spartan';
   	    text-align: center;
         h5 {
           z-index: 9999;
-  		    font-size: 1rem;
-  		    font-weight: 800;
-  		    line-height: 1.35rem;
-  		    font-family: $font-spartan;
-  		    width: 78%;
-  		    margin: auto;
-  		    color: #FFFFFF;
+          font-size: 1.2rem;
+          font-weight: 800;
+          line-height: 1.2rem;
+          width: 90%;
+          margin: auto;
+          color: #FFFFFF;
         }
       }
       
@@ -65,7 +65,7 @@ $font-spartan:	'Spartan';
         z-index: 9999;
 
         .cont-trg-type-user {
-          margin-bottom: 1.2rem;
+          margin-bottom: 1rem;
           width: calc(100% * 1 / 2);
           padding: 0 .5rem;
           z-index: 9999;
@@ -114,7 +114,7 @@ $font-spartan:	'Spartan';
   			    align-items: center;
   			    text-align: center;
   			    border-radius: 1.5rem;
-  			    padding: .4rem 2rem;
+  			    padding: .6rem 2rem;
   			    outline: none;
   			    z-index: 9999;
   			    overflow: hidden;
@@ -141,7 +141,6 @@ $font-spartan:	'Spartan';
   	            font-size: .9rem;
   					    font-weight: 800;
   					    margin: 0 !important;
-  					    letter-spacing: .03rem;
   	          }
             }
           }

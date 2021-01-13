@@ -29,7 +29,8 @@ $pink:          #E6010C;
 
       ion-card-header {
         padding: 0 !important;
-        margin: 0 !important;
+        margin: 0 auto 3.5rem auto !important;
+        width: 48%;
         img {
           width: 100%;
           object-fit: contain;

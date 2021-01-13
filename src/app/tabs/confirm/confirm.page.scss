@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;900&display=swap');
+//NUEVAS PALETA DE COLORES...
+$primary-clr:   #0A141D;
+$secondary-clr: #FE1417;
+$tertiary-clr:  #FFFFFF;
+$coral:         #FF394C;
+$pink:          #E6010C;
+
+//FUENTE SECUNDARIA...
+$font-spartan:  'Spartan';
 
 .header-cust-ttrqapk {
-  background: dodgerblue;
+  background-color: $primary-clr;
   display: flex;
   height: 56px;
   width: 100%;
@@ -15,7 +23,7 @@ ion-title{
 }
 
 .cont-total-confirm{
-  --ion-background-color: #1E90FF !important;
+  --ion-background-color: #0A141D !important;
   .cont-confirm-details{
   	padding: 1.6rem;
     text-align: center;
@@ -59,8 +67,8 @@ ion-title{
   		}
       
       .btn-confirm{
-      	background: #0032b6;
-        color: #fff;
+      	background: linear-gradient(45deg, $coral, $pink);
+        color: $tertiary-clr;
         padding: .8rem 0;
         width: 100%;
         border-radius: .9rem;
@@ -69,11 +77,8 @@ ion-title{
         outline: none;
         text-decoration: none;
 
-        &:hover{
-        	background: #4A6ECB;
-        }
         &:active{
-        	background: #4A6ECB;
+        	opacity: .8;
         }
       }
     }
