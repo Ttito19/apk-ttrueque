@@ -1,13 +1,20 @@
 $principal-color: dodgerblue;
 
 //NUEVAS PALETA DE COLORES...
-$primary-clr:   #0A141D;
-$secondary-clr: #FE1417;
-$tertiary-clr:  #FFFFFF;
+$primary-clr:       #071573;
+$secondary-clr:     #B80F0F;
+$tertiary-clr:      #FFFFFF;
+$quaternary-clr:    #000000;
+$color1:            #E40914;
+$color2:            #B80F0F;
 
 //BOTONES...
-$blue-btn:      #044DCE;
-$green-btn:     #54CA04;
+$blue-btn:          #162EBD;
+$green-btn:         #029E84;
+
+$gradient_hover:    #EC5B62;
+$blue-btn_hover:   #6373D3;
+$green-btn_hover:   #56BEAD;
 
 //FUENTE SECUNDARIA...
 $font-spartan:  'Spartan';
@@ -37,7 +44,7 @@ $font-spartan:  'Spartan';
 
 
 .cont-lectorqr-home {
-  --ion-background-color: #0A141D !important;
+  --ion-background-color: #071573 !important;
   
   .cont-total-card{
     height: 100%;
@@ -67,17 +74,17 @@ $font-spartan:  'Spartan';
         justify-content: space-evenly;
         padding: .9rem 1rem;
         border: none;
-        background: red;
+        background: linear-gradient(45deg, $color2, $color1);
         transition: all ease .3s;
         border-radius: 1.5rem;
         outline: none;
 
         &:hover{
-          background: #FF5555;
+          background: $gradient_hover;
           color: #fff;
         }
         &:active{
-          background: #FF5555;
+          background: $gradient_hover;
           color: #fff;
         }
 
@@ -120,11 +127,11 @@ $font-spartan:  'Spartan';
         }
 
         &:hover{
-          background: #4D4DFF;
+          background-color: $blue-btn_hover;
         }
 
         &:active{
-          background: #4D4DFF;
+          background-color: $blue-btn_hover;
         }
       }
     }
@@ -146,12 +153,12 @@ $font-spartan:  'Spartan';
         
         h1{
           font-size: 1.35rem;
-          font-weight: bold;
-          color: $primary-clr;
+          font-weight: 800;
+          color: $quaternary-clr;
           margin: 0 0 .1rem 0;
         }
         p{
-          color: $primary-clr;
+          color: $quaternary-clr;
           margin: 0;
           font-size: .8rem;
         }
@@ -173,7 +180,7 @@ $font-spartan:  'Spartan';
       .cont-info-paymentdata{
         text-align: center !important;
         h5{
-          color: $primary-clr;
+          color: $quaternary-clr;
         }
 
         p{
@@ -185,7 +192,7 @@ $font-spartan:  'Spartan';
         p{
           font-size: 1rem;
           font-weight: bold;
-          color: $primary-clr;
+          color: $quaternary-clr;
         }
         input{
           text-align: center !important;
@@ -225,10 +232,10 @@ $font-spartan:  'Spartan';
         }
 
         &:hover{
-          background: #9BFD3D;
+          background-color: $green-btn_hover;
         }
         &:active{
-          background: #9BFD3D;
+          background-color: $green-btn_hover;
         }
         
         ion-icon{

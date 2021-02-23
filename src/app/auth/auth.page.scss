@@ -1,9 +1,9 @@
 //NUEVAS PALETA DE COLORES...
-$primary-clr:   #0A141D;
-$secondary-clr: #FE1417;
-$tertiary-clr:  #FFFFFF;
-$coral:         #FF394C;
-$pink:          #E6010C;
+$primary-clr:     #071573;
+$secondary-clr:   #FE1417;
+$tertiary-clr:    #FFFFFF;
+$color1:          #E40914;
+$color2:          #B80F0F;
 
 .back-logg-usertype {
   background-color: $primary-clr;
@@ -63,7 +63,7 @@ $pink:          #E6010C;
         .cont-btn-logg {
 
           button {
-            background: linear-gradient(45deg, $coral, $pink);
+            background: linear-gradient(45deg, $color1, $color2);
             color: $tertiary-clr;
             padding: 1rem 0;
             display: block;

@@ -1,7 +1,9 @@
 //NUEVAS PALETA DE COLORES...
-$primary-clr:   #0A141D;
-$secondary-clr: #FE1417;
-$tertiary-clr:  #FFFFFF;
+$primary-clr:     #071573;
+$secondary-clr:   #FE1417;
+$tertiary-clr:    #FFFFFF;
+$quaternary-clr:  #000000;
+
 $coral:         #FF394C;
 $pink:          #E6010C;
 
@@ -20,7 +22,7 @@ $font-spartan:  'Spartan';
   }
 }
 ion-content {
-  --ion-background-color: #0A141D !important;
+  --ion-background-color: #071573 !important;
   
   .cont-card-profile{
     width: 90%;
@@ -64,7 +66,7 @@ ion-content {
       }
 
       h1 {
-        color: $primary-clr;
+        color: $quaternary-clr;
         background-color: $tertiary-clr;
         padding: 0.5rem 2rem;
         font-size: 1rem;

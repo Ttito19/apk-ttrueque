@@ -1,9 +1,9 @@
 //NUEVAS PALETA DE COLORES...
-$primary-clr:   #0A141D;
-$secondary-clr: #FE1417;
-$tertiary-clr:  #FFFFFF;
-$coral:         #FF394C;
-$pink:          #E6010C;
+$primary-clr:       #071573;
+$secondary-clr:     #FE1417;
+$tertiary-clr:      #FFFFFF;
+$color1:            #E40914;
+$color2:            #B80F0F;
 
 //FUENTE SECUNDARIA...
 $font-spartan:  'Spartan';
@@ -23,7 +23,7 @@ ion-title{
 }
 
 .cont-total-confirm{
-  --ion-background-color: #0A141D !important;
+  --ion-background-color: #071573 !important;
   .cont-confirm-details{
   	padding: 1.6rem;
     text-align: center;
@@ -67,7 +67,7 @@ ion-title{
   		}
       
       .btn-confirm{
-      	background: linear-gradient(45deg, $coral, $pink);
+      	background: linear-gradient(45deg, $color2, $color1);
         color: $tertiary-clr;
         padding: .8rem 0;
         width: 100%;

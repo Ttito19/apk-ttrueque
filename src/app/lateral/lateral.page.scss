@@ -1,18 +1,19 @@
 $transp: transparent !important;
 
 //NUEVAS PALETA DE COLORES...
-$primary-clr:   #0A141D;
-$secondary-clr: #FE1417;
-$tertiary-clr:  #FFFFFF;
-$coral:         #FF394C;
-$pink:          #E6010C;
+$primary-clr:       #071573;
+$secondary-clr:     #FE1417;
+$tertiary-clr:      #FFFFFF;
+$quaternary-clr:    #000000;
+$color1:            #E40914;
+$color2:            #B80F0F;
 
 //FUENTE SECUNDARIA...
 $font-spartan:  'Spartan';
 
 ion-content {
   .back-sidebar-left-ttrq {
-    background: linear-gradient(180deg, $coral, $pink);
+    background: linear-gradient(90deg, $color2, $color1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,7 +90,7 @@ ion-content {
             width: 100%;
             position: relative;
             padding: 0 1rem 0 2.5rem;
-            margin: 0 0 .8rem 0;
+            margin: .8rem 0 .8rem 0;
 
             img{
               width: 40px;
@@ -155,7 +156,7 @@ ion-content {
     
     span{
       text-align: center;
-      color: $primary-clr;
+      color: $quaternary-clr;
     }
   }
 }

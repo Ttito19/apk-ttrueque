@@ -1,7 +1,8 @@
 //NUEVAS PALETA DE COLORES...
-$primary-clr:   #0A141D;
+$primary-clr:   #071573;
 $secondary-clr: #FE1417;
 $tertiary-clr:  #FFFFFF;
+$quaternary-clr: #000000;
 $coral:         #FF394C;
 $pink:          #E6010C;
 
@@ -21,11 +22,11 @@ $font-spartan:  'Spartan';
   }
 }
 .cont-total-about{
-  --ion-background-color: #0A141D !important;
+  --ion-background-color: #071573 !important;
   .cont-info-about{
   	padding: 1.6rem;
     background-color: $tertiary-clr;
-    color: $primary-clr;
+    color: $quaternary-clr;
     border-radius: .5rem;
     width: 90%;
     margin: 1rem auto auto auto;

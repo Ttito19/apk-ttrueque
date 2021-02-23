@@ -1,7 +1,8 @@
 //NUEVAS PALETA DE COLORES...
-$primary-clr: 	#0A141D;
-$secondary-clr:	#FE1417;
-$tertiary-clr:	#FFFFFF;
+$primary-clr: 	    #071573;
+$secondary-clr:	    #B80F0F;
+$tertiary-clr:	    #FFFFFF;
+$quaternary-clr:    #000000;
 
 //FUENTE SECUNDARIA...
 $font-spartan:	'Spartan';
@@ -95,14 +96,14 @@ $font-spartan:	'Spartan';
               .icon-cont-typeuser{
 
   	          	.icon-login{
-  	          		color: $primary-clr;
+  	          		color: $quaternary-clr;
   	          	}
   	          }
 
               .cont-name-usertype{
 
   	            h5{
-  	            	color: $primary-clr;
+  	            	color: $quaternary-clr;
   	            }
               }
             }  
